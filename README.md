@@ -2,7 +2,7 @@
   <img src="./resources/logo.jpg" alt="RiZoeLXSpam Logo">
 </p>
 <h1 align="center">
-  <b>ʀɪᴢᴏᴇʟXsᴘᴀᴍ</b>
+  <b>ʀɪᴢᴏᴇʟ X sᴘᴀᴍ</b>
 </h1>
    
 
