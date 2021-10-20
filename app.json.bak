@@ -1,0 +1,143 @@
+{
+    "name": "RIZOELXSPAM HERE.",
+    "description": "MOST POWERFUL + STABLE SPAM USERBOTS",
+    "logo": "https://telegra.ph/file/8626f33867fc155eaa404.jpg",
+    "keywords": [
+        "telegram",
+        "telethon",
+        "telegram-bot",
+        "Ustad-op",
+        "SpamBots"
+    ],
+    "repository": "https://t.me/TheRiZoeL",
+    "website": "https://t.me/TheRiZoeL",
+    "success_url": "https://t.me/TheRiZoeL",
+    "env": {
+        "API_HASH": {
+            "description": "You API HASH from my.telegram.org",
+            "value": ""
+        },
+        "APP_ID": {
+            "description": "You API ID from my.telegram.org",
+            "value": ""
+        },
+        "STRING": {
+            "description": "telethon string session of spam id",
+            "value": ""
+        },
+        "STRING2": {
+            "description": "telethon string session of spam id",
+            "value": ""
+
+        },
+        "STRING3": {
+            "description": "telethon string session of spam id",
+            "value": ""
+           
+        },
+        "STRING4": {
+            "description": "telethon string session of spam id)",
+            "value": ""
+            
+        },
+        "STRING5": {
+            "description": "telethon string session of spam id",
+            "value": ""
+           
+        },
+        "STRING6": {
+            "description": "telethon string session of spam id",
+            "value": ""
+            
+        },
+        "STRING7": {
+            "description": "telethon string session of spam id",
+            "value": ""
+            
+        },
+        "STRING8": {
+            "description": "telethon string session of spam id",
+            "value": ""
+            
+        },
+        "STRING9": {
+            "description": "telethon string session of spam id",
+            "value": ""
+            
+        },
+        "STRING10": {
+            "description": "telethon string session of spam id",
+            "value": ""
+            
+        },  
+       "STRING11": {
+            "description": "telethon string session of spam id",
+            "value": ""
+        },
+        "STRING12": {
+            "description": "telethon string session of spam id",
+            "value": ""
+
+        },
+        "STRING13": {
+            "description": "telethon string session of spam id",
+            "value": ""
+           
+        },
+        "STRING14": {
+            "description": "telethon string session of spam id",
+            "value": ""
+            
+        },
+        "STRING15": {
+            "description": "telethon string session of spam id",
+            "value": ""
+           
+        },
+        "STRING16": {
+            "description": "telethon string session of spam id",
+            "value": ""
+            
+        },
+        "STRING17": {
+            "description": "telethon string session of spam id",
+            "value": ""
+            
+        },
+        "STRING18": {
+            "description": "telethon string session of spam id",
+            "value": ""
+            
+        },
+        "STRING19": {
+            "description": "telethon string session of spam id",
+            "value": ""
+            
+        },
+        "STRING20": {
+            "description": "telethon string session of spam id",
+            "value": ""     
+                    
+        },
+        "SUDO_USERS": {
+            "description": "Sudo users id space by space",
+            "value": ""
+            
+        },
+        "HEROKU_API_KEY": {
+            "description": "Your Heroku api key to update your bot",
+            "value": ""
+            
+        },
+        "HEROKU_APP_NAME": {
+            "description": "Your app name to Update your bot",
+            "value": ""
+            
+        }
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
+}
