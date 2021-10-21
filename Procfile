@@ -1,1 +1,1 @@
-UstaD: python -m RiZoeLXSpam
+Riz: python -m RiZoeLXSpam
