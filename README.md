@@ -25,6 +25,9 @@
 # ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs
 [![Commands](https://img.shields.io/badge/RiZoeLXSpam-CMDS-blue)](https://telegra.ph/%F0%9D%97%A5%F0%9D%97%9C%F0%9D%97%AD%F0%9D%97%A2%F0%9D%97%98%F0%9D%97%9F-%F0%9D%97%AB-%F0%9D%97%A6%F0%9D%97%A3%F0%9D%97%94%F0%9D%97%A0-10-15)
 
+# Support & Updates 🎑
+<a href="https://t.me/DNHxHELL"><img src="https://img.shields.io/badge/Join-Group%20Support-blue.svg?style=for-the-badge&logo=Telegram"></a> <a href="https://t.me/RiZoeLX"><img src="https://img.shields.io/badge/Join-Updates%20Channel-blue.svg?style=for-the-badge&logo=Telegram"></a>
+
 # Credits
 * [![RiZoeL-Creator](https://img.shields.io/static/v1?label=RiZoeL&message=Creator&color=critical)](https://t.me/TheRiZoeL)
 * [Lonami](https://github.com/LonamiWebs/) for [Telethon.](https://github.com/LonamiWebs/Telethon)
