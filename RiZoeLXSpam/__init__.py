@@ -9,7 +9,7 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
                     level=logging.WARNING)
 
 # Basics
-APP_ID = config("APP_ID", default=None, cast=int)
+APP_ID = config("APP_ID", default=None)
 API_HASH = config("API_HASH", default=None)
 HEROKU_APP_NAME = config("HEROKU_APP_NAME", None)
 HEROKU_API_KEY = config("HEROKU_API_KEY", None)
@@ -378,5 +378,3 @@ RRAID = [
     "TERA MAA MERI FAN",
     "TERI SEXY BAHEN KI CHUT OP",
 ]
-
-# TelegramClient('Riz20', APP_ID, API_HASH).start(session_name=STRING20) 
