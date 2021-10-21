@@ -8,7 +8,7 @@
 [![Forks](https://img.shields.io/github/forks/MrRizoel/RiZoeLXSpam?style=flat-square&color=orange)](https://github.com/MrRizoel/RiZoeLXSpam/fork)
 [![Python](https://img.shields.io/badge/Python-v3.9.7-blue)](https://www.python.org/)
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/MrRizoel/RiZoeLXSpam)   
-[![License](https://img.shields.io/badge/License-AGPL-blue)](https://github.com/MrRizoel/RiZoeLXSpam/blob/main/LICENSE)
+[![License](https://img.shields.io/badge/License-AGPL-blue)](https://github.com/MrRizoel/RiZoeLXSpam/main/LICENSE)
 ----
    
 # ALL COMMANDS
