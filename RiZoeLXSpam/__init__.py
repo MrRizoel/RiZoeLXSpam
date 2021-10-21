@@ -34,45 +34,45 @@ STRING19 = config("STRING19", default=None)
 STRING20 = config("STRING20", default=None)
 SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
 
-Riz = TelegramClient('Riz', APP_ID, API_HASH).start(session_name=STRING) 
+Riz = STRING
 
-Riz2 = TelegramClient('Riz2', APP_ID, API_HASH).start(session_name=STRING2) 
+Riz2 = STRING2
 
-Riz3 = TelegramClient('Riz3', APP_ID, API_HASH).start(session_name=STRING3) 
+Riz3 = STRING3
 
-Riz4 = TelegramClient('Riz4', APP_ID, API_HASH).start(session_name=STRING4) 
+Riz4 = STRING4
 
-Riz5 = TelegramClient('Riz5', APP_ID, API_HASH).start(session_name=STRING5) 
+Riz5 = STRING5
 
-Riz6 = TelegramClient('Riz6', APP_ID, API_HASH).start(session_name=STRING6) 
+Riz6 = STRING6 
 
-Riz7 = TelegramClient('Riz7', APP_ID, API_HASH).start(session_name=STRING7) 
+Riz7 = STRING7
 
-Riz8 = TelegramClient('Riz8', APP_ID, API_HASH).start(session_name=STRING8) 
+Riz8 = STRING8
 
-Riz9 = TelegramClient('Riz9', APP_ID, API_HASH).start(session_name=STRING9) 
+Riz9 = STRING9
 
-Riz10 = TelegramClient('Riz10', APP_ID, API_HASH).start(session_name=STRING10) 
+Riz10 = STRING10
 
-Riz11 = TelegramClient('Riz11', APP_ID, API_HASH).start(session_name=STRING11) 
+Riz11 = STRING11
 
-Riz12 = TelegramClient('Riz12', APP_ID, API_HASH).start(session_name=STRING12) 
+Riz12 = STRING12
 
-Riz13 = TelegramClient('Riz13', APP_ID, API_HASH).start(session_name=STRING13) 
+Riz13 = STRING13
 
-Riz14 = TelegramClient('Riz14', APP_ID, API_HASH).start(session_name=STRING14) 
+Riz14 = STRING14
 
-Riz15 = TelegramClient('Riz15', APP_ID, API_HASH).start(session_name=STRING15) 
+Riz15 = STRING15
 
-Riz16 = TelegramClient('Riz16', APP_ID, API_HASH).start(session_name=STRING16) 
+Riz16 = STRING16
 
-Riz17 = TelegramClient('Riz17', APP_ID, API_HASH).start(session_name=STRING17) 
+Riz17 = STRING17
 
-Riz18 = TelegramClient('Riz18', APP_ID, API_HASH).start(session_name=STRING18) 
+Riz18 = STRING18
 
-Riz19 = TelegramClient('Riz18', APP_ID, API_HASH).start(session_name=STRING19) 
+Riz19 = STRING19
 
-Riz20 = TelegramClient('Riz20', APP_ID, API_HASH).start(session_name=STRING20) 
+Riz20 = STRING20
 
 RAID = [
     "MADARCHOD TERI MAA KI CHUT ME GHUTKA KHAAKE THOOK DUNGA 🤣🤣",
