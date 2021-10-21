@@ -8,13 +8,13 @@ import inspect
 import re
 
 def load_plugins(plugin_name):
-    path = Path(f"RiZoeL/plugins/{plugin_name}.py")
-    name = "RiZoeL.plugins.{}".format(plugin_name)
+    path = Path(f"RiZoeLXSpam/plugins/{plugin_name}.py")
+    name = "RiZoeLXSpam.plugins.{}".format(plugin_name)
     spec = importlib.util.spec_from_file_location(name, path)
     load = importlib.util.module_from_spec(spec)
     load.logger = logging.getLogger(plugin_name)
     spec.loader.exec_module(load)
-    sys.modules["RiZoeL.plugins." + plugin_name] = load
+    sys.modules["RiZoeLXSpam.plugins." + plugin_name] = load
     print("RiZoeL has Imported " + plugin_name)
 
 async def edit_or_reply(event, text):
