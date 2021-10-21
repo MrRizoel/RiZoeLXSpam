@@ -9,7 +9,6 @@
 [![Forks](https://img.shields.io/github/forks/MrRizoel/RiZoeLXSpam?style=flat-square&color=orange)](https://github.com/MrRizoel/RiZoeLXSpam/fork)
 [![Size](https://img.shields.io/github/repo-size/MrRizoel/RiZoeLXSpam?style=flat-square&color=green)](https://github.com/MrRizoel/RiZoeLXSpam/)   
 [![Python](https://img.shields.io/badge/Python-v3.9.7-blue)](https://www.python.org/)
-[![CodeFactor](https://www.codefactor.io/repository/github/MrRizoel/RiZoeLXSpam/badge/main)](https://www.codefactor.io/repository/github/MrRizoel/RiZoeLXSpam/overview/main)
 [![Maintenance](https://img.shields.io/badge/Maintained%3F-yes-green.svg)](https://github.com/MrRizoel/RiZoeLXSpam/graphs/commit-activity)
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/MrRizoel/RiZoeLXSpam)   
 [![Contributors](https://img.shields.io/github/contributors/MrRizoel/RiZoeLXSpam?style=flat-square&color=green)](https://github.com/MrRizoel/RiZoeLXSpam/graphs/contributors)
