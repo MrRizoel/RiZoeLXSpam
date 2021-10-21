@@ -6,133 +6,137 @@
         "telegram",
         "telethon",
         "telegram-bot",
-        "Ustad-op",
+        "RiZoeLXSpam",
         "SpamBots"
     ],
     "repository": "https://t.me/TheRiZoeL",
     "website": "https://t.me/TheRiZoeL",
     "success_url": "https://t.me/TheRiZoeL",
     "env": {
-        "API_HASH": {
-            "description": "You API HASH from my.telegram.org",
-            "value": ""
-        },
-        "APP_ID": {
-            "description": "You API ID from my.telegram.org",
-            "value": ""
-        },
-        "STRING": {
-            "description": "telethon string session of spam id",
-            "value": ""
-        },
-        "STRING2": {
-            "description": "telethon string session of spam id",
-            "value": ""
-
-        },
-        "STRING3": {
-            "description": "telethon string session of spam id",
-            "value": ""
-           
-        },
-        "STRING4": {
-            "description": "telethon string session of spam id)",
-            "value": ""
-            
-        },
-        "STRING5": {
-            "description": "telethon string session of spam id",
-            "value": ""
-           
-        },
-        "STRING6": {
-            "description": "telethon string session of spam id",
-            "value": ""
-            
-        },
-        "STRING7": {
-            "description": "telethon string session of spam id",
-            "value": ""
-            
-        },
-        "STRING8": {
-            "description": "telethon string session of spam id",
-            "value": ""
-            
-        },
-        "STRING9": {
-            "description": "telethon string session of spam id",
-            "value": ""
-            
-        },
-        "STRING10": {
-            "description": "telethon string session of spam id",
-            "value": ""
-            
-        },  
-       "STRING11": {
-            "description": "telethon string session of spam id",
-            "value": ""
-        },
-        "STRING12": {
-            "description": "telethon string session of spam id",
-            "value": ""
-
-        },
-        "STRING13": {
-            "description": "telethon string session of spam id",
-            "value": ""
-           
-        },
-        "STRING14": {
-            "description": "telethon string session of spam id",
-            "value": ""
-            
-        },
-        "STRING15": {
-            "description": "telethon string session of spam id",
-            "value": ""
-           
-        },
-        "STRING16": {
-            "description": "telethon string session of spam id",
-            "value": ""
-            
-        },
-        "STRING17": {
-            "description": "telethon string session of spam id",
-            "value": ""
-            
-        },
-        "STRING18": {
-            "description": "telethon string session of spam id",
-            "value": ""
-            
-        },
-        "STRING19": {
-            "description": "telethon string session of spam id",
-            "value": ""
-            
-        },
-        "STRING20": {
-            "description": "telethon string session of spam id",
-            "value": ""     
-                    
+             "API_ID": {
+        "description": "Api ID",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Api Hash",
+        "value": "",
+        "required": true
+      },
+      "STRING": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": true
+      },
+      "STRING2": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING3": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING4": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING5": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING6": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING7": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING8": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING9": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING10": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING11": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING12": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING13": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING14": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING15": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING16": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING17": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING18": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING19": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
+      },
+      "STRING20": {
+        "description": "Telethon String Session",
+        "value": "",
+        "required": false
         },
         "SUDO_USERS": {
             "description": "Sudo users id space by space",
             "value": ""
-            
+            "required": true
         },
         "HEROKU_API_KEY": {
             "description": "Your Heroku api key to update your bot",
             "value": ""
-            
+            "required": false 
         },
         "HEROKU_APP_NAME": {
             "description": "Your app name to Update your bot",
-            "value": ""
-            
+          "value": ""
+          "required": false  
         }
     },
     "buildpacks": [
