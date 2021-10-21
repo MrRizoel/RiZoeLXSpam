@@ -1,6 +1,6 @@
 import glob
 from pathlib import Path
-from RiZoeL.utils import load_plugins
+from RiZoeLXSpam.utils import load_plugins
 import logging
 from . import Riz, Riz2, Riz3, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, Riz11, Riz12, Riz13, Riz14, Riz15, Riz16, Riz17, Riz18, Riz19, Riz20
 
