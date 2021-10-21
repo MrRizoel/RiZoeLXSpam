@@ -1,0 +1,32 @@
+from os import getenv
+from dotenv import load_dotenv
+
+load_dotenv()
+
+STRING = getenv("STRING")
+STRING2 = getenv("STRING2")
+STRING3 = getenv("STRING3")
+STRING4 = getenv("STRING4")
+STRING5 = getenv("STRING5")
+STRING6 = getenv("STRING6")
+STRING7 = getenv("STRING7")
+STRING8 = getenv("STRING8")
+STRING9 = getenv("STRING9")
+STRING10 = getenv("STRING10")
+STRING11 = getenv("STRING11")
+STRING12 = getenv("STRING12")
+STRING13 = getenv("STRING13")
+STRING14 = getenv("STRING14")
+STRING15 = getenv("STRING15")
+STRING16 = getenv("STRING16")
+STRING17 = getenv("STRING17")
+STRING18 = getenv("STRING18")
+STRING19 = getenv("STRING19")
+STRING20 = getenv("STRING20")
+API_ID = getenv("API_ID")
+API_HASH = getenv("API_HASH")
+HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
+HEROKU_API_KEY = getenv("HEROKU_API_KEY")
+SUDO = list(map(int, getenv("SUDO").split()))
+TMP_DOWNLOAD_DIRECTORY = os.environ.get(
+            "TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
