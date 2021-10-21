@@ -125,17 +125,17 @@
         },
         "SUDO_USERS": {
             "description": "Sudo users id space by space",
-            "value": ""
+            "value": "",
             "required": true
         },
         "HEROKU_API_KEY": {
             "description": "Your Heroku api key to update your bot",
-            "value": ""
+            "value": "",
             "required": false 
         },
         "HEROKU_APP_NAME": {
             "description": "Your app name to Update your bot",
-          "value": ""
+          "value": "",
           "required": false  
         }
     },
