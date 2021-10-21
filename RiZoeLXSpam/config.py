@@ -27,6 +27,4 @@ API_ID = getenv("API_ID")
 API_HASH = getenv("API_HASH")
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
-SUDO = list(map(int, getenv("SUDO").split()))
-TMP_DOWNLOAD_DIRECTORY = os.environ.get(
-            "TMP_DOWNLOAD_DIRECTORY", "./DOWNLOADS/")
+SUDO_USERS = list(map(int, getenv("SUDO").split()))
