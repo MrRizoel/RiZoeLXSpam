@@ -10,9 +10,8 @@
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/MrRizoel/RiZoeLXSpam)   
 ----
 
-`` ☯︎ ғᴀsᴛ ᴀɴᴅ sᴛᴀʙʟᴇ ``
-`` Deploy Up to 20 UserBots in One time 🔥``
-`` No Crash ``
+- ☯︎ ғᴀsᴛ ᴀɴᴅ sᴛᴀʙʟᴇ 
+- Deploy Up to 20 UserBots in One time 🔥
 
 ### Generate string session from below:
 
