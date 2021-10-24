@@ -18,6 +18,11 @@
         "value": "",
         "required": true
       },
+      "ALIVE_PIC": {
+        "description": "Api Hash",
+        "value": "",
+        "required": false
+      },
       "API_HASH": {
         "description": "Api Hash",
         "value": "",
