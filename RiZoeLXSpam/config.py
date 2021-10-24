@@ -3,6 +3,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
+ALIVE_PIC = getenv("ALIVE_PIC")
 STRING = getenv("STRING")
 STRING2 = getenv("STRING2")
 STRING3 = getenv("STRING3")
@@ -27,4 +28,4 @@ API_ID = getenv("API_ID")
 API_HASH = getenv("API_HASH")
 HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 HEROKU_API_KEY = getenv("HEROKU_API_KEY")
-SUDO_USERS = list(map(int, getenv("SUDO").split()))
+SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
