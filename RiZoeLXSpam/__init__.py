@@ -14,7 +14,7 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 
 # Sessions
 os.system("pip install --upgrade pip")
-if STRING:
+    if STRING:
     session_name = str(STRING)
         print("String 1 Found")
             Riz = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
