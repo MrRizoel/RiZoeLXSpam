@@ -39,7 +39,7 @@ os.system("pip install --upgrade pip")
     else:
         print("Session 3 not Found")
         session_name = "startup"
-            Riz = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+            Riz3 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
 
     if STRING4:
         session_name = str(STRING4)
