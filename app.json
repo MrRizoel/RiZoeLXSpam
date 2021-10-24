@@ -14,17 +14,17 @@
     "success_url": "https://t.me/TheRiZoeL",
     "env": {
              "API_ID": {
-        "description": "Api ID",
+        "description": "Fill Api ID Take this value from My.telegram.org",
         "value": "",
         "required": true
       },
       "ALIVE_PIC": {
-        "description": "Api Hash",
+        "description": "your alive pic or video",
         "value": "",
         "required": false
       },
       "API_HASH": {
-        "description": "Api Hash",
+        "description": "Fill Api hash Take this value from My.telegram.org",
         "value": "",
         "required": true
       },
@@ -143,10 +143,20 @@
           "value": "",
           "required": false  
         }
-    },
-    "buildpacks": [
-        {
-            "url": "heroku/python"
-        }
-    ]
+      },
+  "addons": [{
+    "plan": "heroku-postgresql",
+    "options": {
+      "version": "12"
+    }
+  }],
+  "buildpacks": [{
+    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
+  },{
+    "url": "https://github.com/heroku/heroku-buildpack-apt.git"
+  },{
+    "url": "https://github.com/chrismytton/heroku-buildpack-jq"
+  },{
+    "url": "heroku/python"
+  }]
 }
