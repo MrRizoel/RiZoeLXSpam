@@ -3,7 +3,8 @@ import os
 import sys
 import git
 from telethon import events
-from .. import Riz, Riz2, Riz3, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, Riz11, Riz12, Riz13, Riz14, Riz15, Riz16, Riz17, Riz18, Riz19, Riz20, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY
+from .. import Riz, Riz2, Riz3, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, Riz11, Riz12, Riz13, Riz14, Riz15, Riz16, Riz17, Riz18, Riz19, Riz20
+from RiZoeLXSpam.config import SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY
 
 SMEX_USERS = []
 for x in SUDO_USERS:
