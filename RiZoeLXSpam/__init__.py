@@ -14,185 +14,185 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 
 # Sessions
 os.system("pip install --upgrade pip")
-    if STRING:
-    session_name = str(STRING)
-        print("String 1 Found")
-            Riz = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
-   else:
-        print("Session 1 not Found")
-        session_name = "startup"
-            Riz = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+if STRING:
+     session_name = str(STRING)
+     print("String 1 Found")
+     Riz = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+else:
+     print("Session 1 not Found")
+     session_name = "startup"
+     Riz = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
 
-    if STRING2:
-    session_name = str(STRING2)
-        print("String 2 Found")
-            Riz2 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
-   else:
-        print("Session 2 not Found")
-        session_name = "startup"
-            Riz2 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+if STRING2:
+     session_name = str(STRING2)
+     print("String 2 Found")
+     Riz2 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+else:
+     print("Session 2 not Found")
+     session_name = "startup"
+     Riz2 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
 
-    if STRING3:
-        session_name = str(STRING3)
-        print("String 3 Found")
-            Riz3 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
-    else:
-        print("Session 3 not Found")
-        session_name = "startup"
-            Riz3 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+if STRING3:
+     session_name = str(STRING3)
+     print("String 3 Found")
+     Riz3 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+else:
+     print("Session 3 not Found")
+     session_name = "startup"
+     Riz = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
 
-    if STRING4:
-        session_name = str(STRING4)
-        print("String 4 Found")
-            Riz4 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
-    else:
-        print("Session 4 not Found")
-        session_name = "startup"
-            Riz4 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+if STRING4:
+     session_name = str(STRING4)
+     print("String 4 Found")
+     Riz4 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+else:
+     print("Session 4 not Found")
+     session_name = "startup"
+     Riz4 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
 
-    if STRING5:
-        session_name = str(STRING5)
-        print("String 5 Found")
-            Riz5 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
-    else:
-        print("Session 5 not Found")
-        session_name = "startup"
-            Riz5 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+if STRING5:
+     session_name = str(STRING5)
+     print("String 5 Found")
+     Riz5 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+else:
+     print("Session 5 not Found")
+     session_name = "startup"
+     Riz5 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
 
-    if STRING6:
-        session_name = str(STRING6)
-        print("String 6 Found")
-            Riz6 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
-    else:
-        print("Session 6 not Found")
-        session_name = "startup"
-            Riz6 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+if STRING6:
+     session_name = str(STRING6)
+     print("String 6 Found")
+     Riz6 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+else:
+     print("Session 6 not Found")
+     session_name = "startup"
+     Riz6 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
 
-    if STRING7:
-        session_name = str(STRING7)
-        print("String 7 Found")
-            Riz7 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
-    else:
-        print("Session 7 not Found")
-        session_name = "startup"
-            Riz7 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+if STRING7:
+     session_name = str(STRING7)
+     print("String 7 Found")
+     Riz7 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+else:
+     print("Session 7 not Found")
+     session_name = "startup"
+     Riz7 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
 
-    if STRING8:
-        session_name = str(STRING8)
-        print("String 8 Found")
-            Riz8 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
-    else:
-        print("Session 8 not Found")
-        session_name = "startup"
-            Riz8 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+if STRING8:
+     session_name = str(STRING8)
+     print("String 8 Found")
+     Riz8 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+else:
+     print("Session 8 not Found")
+     session_name = "startup"
+     Riz8 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
 
-    if STRING9:
-        session_name = str(STRING9)
-        print("String 9 Found")
-            Riz9 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
-    else:
-        print("Session 9 not Found")
-        session_name = "startup"
-            Riz9 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+if STRING9:
+     session_name = str(STRING9)
+     print("String 9 Found")
+     Riz9 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+else:
+     print("Session 9 not Found")
+     session_name = "startup"
+     Riz9 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
 
-    if STRING10:
-        session_name = str(STRING10)
-        print("String 10 Found")
-            Riz10 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
-    else:
-        print("Session 10 not Found")
-        session_name = "startup"
-            Riz10 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+if STRING10:
+     session_name = str(STRING10)
+     print("String 10 Found")
+     Riz10 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+else:
+     print("Session 10 not Found")
+     session_name = "startup"
+     Riz10 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
 
-    if STRING11:
-        session_name = str(STRING11)
-        print("String 11 Found")
-            Riz11 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
-    else:
-        print("Session 11 not Found")
-        session_name = "startup"
-            Riz11 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+if STRING11:
+     session_name = str(STRING11)
+     print("String 11 Found")
+     Riz11 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+else:
+     print("Session 11 not Found")
+     session_name = "startup"
+     Riz11 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
 
-    if STRING12:
-        session_name = str(STRING12)
-        print("String 12 Found")
-            Riz12 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
-    else:
-        print("Session 12 not Found")
-        session_name = "startup"
-            Riz12 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+if STRING12:
+     session_name = str(STRING12)
+     print("String 12 Found")
+     Riz12 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+else:
+     print("Session 12 not Found")
+     session_name = "startup"
+     Riz12 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
 
-    if STRING13:
-        session_name = str(STRING13)
-        print("String 13 Found")
-            Riz13 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
-    else:
-        print("Session 13 not Found")
-        session_name = "startup"
-            Riz13 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+if STRING13:
+     session_name = str(STRING13)
+     print("String 13 Found")
+     Riz13 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+else:
+     print("Session 13 not Found")
+     session_name = "startup"
+     Riz13 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
 
-    if STRING14:
-        session_name = str(STRING14)
-        print("String 14 Found")
-            Riz14 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
-    else:
-        print("Session 14 not Found")
-        session_name = "startup"
-            Riz14 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+if STRING14:
+     session_name = str(STRING14)
+     print("String 14 Found")
+     Riz14 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+else:
+     print("Session 14 not Found")
+     session_name = "startup"
+     Riz14 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
 
-    if STRING15:
-        session_name = str(STRING15)
-        print("String 15 Found")
-            Riz15 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
-    else:
-        print("Session 15 not Found")
-        session_name = "startup"
-            Riz15 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+if STRING15:
+     session_name = str(STRING15)
+     print("String 15 Found")
+     Riz15 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+else:
+     print("Session 15 not Found")
+     session_name = "startup"
+     Riz15 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
 
-    if STRING16:
-        session_name = str(STRING16)
-        print("String 16 Found")
-            Riz16 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
-    else:
-        print("Session 16 not Found")
-        session_name = "startup"
-            Riz16 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+if STRING16:
+     session_name = str(STRING16)
+     print("String 16 Found")
+     Riz16 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+else:
+     print("Session 16 not Found")
+     session_name = "startup"
+     Riz16 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
 
-    if STRING17:
-        session_name = str(STRING17)
-        print("String 17 Found")
-            Riz17 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
-    else:
-        print("Session 17 not Found")
-        session_name = "startup"
-            Riz17 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+if STRING17:
+     session_name = str(STRING17)
+     print("String 17 Found")
+     Riz17 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+else:
+     print("Session 17 not Found")
+     session_name = "startup"
+     Riz17 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
 
-    if STRING18:
-        session_name = str(STRING18)
-        print("String 18 Found")
-            Riz18 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
-    else:
-        print("Session 18 not Found")
-        session_name = "startup"
-            Riz18 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+if STRING18:
+     session_name = str(STRING18)
+     print("String 18 Found")
+     Riz18 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+else:
+     print("Session 18 not Found")
+     session_name = "startup"
+     Riz18 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
 
-    if STRING19:
-        session_name = str(STRING19)
-        print("String 19 Found")
-            Riz19 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
-    else:
-        print("Session 19 not Found")
-        session_name = "startup"
-            Riz19 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+if STRING19:
+     session_name = str(STRING19)
+     print("String 19 Found")
+     Riz19 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+else:
+     print("Session 19 not Found")
+     session_name = "startup"
+     Riz19 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
 
-    if STRING20:
-        session_name = str(STRING20)
-        print("String 20 Found")
-            Riz20 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
-    else:
-        print("Session 20 not Found")
-        session_name = "startup"
-            Riz20 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+if STRING20:
+     session_name = str(STRING20)
+     print("String 20 Found")
+     Riz20 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
+else:
+     print("Session 20 not Found")
+     session_name = "startup"
+     Riz20 = TelegramClient(StringSession(session_name), APP_ID, API_HASH)
 
 RAID = [
     "MADARCHOD TERI MAA KI CHUT ME GHUTKA KHAAKE THOOK DUNGA 🤣🤣",
