@@ -1,6 +1,6 @@
 from .. import Riz
-from RiZoeLXSpam.config import SUDO_USERS
-from RiZoeLXSpam.config import ALIVE_PIC else "https://telegra.ph/file/ba87c58f01a6fcb5ef512.jpg"
+from .. import SUDO_USERS
+from .. import ALIVE_PIC else "https://telegra.ph/file/ba87c58f01a6fcb5ef512.jpg"
 from telethon import events
 from time import time
 from datetime import datetime
