@@ -1,5 +1,4 @@
-from .. import Riz
-from RiZoeLXSpam.config import SUDO_USERS
+from .. import Riz, SUDO_USERS
 from telethon import events
 from time import time
 from datetime import datetime
