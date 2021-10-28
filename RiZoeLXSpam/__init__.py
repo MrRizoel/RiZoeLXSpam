@@ -4,13 +4,38 @@ from telethon import TelegramClient
 from decouple import config
 import logging
 import time
-from telethon.tl.functions.channels import LeaveChannelRequest
-from telethon.tl.functions.messages import ImportChatInviteRequest
-from os import getenv
-from RiZoeLXSpam.config import APP_ID, API_HASH, STRING, STRING2, STRING3, STRING4 ,STRING5, STRING6, STRING7, STRING8 ,STRING9, STRING10, STRING11, STRING12 , STRING13 , STRING14 , STRING15 ,STRING16 , STRING17 , STRING18 , STRING19 , STRING20
 
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)
+
+#values
+APP_ID = config("APP_ID", default=None, cast=int)
+API_HASH = config("API_HASH", default=None)
+ALIVE_PIC = config("ALIVE_PIC", default=None)
+HEROKU_APP_NAME = config("HEROKU_APP_NAME", None)
+HEROKU_API_KEY = config("HEROKU_API_KEY", None)
+STRING = config("STRING", default=None)
+STRING2 = config("STRING2", default=None)
+STRING3 = config("STRING3", default=None)
+STRING4 = config("STRING4", default=None)
+STRING5 = config("STRING5", default=None)
+STRING6 = config("STRING6", default=None)
+STRING7 = config("STRING7", default=None)
+STRING8 = config("STRING8", default=None)
+STRING9 = config("STRING9", default=None)
+STRING10 = config("STRING10", default=None)
+STRING11 = config("STRING11", default=None)
+STRING12 = config("STRING12", default=None)
+STRING13 = config("STRING13", default=None)
+STRING14 = config("STRING14", default=None)
+STRING15 = config("STRING15", default=None)
+STRING16 = config("STRING16", default=None)
+STRING17 = config("STRING17", default=None)
+STRING18 = config("STRING18", default=None)
+STRING19 = config("STRING19", default=None)
+STRING20 = config("STRING20", default=None)
+SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
+
 
 # Sessions
 os.system("pip install --upgrade pip")
