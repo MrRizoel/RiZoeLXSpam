@@ -48,7 +48,7 @@ else:
      session_name = "startup"
      Riz = TelegramClient(StringSession(session_name), API_ID, API_HASH)
 
-     if STRING2:
+if STRING2:
      session_name = str(STRING2)
      print("String 2 Found")
      Riz2 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
