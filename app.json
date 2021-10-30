@@ -143,18 +143,10 @@
           "value": "",
           "required": false  
         }
-      },
-  "addons": [{
-    "plan": "heroku-postgresql",
-    "options": {
-      "version": "12"
-    }
-  }],
-  "buildpacks": [{
-    "url": "https://github.com/opendoor-labs/heroku-buildpack-p7zip"
-  },{
-    "url": "https://github.com/chrismytton/heroku-buildpack-jq"
-  },{
-    "url": "heroku/python"
-  }]
+    },
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ]
 }
