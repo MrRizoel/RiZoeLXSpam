@@ -1,6 +1,7 @@
 import os
 import sys
-from telethon import TelegramClient
+from telethon import TelegramClient, events
+from telethon.sessions import StringSession
 from decouple import config
 from os import getenv
 import logging
