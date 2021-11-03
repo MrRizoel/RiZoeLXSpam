@@ -2,6 +2,7 @@ import os
 import sys
 from telethon import TelegramClient
 from decouple import config
+from os import getenv
 import logging
 import time
 
@@ -34,7 +35,7 @@ STRING17 = config("STRING17", default=None)
 STRING18 = config("STRING18", default=None)
 STRING19 = config("STRING19", default=None)
 STRING20 = config("STRING20", default=None)
-SUDO_USERS = list(map(int, config("SUDO_USERS").split()))
+SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
 
 
 # Sessions
