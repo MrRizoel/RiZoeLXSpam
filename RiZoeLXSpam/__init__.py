@@ -58,7 +58,7 @@ if STRING:
         except Exception as e:
             print(e)
             pass
-    else:
+else:
         print("Session 1 not Found")
         pass
         session_name = "startup"
@@ -83,7 +83,7 @@ if STRING2:
         except Exception as e:
             print(e)
             pass
-    else:
+else:
         print("Session 2 not Found")
         pass
         session_name = "startup"
@@ -108,7 +108,7 @@ if STRING3:
         except Exception as e:
             print(e)
             pass
-    else:
+else:
         print("Session 3 not Found")
         pass
         session_name = "startup"
@@ -133,7 +133,7 @@ if STRING4:
         except Exception as e:
             print(e)
             pass
-    else:
+else:
         print("Session 4 not Found")
         pass
         session_name = "startup"
@@ -158,7 +158,7 @@ if STRING5:
         except Exception as e:
             print(e)
             pass
-    else:
+else:
         print("Session 5 not Found")
         pass
         session_name = "startup"
@@ -183,7 +183,7 @@ if STRING6:
         except Exception as e:
             print(e)
             pass
-    else:
+else:
         print("Session 6 not Found")
         pass
         session_name = "startup"
@@ -208,7 +208,7 @@ if STRING7:
         except Exception as e:
             print(e)
             pass
-    else:
+else:
         print("Session 7 not Found")
         pass
         session_name = "startup"
@@ -224,7 +224,7 @@ if STRING8:
         Riz8 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 8")
-8await  Riz8.start()
+            await  Riz8.start()
             await Riz8(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz8(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             botme = await Riz8.get_me()
@@ -233,7 +233,7 @@ if STRING8:
         except Exception as e:
             print(e)
             pass
-    else:
+else:
         print("Session 8 not Found")
         pass
         session_name = "startup"
@@ -258,7 +258,7 @@ if STRING9:
         except Exception as e:
             print(e)
             pass
-    else:
+else:
         print("Session 9 not Found")
         pass
         session_name = "startup"
@@ -283,7 +283,7 @@ if STRING10:
         except Exception as e:
             print(e)
             pass
-    else:
+else:
         print("Session 10 not Found")
         pass
         session_name = "startup"
@@ -308,7 +308,7 @@ if STRING11:
         except Exception as e:
             print(e)
             pass
-    else:
+else:
         print("Session 11 not Found")
         pass
         session_name = "startup"
@@ -333,7 +333,7 @@ if STRING12:
         except Exception as e:
             print(e)
             pass
-    else:
+else:
         print("Session 12 not Found")
         pass
         session_name = "startup"
@@ -358,7 +358,7 @@ if STRING13:
         except Exception as e:
             print(e)
             pass
-    else:
+else:
         print("Session 13 not Found")
         pass
         session_name = "startup"
@@ -383,7 +383,7 @@ if STRING14:
         except Exception as e:
             print(e)
             pass
-    else:
+else:
         print("Session 14 not Found")
         pass
         session_name = "startup"
@@ -408,7 +408,7 @@ if STRING15:
         except Exception as e:
             print(e)
             pass
-    else:
+else:
         print("Session 15 not Found")
         pass
         session_name = "startup"
@@ -433,7 +433,7 @@ if STRING16:
         except Exception as e:
             print(e)
             pass
-    else:
+else:
         print("Session 16 not Found")
         pass
         session_name = "startup"
@@ -458,7 +458,7 @@ if STRING17:
         except Exception as e:
             print(e)
             pass
-    else:
+else:
         print("Session 17 not Found")
         pass
         session_name = "startup"
@@ -483,7 +483,7 @@ if STRING18:
         except Exception as e:
             print(e)
             pass
-    else:
+else:
         print("Session 18 not Found")
         pass
         session_name = "startup"
@@ -508,7 +508,7 @@ if STRING19:
         except Exception as e:
             print(e)
             pass
-    else:
+else:
         print("Session 19 not Found")
         pass
         session_name = "startup"
@@ -533,7 +533,7 @@ if STRING20:
         except Exception as e:
             print(e)
             pass
-    else:
+else:
         print("Session 20 not Found")
         pass
         session_name = "startup"
