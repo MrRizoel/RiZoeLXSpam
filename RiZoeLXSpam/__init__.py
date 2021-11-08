@@ -54,7 +54,7 @@ if STRING:
             await Riz(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             botme = await Riz.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            SMEX_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -79,7 +79,7 @@ if STRING2:
             await Riz2(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             botme = await Riz2.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            SMEX_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -104,7 +104,7 @@ if STRING3:
             await Riz3(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             botme = await Riz3.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            SMEX_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -129,7 +129,7 @@ if STRING4:
             await Riz4(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             botme = await Riz4.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            SMEX_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -154,7 +154,7 @@ if STRING5:
             await Riz5(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             botme = await Riz5.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            SMEX_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -179,7 +179,7 @@ if STRING6:
             await Riz6(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             botme = await Riz6.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            SMEX_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -204,7 +204,7 @@ if STRING7:
             await Riz7(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             botme = await Riz7.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            SMEX_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -229,7 +229,7 @@ if STRING8:
             await Riz8(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             botme = await Riz8.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            SMEX_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -254,7 +254,7 @@ if STRING9:
             await Riz9(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             botme = await Riz9.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            SMEX_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -279,7 +279,7 @@ if STRING10:
             await Riz10(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             botme = await Riz10.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            SMEX_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -304,7 +304,7 @@ if STRING11:
             await Riz11(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             botme = await Riz11.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            SMEX_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -329,7 +329,7 @@ if STRING12:
             await Riz12(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             botme = await Riz12.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            SMEX_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -354,7 +354,7 @@ if STRING13:
             await Riz13(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             botme = await Riz13.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            SMEX_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -379,7 +379,7 @@ if STRING14:
             await Riz14(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             botme = await Riz14.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            SMEX_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -404,7 +404,7 @@ if STRING15:
             await Riz15(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             botme = await Riz15.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            SMEX_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -429,7 +429,7 @@ if STRING16:
             await Riz16(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             botme = await Riz16.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            SMEX_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -454,7 +454,7 @@ if STRING17:
             await Riz17(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             botme = await Riz17.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            SMEX_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -479,7 +479,7 @@ if STRING18:
             await Riz18(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             botme = await Riz18.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            SMEX_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -504,7 +504,7 @@ if STRING19:
             await Riz19(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             botme = await Riz19.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            SMEX_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -529,7 +529,7 @@ if STRING20:
             await Riz20(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             botme = await Riz20.get_me()
             botid = telethon.utils.get_peer_id(botme)
-            SMEX_USERS.append(botid)
+            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
