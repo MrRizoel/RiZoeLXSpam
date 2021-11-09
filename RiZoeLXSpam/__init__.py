@@ -1,5 +1,9 @@
 import os
 import sys
+import random
+import asyncio
+import telethon.utils
+from telethon.tl import functions
 from telethon import TelegramClient, events
 from telethon.sessions import StringSession
 from decouple import config
