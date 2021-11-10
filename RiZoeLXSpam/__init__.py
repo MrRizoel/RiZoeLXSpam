@@ -46,18 +46,13 @@ SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
 
 
 # Sessions
+os.system("pip install --upgrade pip")
 if STRING:
         session_name = str(STRING)
         print("String 1 Found")
         Riz = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 1")
-            await Riz.start()
-            await Riz(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
-            await Riz(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
-            botme = await Riz.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -67,8 +62,7 @@ else:
         session_name = "startup"
         Riz = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
-            await Riz.start()
-        except Exception as e:
+       except Exception as e:
             pass
 
 if STRING2:
@@ -77,12 +71,6 @@ if STRING2:
         Riz2 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 2")
-            await Riz2.start()
-            await Riz2(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
-            await Riz2(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
-            botme = await Riz2.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -92,7 +80,6 @@ else:
         session_name = "startup"
         Riz2 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
-            await Riz2.start()
         except Exception as e:
             pass
 
@@ -102,12 +89,6 @@ if STRING3:
         Riz3 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 3")
-            await Riz3.start()
-            await Riz3(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
-            await Riz3(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
-            botme = await Riz3.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -117,7 +98,6 @@ else:
         session_name = "startup"
         Riz3 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
-            await Riz3.start()
         except Exception as e:
             pass
 
@@ -127,12 +107,6 @@ if STRING4:
         Riz4 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 4")
-            await Riz4.start()
-            await Riz4(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
-            await Riz4(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
-            botme = await Riz4.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -142,7 +116,6 @@ else:
         session_name = "startup"
         Riz4 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
-            await Riz4.start()
         except Exception as e:
             pass
 
@@ -152,12 +125,6 @@ if STRING5:
         Riz5 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 5")
-            await Riz5.start()
-            await Riz5(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
-            await Riz5(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
-            botme = await Riz5.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -167,7 +134,6 @@ else:
         session_name = "startup"
         Riz5 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
-            await Riz5.start()
         except Exception as e:
             pass
 
@@ -177,12 +143,6 @@ if STRING6:
         Riz6 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 6")
-            await Riz6.start()
-            await Riz6(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
-            await Riz6(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
-            botme = await Riz6.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -192,7 +152,6 @@ else:
         session_name = "startup"
         Riz6 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
-            await Riz6.start()
         except Exception as e:
             pass
 
@@ -202,12 +161,6 @@ if STRING7:
         Riz7 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 7")
-            await Riz7.start()
-            await Riz7(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
-            await Riz7(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
-            botme = await Riz7.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -217,7 +170,6 @@ else:
         session_name = "startup"
         Riz7 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
-            await Riz7.start()
         except Exception as e:
             pass
 
@@ -227,12 +179,6 @@ if STRING8:
         Riz8 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 8")
-            await Riz8.start()
-            await Riz8(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
-            await Riz8(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
-            botme = await Riz8.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -242,7 +188,6 @@ else:
         session_name = "startup"
         Riz8 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
-            await Riz8.start()
         except Exception as e:
             pass
 
@@ -252,12 +197,6 @@ if STRING9:
         Riz9 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 9")
-            await Riz9.start()
-            await Riz9(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
-            await Riz9(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
-            botme = await Riz9.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -267,7 +206,6 @@ else:
         session_name = "startup"
         Riz9 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
-            await Riz9.start()
         except Exception as e:
             pass
 
@@ -277,12 +215,6 @@ if STRING10:
         Riz10 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 10")
-            await Riz10.start()
-            await Riz10(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
-            await Riz10(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
-            botme = await Riz10.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -292,7 +224,6 @@ else:
         session_name = "startup"
         Riz10 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
-            await Riz10.start()
         except Exception as e:
             pass
 
@@ -302,12 +233,6 @@ if STRING11:
         Riz11 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 11")
-            await Riz11.start()
-            await Riz11(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
-            await Riz11(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
-            botme = await Riz11.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -317,7 +242,6 @@ else:
         session_name = "startup"
         Riz11 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
-            await Riz11.start()
         except Exception as e:
             pass
 
@@ -327,12 +251,6 @@ if STRING12:
         Riz12 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 12")
-            await Riz12.start()
-            await Riz12(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
-            await Riz12(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
-            botme = await Riz12.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -342,7 +260,6 @@ else:
         session_name = "startup"
         Riz12 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
-            await Riz12.start()
         except Exception as e:
             pass
 
@@ -352,12 +269,6 @@ if STRING13:
         Riz13 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 13")
-            await Riz13.start()
-            await Riz13(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
-            await Riz13(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
-            botme = await Riz13.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -367,7 +278,6 @@ else:
         session_name = "startup"
         Riz13 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
-            await Riz13.start()
         except Exception as e:
             pass
 
@@ -377,12 +287,6 @@ if STRING14:
         Riz14 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 14")
-            await Riz14.start()
-            await Riz14(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
-            await Riz14(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
-            botme = await Riz14.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -392,7 +296,6 @@ else:
         session_name = "startup"
         Riz14 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
-            await Riz14.start()
         except Exception as e:
             pass
 
@@ -402,12 +305,6 @@ if STRING15:
         Riz15 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 15")
-            await Riz15.start()
-            await Riz15(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
-            await Riz15(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
-            botme = await Riz15.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -417,7 +314,6 @@ else:
         session_name = "startup"
         Riz15 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
-            await Riz15.start()
         except Exception as e:
             pass
 
@@ -427,12 +323,6 @@ if STRING16:
         Riz16 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 16")
-            await Riz16.start()
-            await Riz16(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
-            await Riz16(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
-            botme = await Riz16.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -442,7 +332,6 @@ else:
         session_name = "startup"
         Riz16 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
-            await Riz16.start()
         except Exception as e:
             pass
 
@@ -452,12 +341,6 @@ if STRING17:
         Riz17 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 17")
-            await Riz17.start()
-            await Riz17(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
-            await Riz17(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
-            botme = await Riz17.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -467,7 +350,6 @@ else:
         session_name = "startup"
         Riz17 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
-            await Riz17.start()
         except Exception as e:
             pass
 
@@ -477,12 +359,6 @@ if STRING18:
         Riz18 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 18")
-            await Riz18.start()
-            await Riz18(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
-            await Riz18(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
-            botme = await Riz18.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -492,7 +368,6 @@ else:
         session_name = "startup"
         Riz18 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
-            await Riz18.start()
         except Exception as e:
             pass
 
@@ -502,12 +377,6 @@ if STRING19:
         Riz19 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 19")
-            await Riz19.start()
-            await Riz19(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
-            await Riz19(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
-            botme = await Riz19.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -517,7 +386,6 @@ else:
         session_name = "startup"
         Riz19 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
-            await Riz19.start()
         except Exception as e:
             pass
 
@@ -527,12 +395,6 @@ if STRING20:
         Riz20 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 20")
-            await Riz20.start()
-            await Riz20(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
-            await Riz20(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
-            botme = await Riz20.get_me()
-            botid = telethon.utils.get_peer_id(botme)
-            SUDO_USERS.append(botid)
         except Exception as e:
             print(e)
             pass
@@ -542,7 +404,6 @@ else:
         session_name = "startup"
         Riz20 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
-            await Riz20.start()
         except Exception as e:
             pass
 
