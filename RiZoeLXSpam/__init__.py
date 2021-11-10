@@ -46,7 +46,6 @@ SUDO_USERS = list(map(int, getenv("SUDO_USERS").split()))
 
 
 # Sessions
-os.system("pip install --upgrade pip")
 if STRING:
         session_name = str(STRING)
         print("String 1 Found")
