@@ -10,7 +10,6 @@ from decouple import config
 from os import getenv
 import logging
 import time
-from telethon.tl.functions.messages import ImportChatInviteRequest
 
 
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
