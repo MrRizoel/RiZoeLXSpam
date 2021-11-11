@@ -176,170 +176,114 @@ else:
         pass
         session_name = "startup"
         Riz11 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-        try:
-        except Exception as e:
             pass
 
 if STRING12:
         session_name = str(STRING12)
         print("String 12 Found")
         Riz12 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-        try:
-            print("Booting Up The Client 12")
-        except Exception as e:
-            print(e)
             pass
 else:
         print("Session 12 not Found")
         pass
         session_name = "startup"
         Riz12 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-        try:
-        except Exception as e:
             pass
 
 if STRING13:
         session_name = str(STRING13)
         print("String 13 Found")
         Riz13 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-        try:
-            print("Booting Up The Client 13")
-        except Exception as e:
-            print(e)
             pass
 else:
         print("Session 13 not Found")
         pass
         session_name = "startup"
         Riz13 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-        try:
-        except Exception as e:
             pass
 
 if STRING14:
         session_name = str(STRING14)
         print("String 14 Found")
         Riz14 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-        try:
-            print("Booting Up The Client 14")
-        except Exception as e:
-            print(e)
             pass
 else:
         print("Session 14 not Found")
         pass
         session_name = "startup"
         Riz14 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-        try:
-        except Exception as e:
             pass
 
 if STRING15:
         session_name = str(STRING15)
         print("String 15 Found")
         Riz15 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-        try:
-            print("Booting Up The Client 15")
-        except Exception as e:
-            print(e)
             pass
 else:
         print("Session 15 not Found")
         pass
         session_name = "startup"
         Riz15 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-        try:
-        except Exception as e:
             pass
 
 if STRING16:
         session_name = str(STRING16)
         print("String 16 Found")
         Riz16 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-        try:
-            print("Booting Up The Client 16")
-        except Exception as e:
-            print(e)
             pass
 else:
         print("Session 16 not Found")
         pass
         session_name = "startup"
         Riz16 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-        try:
-        except Exception as e:
             pass
 
 if STRING17:
         session_name = str(STRING17)
         print("String 17 Found")
         Riz17 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-        try:
-            print("Booting Up The Client 17")
-        except Exception as e:
-            print(e)
             pass
 else:
         print("Session 17 not Found")
         pass
         session_name = "startup"
         Riz17 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-        try:
-        except Exception as e:
             pass
 
 if STRING18:
         session_name = str(STRING18)
         print("String 18 Found")
         Riz18 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-        try:
-            print("Booting Up The Client 18")
-        except Exception as e:
-            print(e)
             pass
 else:
         print("Session 18 not Found")
         pass
         session_name = "startup"
         Riz18 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-        try:
-        except Exception as e:
             pass
 
 if STRING19:
         session_name = str(STRING19)
         print("String 19 Found")
         Riz19 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-        try:
-            print("Booting Up The Client 19")
-        except Exception as e:
-            print(e)
             pass
 else:
         print("Session 19 not Found")
         pass
         session_name = "startup"
         Riz19 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-        try:
-        except Exception as e:
             pass
 
 if STRING20:
         session_name = str(STRING20)
         print("String 20 Found")
         Riz20 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-        try:
-            print("Booting Up The Client 20")
-        except Exception as e:
-            print(e)
             pass
 else:
         print("Session 20 not Found")
         pass
         session_name = "startup"
         Riz20 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-        try:
-        except Exception as e:
             pass
 
 RAID = [
