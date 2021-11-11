@@ -1,5 +1,5 @@
 import asyncio
-from .. import Riz, Riz2, Riz3, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, Riz11, Riz12, Riz13, Riz14, Riz15, Riz16, Riz17, Riz18, Riz19, Riz20, SUDO_USERS
+from .. import Riz, Riz2, Riz3, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, SUDO_USERS
 import telethon.utils
 from telethon.tl import functions
 from telethon.tl.functions.channels import LeaveChannelRequest
@@ -22,16 +22,6 @@ for x in SUDO_USERS:
 @Riz8.on(events.NewMessage(pattern=".leave"))
 @Riz9.on(events.NewMessage(pattern=".leave"))
 @Riz10.on(events.NewMessage(pattern=".leave"))
-@Riz11.on(events.NewMessage(pattern=".leave"))
-@Riz12.on(events.NewMessage(pattern=".leave"))
-@Riz13.on(events.NewMessage(pattern=".leave"))
-@Riz14.on(events.NewMessage(pattern=".leave"))
-@Riz15.on(events.NewMessage(pattern=".leave"))
-@Riz16.on(events.NewMessage(pattern=".leave"))
-@Riz17.on(events.NewMessage(pattern=".leave"))
-@Riz18.on(events.NewMessage(pattern=".leave"))
-@Riz19.on(events.NewMessage(pattern=".leave"))
-@Riz20.on(events.NewMessage(pattern=".leave"))
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
     if e.sender_id in SMEX_USERS:
