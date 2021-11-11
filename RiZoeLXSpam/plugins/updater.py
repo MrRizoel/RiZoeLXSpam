@@ -3,7 +3,7 @@ import os
 import sys
 import git
 from telethon import events
-from .. import Riz, Riz2, Riz3, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, Riz11, Riz12, Riz13, Riz14, Riz15, Riz16, Riz17, Riz18, Riz19, Riz20, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY
+from .. import Riz, Riz2, Riz3, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY
 
 SMEX_USERS = []
 for x in SUDO_USERS:
@@ -42,16 +42,6 @@ RESTARTING_APP = "re-starting heroku application"
 @Riz8.on(events.NewMessage(pattern=".update"))
 @Riz9.on(events.NewMessage(pattern=".update"))
 @Riz10.on(events.NewMessage(pattern=".update"))
-@Riz11.on(events.NewMessage(pattern=".update"))
-@Riz12.on(events.NewMessage(pattern=".update"))
-@Riz13.on(events.NewMessage(pattern=".update"))
-@Riz14.on(events.NewMessage(pattern=".update"))
-@Riz15.on(events.NewMessage(pattern=".update"))
-@Riz16.on(events.NewMessage(pattern=".update"))
-@Riz17.on(events.NewMessage(pattern=".update"))
-@Riz18.on(events.NewMessage(pattern=".update"))
-@Riz19.on(events.NewMessage(pattern=".update"))
-@Riz20.on(events.NewMessage(pattern=".update"))
 async def restart(e):
     if e.sender_id in SMEX_USERS:
         text = " 🔰𝐔𝐏𝐃𝐀𝐓𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐒𝐏𝐀𝐌𝐁𝐎𝐓🔰....\n𝐓𝐘𝐏𝐄 /𝐩𝐢𝐧𝐠 𝐀𝐅𝐓𝐄𝐑 𝟓 𝐌𝐈𝐍𝐒 𝐓𝐎 𝐂𝐇𝐄𝐂𝐊 𝐈𝐅 𝐈'𝐌 𝐎𝐍"
