@@ -6,7 +6,7 @@ import random
 from telethon import events
 from telethon import functions, types
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
-from .. import Riz, Riz2, Riz3, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, Riz11, Riz12, Riz13, Riz14, Riz15, Riz16, Riz17, Riz18, Riz19, Riz20, RAID, RRAID, SUDO_USERS
+from .. import Riz, Riz2, Riz3, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, RAID, RRAID, SUDO_USERS
 
 SMEX_USERS = []
 for x in SUDO_USERS:
@@ -26,16 +26,6 @@ que = {}
 @Riz8.on(events.NewMessage(pattern=".raid"))
 @Riz9.on(events.NewMessage(pattern=".raid"))
 @Riz10.on(events.NewMessage(pattern=".raid"))
-@Riz11.on(events.NewMessage(pattern=".raid"))
-@Riz12.on(events.NewMessage(pattern=".raid"))
-@Riz13.on(events.NewMessage(pattern=".raid"))
-@Riz14.on(events.NewMessage(pattern=".raid"))
-@Riz15.on(events.NewMessage(pattern=".raid"))
-@Riz16.on(events.NewMessage(pattern=".raid"))
-@Riz17.on(events.NewMessage(pattern=".raid"))
-@Riz18.on(events.NewMessage(pattern=".raid"))
-@Riz19.on(events.NewMessage(pattern=".raid"))
-@Riz20.on(events.NewMessage(pattern=".raid"))
 async def spam(e):  
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -84,16 +74,6 @@ async def spam(e):
 @Riz8.on(events.NewMessage(incoming=True))
 @Riz9.on(events.NewMessage(incoming=True))
 @Riz10.on(events.NewMessage(incoming=True))
-@Riz11.on(events.NewMessage(incoming=True))
-@Riz12.on(events.NewMessage(incoming=True))
-@Riz13.on(events.NewMessage(incoming=True))
-@Riz14.on(events.NewMessage(incoming=True))
-@Riz15.on(events.NewMessage(incoming=True))
-@Riz16.on(events.NewMessage(incoming=True))
-@Riz17.on(events.NewMessage(incoming=True))
-@Riz18.on(events.NewMessage(incoming=True))
-@Riz19.on(events.NewMessage(incoming=True))
-@Riz20.on(events.NewMessage(incoming=True))
 async def _(event):
     global que
     queue = que.get(event.sender_id)
@@ -119,16 +99,6 @@ async def _(event):
 @Riz8.on(events.NewMessage(pattern=".replyraid"))
 @Riz9.on(events.NewMessage(pattern=".replyraid"))
 @Riz10.on(events.NewMessage(pattern=".replyraid"))
-@Riz11.on(events.NewMessage(pattern=".replyraid"))
-@Riz12.on(events.NewMessage(pattern=".replyraid"))
-@Riz13.on(events.NewMessage(pattern=".replyraid"))
-@Riz14.on(events.NewMessage(pattern=".replyraid"))
-@Riz15.on(events.NewMessage(pattern=".replyraid"))
-@Riz16.on(events.NewMessage(pattern=".replyraid"))
-@Riz17.on(events.NewMessage(pattern=".replyraid"))
-@Riz18.on(events.NewMessage(pattern=".replyraid"))
-@Riz19.on(events.NewMessage(pattern=".replyraid"))
-@Riz20.on(events.NewMessage(pattern=".replyraid"))
 async def _(e):
     global que
     if e.sender_id in SMEX_USERS:
@@ -170,16 +140,6 @@ async def _(e):
 @Riz8.on(events.NewMessage(pattern=".dreplyraid"))
 @Riz9.on(events.NewMessage(pattern=".dreplyraid"))
 @Riz10.on(events.NewMessage(pattern=".dreplyraid"))
-@Riz11.on(events.NewMessage(pattern=".dreplyraid"))
-@Riz12.on(events.NewMessage(pattern=".dreplyraid"))
-@Riz13.on(events.NewMessage(pattern=".dreplyraid"))
-@Riz14.on(events.NewMessage(pattern=".dreplyraid"))
-@Riz15.on(events.NewMessage(pattern=".dreplyraid"))
-@Riz16.on(events.NewMessage(pattern=".dreplyraid"))
-@Riz17.on(events.NewMessage(pattern=".dreplyraid"))
-@Riz18.on(events.NewMessage(pattern=".dreplyraid"))
-@Riz19.on(events.NewMessage(pattern=".dreplyraid"))
-@Riz20.on(events.NewMessage(pattern=".dreplyraid"))
 async def _(e):
     global que    
     if e.sender_id in SMEX_USERS:
