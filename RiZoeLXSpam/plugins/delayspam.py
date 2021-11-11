@@ -19,7 +19,8 @@ import os
 from telethon import events
 from telethon import functions, types
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
-from .. import Riz, Riz2, Riz3, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, Riz11, Riz12, Riz13, Riz14, Riz15, Riz16, Riz17, Riz18, Riz19, Riz20, SUDO_USERS
+from .. import Riz, Riz2, Riz3, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, SUDO_USERS
+
 SMEX_USERS = []
 for x in SUDO_USERS:
     SMEX_USERS.append(x)
@@ -36,16 +37,6 @@ for x in SUDO_USERS:
 @Riz8.on(events.NewMessage(pattern=".delayspam"))
 @Riz9.on(events.NewMessage(pattern=".delayspam"))
 @Riz10.on(events.NewMessage(pattern=".delayspam"))
-@Riz11.on(events.NewMessage(pattern=".delayspam"))
-@Riz12.on(events.NewMessage(pattern=".delayspam"))
-@Riz13.on(events.NewMessage(pattern=".delayspam"))
-@Riz14.on(events.NewMessage(pattern=".delayspam"))
-@Riz15.on(events.NewMessage(pattern=".delayspam"))
-@Riz16.on(events.NewMessage(pattern=".delayspam"))
-@Riz17.on(events.NewMessage(pattern=".delayspam"))
-@Riz18.on(events.NewMessage(pattern=".delayspam"))
-@Riz19.on(events.NewMessage(pattern=".delayspam"))
-@Riz20.on(events.NewMessage(pattern=".delayspam"))
 async def spam(e):    
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
