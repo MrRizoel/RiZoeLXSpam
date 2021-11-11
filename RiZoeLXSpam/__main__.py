@@ -49,32 +49,3 @@ if __name__ == "__main__":
 if __name__ == "__main__":
     Riz10.run_until_disconnected()
 
-if __name__ == "__main__":
-    Riz11.run_until_disconnected()
-
-if __name__ == "__main__":
-    Riz12.run_until_disconnected()
-    
-if __name__ == "__main__":
-    Riz13.run_until_disconnected()
-    
-if __name__ == "__main__":
-    Riz14.run_until_disconnected()
-    
-if __name__ == "__main__":
-    Riz15.run_until_disconnected()
-   
-if __name__ == "__main__":
-    Riz16.run_until_disconnected()
-
-if __name__ == "__main__":
-    Riz17.run_until_disconnected()
-
-if __name__ == "__main__":
-    Riz18.run_until_disconnected()
-
-if __name__ == "__main__":
-    Riz19.run_until_disconnected()
-
-if __name__ == "__main__":
-    Riz20.run_until_disconnected()
