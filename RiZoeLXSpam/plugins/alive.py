@@ -1,5 +1,5 @@
 from .. import Riz, SUDO_USERS
-from .. import ALIVE_PIC else "https://telegra.ph/file/ba87c58f01a6fcb5ef512.jpg"
+from .. import ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/ba87c58f01a6fcb5ef512.jpg"
 from telethon import events
 from time import time
 from datetime import datetime
