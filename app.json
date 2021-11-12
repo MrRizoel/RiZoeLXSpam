@@ -36,99 +36,49 @@
       "STRING2": {
         "description": "Telethon String Session",
         "value": "",
-        "required": false
+        "required": true
       },
       "STRING3": {
         "description": "Telethon String Session",
         "value": "",
-        "required": false
+        "required": true
       },
       "STRING4": {
         "description": "Telethon String Session",
         "value": "",
-        "required": false
+        "required": true
       },
       "STRING5": {
         "description": "Telethon String Session",
         "value": "",
-        "required": false
+        "required": true
       },
       "STRING6": {
         "description": "Telethon String Session",
         "value": "",
-        "required": false
+        "required": true
       },
       "STRING7": {
         "description": "Telethon String Session",
         "value": "",
-        "required": false
+        "required": true
       },
       "STRING8": {
         "description": "Telethon String Session",
         "value": "",
-        "required": false
+        "required": true
       },
       "STRING9": {
         "description": "Telethon String Session",
         "value": "",
-        "required": false
+        "required": true
       },
       "STRING10": {
         "description": "Telethon String Session",
         "value": "",
-        "required": false
+        "required": true
       },
-      "STRING11": {
-        "description": "Telethon String Session",
-        "value": "",
-        "required": false
-      },
-      "STRING12": {
-        "description": "Telethon String Session",
-        "value": "",
-        "required": false
-      },
-      "STRING13": {
-        "description": "Telethon String Session",
-        "value": "",
-        "required": false
-      },
-      "STRING14": {
-        "description": "Telethon String Session",
-        "value": "",
-        "required": false
-      },
-      "STRING15": {
-        "description": "Telethon String Session",
-        "value": "",
-        "required": false
-      },
-      "STRING16": {
-        "description": "Telethon String Session",
-        "value": "",
-        "required": false
-      },
-      "STRING17": {
-        "description": "Telethon String Session",
-        "value": "",
-        "required": false
-      },
-      "STRING18": {
-        "description": "Telethon String Session",
-        "value": "",
-        "required": false
-      },
-      "STRING19": {
-        "description": "Telethon String Session",
-        "value": "",
-        "required": false
-      },
-      "STRING20": {
-        "description": "Telethon String Session",
-        "value": "",
-        "required": false
-        },
-        "SUDO_USERS": {
+       "SUDO_USERS": {
             "description": "Sudo users id space by space",
             "value": "",
             "required": true
