@@ -4,7 +4,7 @@ import random
 from os import execl
 import asyncio
 import telethon.utils
-from .. import Riz, Riz2, Riz3, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, SUDO_USERS
+from .. import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, SUDO_USERS
 from telethon.tl import functions
 from telethon import events
 
