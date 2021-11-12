@@ -5,7 +5,7 @@ import os
 from telethon.errors.rpcerrorlist import UsernameOccupiedError
 from telethon.tl import functions
 from telethon.tl.functions.account import UpdateUsernameRequest
-from .. import Riz, Riz2, Riz3, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, SUDO_USERS
+from .. import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, SUDO_USERS
 
 SMEX_USERS = []
 for x in SUDO_USERS:
