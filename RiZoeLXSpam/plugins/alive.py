@@ -1,5 +1,5 @@
 from .. import Riz, SUDO_USERS
-from .. import ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/ba87c58f01a6fcb5ef512.jpg"
+from .. import ALIVE_PIC
 from telethon import events
 from time import time
 from datetime import datetime
@@ -8,7 +8,7 @@ SMEX_USERS = []
 for x in SUDO_USERS:
     SMEX_USERS.append(x)
 
-RIZ_PIC = ALIVE_PIC    
+RIZ_PIC = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/ba87c58f01a6fcb5ef512.jpg"
             
 @Riz.on(events.NewMessage(pattern=".alive"))
 async def alive(event):
