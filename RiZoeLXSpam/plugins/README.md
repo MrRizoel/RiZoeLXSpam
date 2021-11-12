@@ -1,5 +1,6 @@
 # EXTRA PLUGINS
 
+```python
 from .. import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, SUDO_USERS
 from telethon import events
 
@@ -22,3 +23,4 @@ async def hi(e):
     if e.sender_id in SMEX_USERS:
         event = await e.reply(text, parse_mode=None, link_preview=None )
         await event.edit(f"``**HELLO**``")
+```
