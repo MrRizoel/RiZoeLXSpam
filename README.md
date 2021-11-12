@@ -11,7 +11,7 @@
 ----
 
 - ☯︎ ғᴀsᴛ ᴀɴᴅ sᴛᴀʙʟᴇ 
-- Deploy Up to 20 UserBots in One time 🔥
+- Deploy 10 UserBots in One time 🔥
 
 ### Generate string session from below:
 
