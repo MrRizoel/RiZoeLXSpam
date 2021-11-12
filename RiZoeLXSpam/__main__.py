@@ -1,4 +1,7 @@
 #RiZoeLXSpam By @TheRiZoeL
+
+import sys
+from sys import argv
 import glob
 from pathlib import Path
 from RiZoeLXSpam.utils import load_plugins
