@@ -1,5 +1,5 @@
 build:
   docker:
-      worker: Dockerfile
+    Riz: Dockerfile
 run:
-   worker: python3 RiZoeL.py
+  Riz: python3 -m RiZoeLXSpam
