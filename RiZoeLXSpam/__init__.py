@@ -1,3 +1,6 @@
+# RiZoeLXSpam - Spam Userbots
+# Copyright © 2021 @RiZoeLX
+
 import os
 import sys
 import random
