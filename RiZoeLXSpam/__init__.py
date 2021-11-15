@@ -56,7 +56,7 @@ async def start_RiZoeLX():
     if STRING:
         session_name = str(STRING)
         print("String 1 Found")
-        Riz = TelegramClient(StringSession(session_name), a, b)
+        Riz = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 1")
             await Riz.start()
@@ -72,7 +72,7 @@ async def start_RiZoeLX():
     else:
         print("Session 1 not Found")
         session_name = "startup"
-        Riz = TelegramClient(session_name, a, b)
+        Riz = TelegramClient(session_name, API_ID, API_HASH)
         try:
             await Riz.start()
         except Exception as e:
@@ -81,7 +81,7 @@ async def start_RiZoeLX():
     if STRING2:
         session_name = str(STRING2)
         print("String 2 Found")
-        Riz2 = TelegramClient(StringSession(session_name), a, b)
+        Riz2 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 2")
             await Riz2.start()
@@ -97,7 +97,7 @@ async def start_RiZoeLX():
         print("Session 2 not Found")
         pass
         session_name = "startup"
-        Riz2 = TelegramClient(session_name, a, b)
+        Riz2 = TelegramClient(session_name, API_ID, API_HASH)
         try:
             await Riz2.start()
         except Exception as e:
@@ -106,7 +106,7 @@ async def start_RiZoeLX():
     if STRING3:
         session_name = str(STRING3)
         print("String 3 Found")
-        Riz3 = TelegramClient(StringSession(session_name), a, b)
+        Riz3 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 3")
             await  Riz3.start()
@@ -122,7 +122,7 @@ async def start_RiZoeLX():
         print("Session 3 not Found")
         pass
         session_name = "startup"
-        Riz3 = TelegramClient(session_name, a, b)
+        Riz3 = TelegramClient(session_name, API_ID, API_HASH)
         try:
             await Riz3.start()
         except Exception as e:
@@ -131,7 +131,7 @@ async def start_RiZoeLX():
     if STRING4:
         session_name = str(STRING4)
         print("String 4 Found")
-        Riz5 = TelegramClient(StringSession(session_name), a, b)
+        Riz5 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 4")
             await Riz5.start()
@@ -147,7 +147,7 @@ async def start_RiZoeLX():
         print("Session 4 not Found")
         pass
         session_name = "startup"
-        Riz5 = TelegramClient(session_name, a, b)
+        Riz5 = TelegramClient(session_name, API_ID, API_HASH)
         try:
             await Riz5.start()
         except Exception as e:
@@ -156,7 +156,7 @@ async def start_RiZoeLX():
     if STRING5:
         session_name = str(STRING5)
         print("String 5 Found")
-        Riz4 = TelegramClient(StringSession(session_name), a, b)
+        Riz4 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 5")
             await Riz4.start()
@@ -172,7 +172,7 @@ async def start_RiZoeLX():
         print("Session 5 not Found")
         pass
         session_name = "startup"
-        Riz4 = TelegramClient(session_name, a, b)
+        Riz4 = TelegramClient(session_name, API_ID, API_HASH)
         try:
             await Riz4.start()
         except Exception as e:
@@ -181,7 +181,7 @@ async def start_RiZoeLX():
     if STRING6:
         session_name = str(STRING6)
         print("String 6 Found")
-        Riz6 = TelegramClient(StringSession(session_name), a, b)
+        Riz6 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 6")
             await Riz6.start()
@@ -197,7 +197,7 @@ async def start_RiZoeLX():
         print("Session 6 not Found")
         pass
         session_name = "startup"
-        Riz6 = TelegramClient(session_name, a, b)
+        Riz6 = TelegramClient(session_name, API_ID, API_HASH)
         try:
             await Riz6.start()
         except Exception as e:
@@ -206,7 +206,7 @@ async def start_RiZoeLX():
     if STRING7:
         session_name = str(STRING7)
         print("String 7 Found")
-        Riz7 = TelegramClient(StringSession(session_name), a, b)
+        Riz7 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 7")
             await Riz7.start()
@@ -222,7 +222,7 @@ async def start_RiZoeLX():
         print("Session 7 not Found")
         pass
         session_name = "startup"
-        Riz7 = TelegramClient(session_name, a, b)
+        Riz7 = TelegramClient(session_name, API_ID, API_HASH)
         try:
             await Riz7.start()
         except Exception as e:
@@ -232,7 +232,7 @@ async def start_RiZoeLX():
     if STRING8:
         session_name = str(STRING8)
         print("String 8 Found")
-        Riz8 = TelegramClient(StringSession(session_name), a, b)
+        Riz8 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 8")
             await Riz8.start()
@@ -248,7 +248,7 @@ async def start_RiZoeLX():
         print("Session 8 not Found")
         pass
         session_name = "startup"
-        Riz8 = TelegramClient(session_name, a, b)
+        Riz8 = TelegramClient(session_name, API_ID, API_HASH)
         try:
             await Riz8.start()
         except Exception as e:
@@ -257,7 +257,7 @@ async def start_RiZoeLX():
     if STRING9:
         session_name = str(STRING9)
         print("String 9 Found")
-        Riz9 = TelegramClient(StringSession(session_name), a, b)
+        Riz9 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 9")
             await Riz9.start()
@@ -273,7 +273,7 @@ async def start_RiZoeLX():
         print("Session 9 not Found")
         pass
         session_name = "startup"
-        Riz9 = TelegramClient(session_name, a, b)
+        Riz9 = TelegramClient(session_name, API_ID, API_HASH)
         try:
             await Riz9.start()
         except Exception as e:
@@ -283,7 +283,7 @@ async def start_RiZoeLX():
     if STRING10:
         session_name = str(STRING10)
         print("String 10 Found")
-        Riz10 = TelegramClient(StringSession(session_name), a, b)
+        Riz10 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
         try:
             print("Booting Up The Client 10")
             await Riz10.start()
@@ -299,7 +299,7 @@ async def start_RiZoeLX():
         print("Session 10 not Found")
         pass
         session_name = "startup"
-        Riz10 = TelegramClient(session_name, a, b)
+        Riz10 = TelegramClient(session_name, API_ID, API_HASH)
         try:
             await Riz10.start()
         except Exception as e:
