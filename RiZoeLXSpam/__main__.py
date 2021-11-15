@@ -21,6 +21,8 @@ for name in files:
 
 print("RiZoeL Bot Spam Successfully deployed -!")
 print("Enjoy! Do visit @RiZoeLX")
+loop = asyncio.get_event_loop()
+loop.run_until_complete(start_RiZoeLX()) 
 
 if len(sys.argv) not in (1, 3, 4):
     try:
