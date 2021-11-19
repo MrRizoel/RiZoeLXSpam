@@ -26,16 +26,16 @@ for x in SUDO_USERS:
 async def _(event):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = SET NAME\n\nCommand:\n\n.setname <Message to change name of spam ids>"
     if event.sender_id in SMEX_USERS:
-    names = event.pattern_match.group(1)
-    first_name = names
-    last_name = ""
-    if "|" in names:
-        first_name, last_name = names.split("|", 1)
-    try:
-        await event.client(functions.account.UpdateProfileRequest(  # pylint:disable=E0602
-                first_name=first_name, last_name=last_name
-            )
-        )
-        await event.edit("Name was changed successfully")
-    except Exception as e:  # pylint:disable=C0103,W0703
-        await event.edit(str(e))
+            names = event.text.split(" ", 1)
+        rizoel = names[1]
+        if len(event.text) > 5:
+            firstname = rizoel
+            text = "Changing Name..."
+            try:
+                await event.client(functions.account.UpdateProfileRequest(first_name=firstname))
+                event = await event.reply(text, parse_mode=None, link_preview=None )
+                await event.edit("Name was changed successfully!!")
+            except Exception as e:
+                await print(str(e))   
+        else:
+            await event.reply(usage, parse_mode=None, link_preview=None )
