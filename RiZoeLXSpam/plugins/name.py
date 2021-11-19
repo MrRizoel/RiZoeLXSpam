@@ -25,10 +25,10 @@ for x in SUDO_USERS:
 @Riz10.on(events.NewMessage(pattern=".setname"))
 async def _(event):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = SET NAME\n\nCommand:\n\n.setname <Message to change name of spam ids>"
-    if event.sender_id in SMEX_USERS:
+         if event.sender_id in SMEX_USERS:
             names = event.text.split(" ", 1)
             rizoel = names[1]
-        if len(event.text) > 5:
+         if len(event.text) > 5:
             firstname = rizoel
             text = "Changing Name..."
             try:
