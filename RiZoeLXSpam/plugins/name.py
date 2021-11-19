@@ -33,7 +33,52 @@ async def _(event):
     if "|" in names:
         first_name, last_name = names.split("|", 1)
     try:
-        await bot(
+        await Riz(
+            functions.account.UpdateProfileRequest(  # pylint:disable=E0602
+                first_name=first_name, last_name=last_name
+            )
+        )
+        await Riz2(
+            functions.account.UpdateProfileRequest(  # pylint:disable=E0602
+                first_name=first_name, last_name=last_name
+            )
+        )
+       await Riz3(
+            functions.account.UpdateProfileRequest(  # pylint:disable=E0602
+                first_name=first_name, last_name=last_name
+            )
+        )
+       await Riz4(
+            functions.account.UpdateProfileRequest(  # pylint:disable=E0602
+                first_name=first_name, last_name=last_name
+            )
+        )
+       await Riz5(
+            functions.account.UpdateProfileRequest(  # pylint:disable=E0602
+                first_name=first_name, last_name=last_name
+            )
+        )
+       await Riz6(
+            functions.account.UpdateProfileRequest(  # pylint:disable=E0602
+                first_name=first_name, last_name=last_name
+            )
+        )
+       await Riz7(
+            functions.account.UpdateProfileRequest(  # pylint:disable=E0602
+                first_name=first_name, last_name=last_name
+            )
+        )
+       await Riz8(
+            functions.account.UpdateProfileRequest(  # pylint:disable=E0602
+                first_name=first_name, last_name=last_name
+            )
+        )
+       await Riz9(
+            functions.account.UpdateProfileRequest(  # pylint:disable=E0602
+                first_name=first_name, last_name=last_name
+            )
+        )
+       await Riz10(
             functions.account.UpdateProfileRequest(  # pylint:disable=E0602
                 first_name=first_name, last_name=last_name
             )
