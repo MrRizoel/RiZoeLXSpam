@@ -126,7 +126,7 @@ print("Enjoy! Do visit @RiZoeLX")
 loop = asyncio.get_event_loop()
 loop.run_until_complete(start_RiZoeLX()) 
 
-if len(sys.argv) not in (1, 3, 4):
+if len(argv) not in (1, 3, 4):
     try:
         Riz.disconnect()
     except Exception as e:
