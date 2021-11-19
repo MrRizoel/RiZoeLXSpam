@@ -22,7 +22,7 @@ async def start_RiZoeLX():
         except Exception as e:
             print(e)
             pass
-       try:
+        try:
             await Riz2.start()
             await Riz2(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz2(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
@@ -32,7 +32,7 @@ async def start_RiZoeLX():
         except Exception as e:
             print(e)
             pass
-       try:
+        try:
             await  Riz3.start()
             await Riz3(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz3(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
@@ -42,7 +42,7 @@ async def start_RiZoeLX():
         except Exception as e:
             print(e)
             pass
-       try:
+        try:
             await Riz5.start()
             await Riz5(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz5(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
@@ -52,7 +52,7 @@ async def start_RiZoeLX():
         except Exception as e:
             print(e)
             pass
-       try:
+        try:
             await Riz4.start()
             await Riz4(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz4(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
@@ -62,7 +62,7 @@ async def start_RiZoeLX():
         except Exception as e:
             print(e)
             pass
-       try:
+        try:
             await Riz6.start()
             await Riz6(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz6(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
@@ -72,7 +72,7 @@ async def start_RiZoeLX():
         except Exception as e:
             print(e)
             pass
-       try:
+        try:
             await Riz7.start()
             await Riz7(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz7(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
@@ -82,7 +82,7 @@ async def start_RiZoeLX():
         except Exception as e:
             print(e)
             pass
-       try:
+        try:
             await Riz8.start()
             await Riz8(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz8(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
@@ -92,7 +92,7 @@ async def start_RiZoeLX():
         except Exception as e:
             print(e)
             pass
-       try:
+        try:
             await Riz9.start()
             await Riz9(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz9(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
@@ -102,7 +102,7 @@ async def start_RiZoeLX():
         except Exception as e:
             print(e)
             pass
-       try:
+        try:
             await Riz10.start()
             await Riz10(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz10(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
