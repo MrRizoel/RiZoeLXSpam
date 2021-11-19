@@ -25,7 +25,7 @@ for x in SUDO_USERS:
 @Riz10.on(events.NewMessage(pattern=".setname"))
 async def _(event):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = SET NAME\n\nCommand:\n\n.setname <Message to change name of spam ids>"
-    if e.sender_id in SMEX_USERS:
+    if event.sender_id in SMEX_USERS:
         return
     names = event.pattern_match.group(1)
     first_name = names
