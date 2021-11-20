@@ -7,6 +7,8 @@ import glob
 from pathlib import Path
 from RiZoeLXSpam.utils import load_plugins
 import logging
+from telethon.tl.functions.messages import ImportChatInviteRequest
+from telethon import events
 from . import Riz, Riz2, Riz3, Riz4, Riz5, Riz6, Riz7, Riz8, Riz9, Riz10
 
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
