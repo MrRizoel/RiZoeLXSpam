@@ -1,5 +1,6 @@
 #RiZoeLXSpam By @TheRiZoeL
 
+import asyncio
 import sys
 from sys import argv
 import glob
