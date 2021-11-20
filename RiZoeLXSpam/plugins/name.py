@@ -23,19 +23,19 @@ for x in SUDO_USERS:
 @Riz8.on(events.NewMessage(pattern=".setname"))
 @Riz9.on(events.NewMessage(pattern=".setname"))
 @Riz10.on(events.NewMessage(pattern=".setname"))
-async def _(event):
+async def name(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = SET NAME\n\nCommand:\n\n.setname <Message to change name of spam ids>"
-         if event.sender_id in SMEX_USERS:
-            names = event.text.split(" ", 1)
-            rizoel = names[1]
-         if len(event.text) > 5:
-            firstname = rizoel
+    if e.sender_id in SMEX_USERS:
+        names = e.text.split(" ", 1)
+        RiZoeL = names[1]
+        if len(e.text) > 5:
+            firstname = RiZoeL
             text = "Changing Name..."
             try:
-                await event.client(functions.account.UpdateProfileRequest(first_name=firstname))
-                event = await event.reply(text, parse_mode=None, link_preview=None )
-                await event.edit("Name was changed successfully!!")
+                await e.client(functions.account.UpdateProfileRequest(first_name=firstname))
+                event = await e.reply(text, parse_mode=None, link_preview=None )
+                await event.edit("Changed name successfully!")
             except Exception as e:
                 await print(str(e))   
         else:
-            await event.reply(usage, parse_mode=None, link_preview=None )
+            await e.reply(usage, parse_mode=None, link_preview=None )
