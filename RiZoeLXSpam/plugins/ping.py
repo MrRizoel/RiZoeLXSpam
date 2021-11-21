@@ -1,6 +1,6 @@
 
 
-from .. import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, SUDO_USERS
+from .. import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, Riz11, Riz12, Riz13, Riz14, Riz15, Riz16, Riz17, Riz18, Riz19, Riz20, SUDO_USERS
 from telethon import events
 from time import time
 from datetime import datetime
@@ -46,6 +46,16 @@ def get_readable_time(seconds: int) -> str:
 @Riz8.on(events.NewMessage(pattern=".ping"))
 @Riz9.on(events.NewMessage(pattern=".ping"))
 @Riz10.on(events.NewMessage(pattern=".ping"))
+@Riz11.on(events.NewMessage(pattern=".ping"))
+@Riz12.on(events.NewMessage(pattern=".ping"))
+@Riz13.on(events.NewMessage(pattern=".ping"))
+@Riz14.on(events.NewMessage(pattern=".ping"))
+@Riz15.on(events.NewMessage(pattern=".ping"))
+@Riz16.on(events.NewMessage(pattern=".ping"))
+@Riz17.on(events.NewMessage(pattern=".ping"))
+@Riz18.on(events.NewMessage(pattern=".ping"))
+@Riz19.on(events.NewMessage(pattern=".ping"))
+@Riz20.on(events.NewMessage(pattern=".ping"))
 async def ping(e):
     if e.sender_id in SMEX_USERS:
         start = datetime.now()
@@ -53,4 +63,4 @@ async def ping(e):
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        await event.edit(f"█▀█ █▀█ █▄░█ █▀▀\n█▀▀ █▄█ █░▀█ █▄█\n\nϟʀɪᴢᴏᴇʟ X sᴘᴀᴍϟ︎ `{ms}` ᴍs")                       
+        await event.edit(f"█▀█ █▀█ █▄░█ █▀▀\n█▀▀ █▄█ █░▀█ █▄█\n\nϟ ʀɪᴢᴏᴇʟ X sᴘᴀᴍ ϟ︎ `{ms}` ᴍs")                       
