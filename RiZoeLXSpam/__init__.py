@@ -19,6 +19,10 @@ from telethon.tl.functions.messages import ImportChatInviteRequest
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)
 
+#version
+
+rizoelversion = "2.0.0"
+
 #values
 API_ID = config("API_ID", default=None, cast=int)
 API_HASH = config("API_HASH", default=None)
