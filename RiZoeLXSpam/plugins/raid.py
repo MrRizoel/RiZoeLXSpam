@@ -26,7 +26,8 @@ que = {}
 @Riz8.on(events.NewMessage(pattern=".raid"))
 @Riz9.on(events.NewMessage(pattern=".raid"))
 @Riz10.on(events.NewMessage(pattern=".raid"))
-async def spam(e):  
+async def spam(e):
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗮𝗶𝗱\n\nCommand:\n\n.raid <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."  
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
@@ -100,6 +101,7 @@ async def _(event):
 @Riz9.on(events.NewMessage(pattern=".replyraid"))
 @Riz10.on(events.NewMessage(pattern=".replyraid"))
 async def _(e):
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱\n\nCommand:\n\n.replyraid <Username of User>\n\n.replyraid <reply to a User>"
     global que
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
@@ -141,6 +143,7 @@ async def _(e):
 @Riz9.on(events.NewMessage(pattern=".dreplyraid"))
 @Riz10.on(events.NewMessage(pattern=".dreplyraid"))
 async def _(e):
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗲𝗮𝗰𝘁𝗶𝘃𝗮𝘁𝗲 𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱\n\nCommand:\n\n.dreplyraid <Username of User>\n\n.dreplyraid <reply to a User>"
     global que    
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
