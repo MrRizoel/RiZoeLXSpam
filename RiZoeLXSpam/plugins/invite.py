@@ -4,7 +4,7 @@ import random
 from os import execl
 import asyncio
 import telethon.utils
-from .. import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, SUDO_USERS
+from .. import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, Riz11, Riz12, Riz13, Riz14, Riz15, Riz16, Riz17, Riz18, Riz19, Riz20, SUDO_USERS
 from telethon.tl import functions
 from telethon import events
 
@@ -91,7 +91,16 @@ def user_full_name(user):
 @Riz8.on(events.NewMessage(pattern=".inviteall"))
 @Riz9.on(events.NewMessage(pattern=".inviteall"))
 @Riz10.on(events.NewMessage(pattern=".inviteall"))
-
+@Riz11.on(events.NewMessage(pattern=".inviteall"))
+@Riz12.on(events.NewMessage(pattern=".inviteall"))
+@Riz13.on(events.NewMessage(pattern=".inviteall"))
+@Riz14.on(events.NewMessage(pattern=".inviteall"))
+@Riz15.on(events.NewMessage(pattern=".inviteall"))
+@Riz16.on(events.NewMessage(pattern=".inviteall"))
+@Riz17.on(events.NewMessage(pattern=".inviteall"))
+@Riz18.on(events.NewMessage(pattern=".inviteall"))
+@Riz19.on(events.NewMessage(pattern=".inviteall"))
+@Riz20.on(events.NewMessage(pattern=".inviteall"))
 async def get_users(event):
     if event.sender_id in SMEX_USERS:
         rkp = await event.reply("`processing...`")
