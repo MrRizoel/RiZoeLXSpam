@@ -36,47 +36,47 @@
       "STRING2": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false
       },
       "STRING3": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false
       },
       "STRING4": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false
       },
       "STRING5": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false
       },
       "STRING6": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false
       },
       "STRING7": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false
       },
       "STRING8": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false
       },
       "STRING9": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false
       },
       "STRING10": {
         "description": "Telethon String Session",
         "value": "",
-        "required": true
+        "required": false
       },
        "SUDO_USER": {
             "description": "Sudo users id space by space",
