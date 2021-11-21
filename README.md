@@ -33,5 +33,5 @@
 * [Support Group](https://t.me/DNHcHELL)
 
 # Credits
-* [RiZoeL-Creator](https://t.me/TheRiZoeL)
+* [RiZoeL Creator](https://t.me/TheRiZoeL)
 * [Lonami](https://github.com/LonamiWebs/) for [Telethon.](https://github.com/LonamiWebs/Telethon)
