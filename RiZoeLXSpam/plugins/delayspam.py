@@ -37,7 +37,8 @@ for x in SUDO_USERS:
 @Riz8.on(events.NewMessage(pattern=".delayspam"))
 @Riz9.on(events.NewMessage(pattern=".delayspam"))
 @Riz10.on(events.NewMessage(pattern=".delayspam"))
-async def spam(e):    
+async def spam(e):
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗲𝗹𝗮𝘆𝗦𝗽𝗮𝗺\n\nCommand:\n\n.delayspam <sleep time> <count> <message to spam>\n\n.delayspam <sleep time> <count> <reply to a message>\n\nCount and Sleeptime must be a integer."     
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None)
