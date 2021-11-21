@@ -38,6 +38,7 @@ for x in SUDO_USERS:
 @Riz9.on(events.NewMessage(pattern=".bigspam"))
 @Riz10.on(events.NewMessage(pattern=".bigspam"))
 async def spam(e):
+        usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗴𝗦𝗽𝗮𝗺\n\nCommand:\n\n.bigspam <count> <message to spam>\n\n.bigspam <count> <reply to a message>\n\nCount must be a integer."
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None)
         Rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
