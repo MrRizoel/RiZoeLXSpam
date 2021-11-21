@@ -35,7 +35,6 @@ RiZoeLX += f"© @RiZoeLX | @DNHxHELL\n"
 @Riz.on(events.NewMessage(pattern=".help"))
 async def help(event):
     if event.sender_id in SMEX_USERS:
-     await event.reply(text, parse_mode=None, link_preview=None )
      await Riz.send_file(event.chat_id,
                                   HELP_PIC,
                                   caption=RiZoeLX)                                                         
