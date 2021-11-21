@@ -19,7 +19,7 @@ import os
 from telethon import events
 from telethon import functions, types
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
-from .. import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, SUDO_USERS
+from .. import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, Riz11, Riz12, Riz13, Riz14, Riz15, Riz16, Riz17, Riz18, Riz19, Riz20, SUDO_USERS
 
 SMEX_USERS = []
 for x in SUDO_USERS:
@@ -37,6 +37,16 @@ for x in SUDO_USERS:
 @Riz8.on(events.NewMessage(pattern=".bigspam"))
 @Riz9.on(events.NewMessage(pattern=".bigspam"))
 @Riz10.on(events.NewMessage(pattern=".bigspam"))
+@Riz11.on(events.NewMessage(pattern=".bigspam"))
+@Riz12.on(events.NewMessage(pattern=".bigspam"))
+@Riz13.on(events.NewMessage(pattern=".bigspam"))
+@Riz14.on(events.NewMessage(pattern=".bigspam"))
+@Riz15.on(events.NewMessage(pattern=".bigspam"))
+@Riz16.on(events.NewMessage(pattern=".bigspam"))
+@Riz17.on(events.NewMessage(pattern=".bigspam"))
+@Riz18.on(events.NewMessage(pattern=".bigspam"))
+@Riz19.on(events.NewMessage(pattern=".bigspam"))
+@Riz20.on(events.NewMessage(pattern=".bigspam"))
 async def spam(e):
         usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗕𝗶𝗴𝗦𝗽𝗮𝗺\n\nCommand:\n\n.bigspam <count> <message to spam>\n\n.bigspam <count> <reply to a message>\n\nCount must be a integer."
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
