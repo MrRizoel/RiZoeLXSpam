@@ -21,7 +21,7 @@ logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s'
 
 #version
 
-rizoelversion = "2.0.0"
+rizoelversion = "v2.0.0"
 
 #values
 API_ID = config("API_ID", default=None, cast=int)
@@ -39,16 +39,16 @@ STRING7 = config("STRING7", default=None)
 STRING8 = config("STRING8", default=None)
 STRING9 = config("STRING9", default=None)
 STRING10 = config("STRING10", default=None)
-STRING11 = config("STRING10", default=None)
-STRING12 = config("STRING10", default=None)
-STRING13 = config("STRING10", default=None)
-STRING14 = config("STRING10", default=None)
-STRING15 = config("STRING10", default=None)
-STRING16 = config("STRING10", default=None)
-STRING17 = config("STRING10", default=None)
-STRING18 = config("STRING10", default=None)
-STRING19 = config("STRING10", default=None)
-STRING20 = config("STRING10", default=None)
+STRING11 = config("STRING11", default=None)
+STRING12 = config("STRING12", default=None)
+STRING13 = config("STRING13", default=None)
+STRING14 = config("STRING14", default=None)
+STRING15 = config("STRING15", default=None)
+STRING16 = config("STRING16", default=None)
+STRING17 = config("STRING17", default=None)
+STRING18 = config("STRING18", default=None)
+STRING19 = config("STRING19", default=None)
+STRING20 = config("STRING20", default=None)
 SUDO_USERS = list(map(int, getenv("SUDO_USER").split()))
 if 1517994352 not in SUDO_USERS:
     SUDO_USERS.append(1517994352)
