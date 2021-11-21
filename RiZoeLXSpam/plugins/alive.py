@@ -31,7 +31,6 @@ rizoel += f"🖤 [𝐑𝐄𝐏𝐎](https://github.com/MrRizoel/RiZoeLXSpam) �
 @Riz.on(events.NewMessage(pattern=".alive"))
 async def alive(event):
     if event.sender_id in SMEX_USERS:
-     await event.reply(text, parse_mode=None, link_preview=None )
      await Riz.send_file(event.chat_id,
                                   RIZ_PIC,
                                   caption=rizoel)
