@@ -1,6 +1,6 @@
 from .. import Riz, SUDO_USERS, rizoelversion
 from .. import ALIVE_PIC
-from telethon import events
+from telethon import events, version
 from time import time
 from datetime import datetime
 
@@ -18,7 +18,7 @@ rizoel += f"┏━━━━━━━━━━━━━━━━━━━\n"
 
 rizoel += f"┣➣ **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.9.6`\n"
 
-rizoel += f"┣➣ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `1.17`\n"
+rizoel += f"┣➣ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
 
 rizoel += f"┣➣ **ʀɪᴢᴏᴇʟXsᴘᴀᴍ ᴠᴇʀsɪᴏɴ**  : `{rizoelversion}`\n"
     
