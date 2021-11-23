@@ -30,7 +30,7 @@ rizoel += f"┗━━━━━━━━━━━━━━━━━━━\n\n"
 
 rizoel += f"🖤 [𝐑𝐄𝐏𝐎](https://github.com/MrRizoel/RiZoeLXSpam) 🖤"            
                                     
-@Riz.on(events.NewMessage(pattern=".alive"))
+@Riz.on(events.NewMessage(pattern=r"\.alive"))
 async def alive(event):
     if event.sender_id in SMEX_USERS:
      await Riz.send_file(event.chat_id,
