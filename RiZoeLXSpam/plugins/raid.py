@@ -37,33 +37,32 @@ RiZoeLX = [1517994352, 2086101519]
 @Riz19.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 @Riz20.on(events.NewMessage(incoming=True, pattern=r"\.raid"))
 async def spam(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗮𝗶𝗱\n\nCommand:\n\n.raid <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."  
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗮𝗶𝗱\n\nCommand:\n\n.raid <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."
     if e.sender_id in SMEX_USERS:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
-        Rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-        smex = await e.get_reply_message()
-        if len(Rizoel) == 2:
-            message = str(Rizoel[1])
-            print(message)
-            a = await e.client.get_entity(message)
+        RiZoeL = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+        bitxh = await e.get_reply_message()
+        if len(RiZoeL) == 2:
+            user = str(RiZoeL[1])
+            a = await e.client.get_entity(user)
             g = a.id
             if int(g) in RiZoeLX:
-                text = f"LOL. I can't raid on @RiZoeLX's Owne"
+                text = f"I can't raid on @RiZoeLX's Owner"
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(g) in SMEX_USERS:
                 text = f"This guy is a sudo user."
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
-            c = a.first_name
-            username = f"[{c}](tg://user?id={g})"
-            counter = int(Rizoel[0])
-            for _ in range(counter):
-                reply = random.choice(RAID)
-                caption = f"{username} {reply}"
-                async with e.client.action(e.chat_id, "typing"):
-                    await e.client.send_message(e.chat_id, caption)
-                    await asyncio.sleep(0.3)
+                c = a.first_name
+                username = f"[{c}](tg://user?id={g})"
+                counter = int(RiZoeL[0])
+                for _ in range(counter):
+                    reply = random.choice(RAID)
+                    caption = f"{username} {reply}"
+                    async with e.client.action(e.chat_id, "typing"):
+                        await e.client.send_message(e.chat_id, caption)
+                        await asyncio.sleep(0.5)
         elif e.reply_to_msg_id:             
             a = await e.get_reply_message()
             b = await e.client.get_entity(a.sender_id)
@@ -75,17 +74,17 @@ async def spam(e):
                 text = f"This guy is a sudo user."
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
-            c = b.first_name
-            counter = int(Rizoel[0])
-            username = f"[{c}](tg://user?id={g})"
-            for _ in range(counter):
-                reply = random.choice(RAID)
-                caption = f"{username} {reply}"
-                async with e.client.action(e.chat_id, "typing"):
-                    await e.client.send_message(e.chat_id, caption)
-                    await asyncio.sleep(0.3)
+                c = b.first_name
+                counter = int(RiZoeL[0])
+                username = f"[{c}](tg://user?id={g})"
+                for _ in range(counter):
+                    reply = random.choice(RAID)
+                    caption = f"{username} {reply}"
+                    async with e.client.action(e.chat_id, "typing"):
+                        await e.client.send_message(e.chat_id, caption)
+                        await asyncio.sleep(0.3)
         else:
-            await e.reply(usage, parse_mode=None, link_preview=None )
+            await e.reply(usage)
 
 
 
