@@ -180,11 +180,11 @@ async def _(e):
                 text = f"This guy is a sudo user."
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
-            qeue = que.get(g)
-            appendable = [g]
-            qeue.append(appendable)
-            text = "Activated Reply Raid"
-            await e.reply(text, parse_mode=None, link_preview=None)
+                qeue = que.get(g)
+                appendable = [g]
+                qeue.append(appendable)
+                text = "Activated Reply Raid"
+                await e.reply(text, parse_mode=None, link_preview=None)
         else:
             await e.reply(usage, parse_mode=None, link_preview=None)
 
