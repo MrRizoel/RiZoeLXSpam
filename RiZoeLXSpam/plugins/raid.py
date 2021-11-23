@@ -48,7 +48,6 @@ async def spam(e):
             print(message)
             a = await e.client.get_entity(message)
             g = a.id
-            c = a.first_name
             if int(g) in RiZoeLX:
                 text = f"LOL. I can't raid on @RiZoeLX's Owne"
                 await e.reply(text, parse_mode=None, link_preview=None )
@@ -56,6 +55,7 @@ async def spam(e):
                 text = f"This guy is a sudo user."
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
+            c = a.first_name
             username = f"[{c}](tg://user?id={g})"
             counter = int(Rizoel[0])
             for _ in range(counter):
