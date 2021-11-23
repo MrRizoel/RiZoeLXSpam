@@ -19,23 +19,33 @@ import os
 from telethon import events
 from telethon import functions, types
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
-from .. import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, SUDO_USERS
+from .. import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, Riz11, Riz12, Riz13, Riz14, Riz15, Riz16, Riz17, Riz18, Riz19, Riz20, SUDO_USERS
 
 SMEX_USERS = []
 for x in SUDO_USERS:
     SMEX_USERS.append(x)
 
 
-@Riz.on(events.NewMessage(pattern=".spam"))
-@Riz2.on(events.NewMessage(pattern=".spam"))
-@Riz3.on(events.NewMessage(pattern=".spam"))
-@Riz4.on(events.NewMessage(pattern=".spam"))
-@Riz5.on(events.NewMessage(pattern=".spam"))
-@Riz6.on(events.NewMessage(pattern=".spam"))
-@Riz7.on(events.NewMessage(pattern=".spam"))
-@Riz8.on(events.NewMessage(pattern=".spam"))
-@Riz9.on(events.NewMessage(pattern=".spam"))
-@Riz10.on(events.NewMessage(pattern=".spam"))
+@Riz.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@Riz2.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@Riz3.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@Riz4.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@Riz5.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@Riz6.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@Riz7.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@Riz8.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@Riz9.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@Riz10.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@Riz11.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@Riz12.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@Riz13.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@Riz14.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@Riz15.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@Riz16.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@Riz17.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@Riz18.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@Riz19.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
+@Riz20.on(events.NewMessage(incoming=True, pattern=r"\.spam"))
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗦𝗽𝗮𝗺\n\nCommand:\n\n.spam <count> <message to spam>\n\n.spam <count> <reply to a message>\n\nCount must be a integer."
     error = "Spam Module can only be used till 100 count. For bigger spams use BigSpam."
