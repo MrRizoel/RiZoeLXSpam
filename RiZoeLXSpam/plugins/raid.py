@@ -162,31 +162,31 @@ async def _(e):
             elif int(g) in SMEX_USERS:
                 text = f"This guy is a sudo user."
                 await e.reply(text, parse_mode=None, link_preview=None )
-           else:
-               qeue = que.get(g)
-               appendable = [g]
-               qeue.append(appendable)
-               text = "Activated Reply Raid"
-               await e.reply(text, parse_mode=None, link_preview=None)
-      elif e.reply_to_msg_id:
-           a = await e.get_reply_message()
-           b = await e.client.get_entity(a.sender_id)
-           g = b.id
-           que[g] = []
-           if int(g) in RiZoeLX:
+        else:
+            qeue = que.get(g)
+            appendable = [g]
+            qeue.append(appendable)
+            text = "Activated Reply Raid"
+            await e.reply(text, parse_mode=None, link_preview=None)
+   elif e.reply_to_msg_id:
+        a = await e.get_reply_message()
+        b = await e.client.get_entity(a.sender_id)
+        g = b.id
+        que[g] = []
+        if int(g) in RiZoeLX:
                 text = f"I can't raid on @RiZoeLX's Owner"
                 await e.reply(text, parse_mode=None, link_preview=None )
-           elif int(g) in SMEX_USERS:
+        elif int(g) in SMEX_USERS:
                 text = f"This guy is a sudo user."
                 await e.reply(text, parse_mode=None, link_preview=None )
-            else:
-                qeue = que.get(g)
-                appendable = [g]
-                qeue.append(appendable)
-                text = "Activated Reply Raid"
-                await e.reply(text, parse_mode=None, link_preview=None)
         else:
-            await e.reply(usage, parse_mode=None, link_preview=None)
+            qeue = que.get(g)
+            appendable = [g]
+            qeue.append(appendable)
+            text = "Activated Reply Raid"
+            await e.reply(text, parse_mode=None, link_preview=None)
+    else:
+        await e.reply(usage, parse_mode=None, link_preview=None)
 
 
 
