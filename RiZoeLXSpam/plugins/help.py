@@ -32,7 +32,7 @@ RiZoeLX += f"ALL CMDS WITH DETAILS [HERE.](https://telegra.ph/%F0%9D%97%A5%F0%9D
 RiZoeLX += f"© @RiZoeLX | @DNHxHELL\n"
 
 
-@Riz.on(events.NewMessage(pattern=".help"))
+@Riz.on(events.NewMessage(incoming=True, pattern=r"\.help"))
 async def help(event):
     if event.sender_id in SMEX_USERS:
      await Riz.send_file(event.chat_id,
