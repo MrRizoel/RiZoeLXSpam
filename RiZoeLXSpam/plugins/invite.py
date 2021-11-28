@@ -9,11 +9,6 @@ from telethon.tl import functions
 from telethon import events
 
 
-SMEX_USERS = []
-for x in SUDO_USERS:
-    SMEX_USERS.append(x)
-
-
 from telethon.errors import (
     ChannelInvalidError,
     ChannelPrivateError,
@@ -102,7 +97,7 @@ def user_full_name(user):
 @Riz19.on(events.NewMessage(pattern=r"\.inviteall"))
 @Riz20.on(events.NewMessage(pattern=r"\.inviteall"))
 async def get_users(event):
-    if event.sender_id in SMEX_USERS:
+    if event.sender_id in SUDO_USERS:
         rkp = await event.reply("`processing...`")
     else:
         rkp = await event.edit("`processing...`")
