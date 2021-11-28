@@ -8,10 +8,6 @@ from telethon.tl.functions.account import UpdateUsernameRequest
 from .. import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, Riz11, Riz12, Riz13, Riz14, Riz15, Riz16, Riz17, Riz18, Riz19, Riz20, SUDO_USERS
 from telethon import events
 
-SMEX_USERS = []
-for x in SUDO_USERS:
-    SMEX_USERS.append(x)
-
 
 @Riz.on(events.NewMessage(pattern=r"\.setname"))
 @Riz2.on(events.NewMessage(pattern=r"\.setname"))
@@ -35,7 +31,7 @@ for x in SUDO_USERS:
 @Riz20.on(events.NewMessage(pattern=r"\.setname"))
 async def name(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = SET NAME\n\nCommand:\n\n.setname <Message to change name of spam ids>"
-    if e.sender_id in SMEX_USERS:
+    if e.sender_id in SUDO_USERS:
         names = e.text.split(" ", 1)
         RiZoeL = names[1]
         if len(e.text) > 5:
