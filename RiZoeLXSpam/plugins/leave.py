@@ -7,10 +7,6 @@ from telethon import events
 import os
 import random
 import sys
-
-SMEX_USERS = []
-for x in SUDO_USERS:
-    SMEX_USERS.append(x)
     
 @Riz.on(events.NewMessage(pattern=r"\.leave"))
 @Riz2.on(events.NewMessage(pattern=r"\.leave"))
@@ -34,7 +30,7 @@ for x in SUDO_USERS:
 @Riz20.on(events.NewMessage(pattern=r"\.leave"))
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
-    if e.sender_id in SMEX_USERS:
+    if e.sender_id in SUDO_USERS:
         rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 7:
             bc = rizoel[0]
