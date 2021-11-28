@@ -5,10 +5,6 @@ import git
 from telethon import events
 from .. import Riz, Riz2, Riz3, Riz4, Riz5, Riz6, Riz7, Riz8, Riz9, Riz10, Riz11, Riz12, Riz13, Riz14, Riz15, Riz16, Riz17, Riz18, Riz19, Riz20, SUDO_USERS, HEROKU_APP_NAME, HEROKU_API_KEY
 
-SMEX_USERS = []
-for x in SUDO_USERS:
-    SMEX_USERS.append(x)
-
 # -- Constants -- #
 IS_SELECTED_DIFFERENT_BRANCH = (
     "looks like a custom branch {branch_name} "
@@ -53,14 +49,14 @@ RESTARTING_APP = "re-starting heroku application"
 @Riz19.on(events.NewMessage(pattern=r"\.update"))
 @Riz20.on(events.NewMessage(pattern=r"\.update"))
 async def restart(e):
-    if e.sender_id in SMEX_USERS:
-        text = " 🔰𝐔𝐏𝐃𝐀𝐓𝐈𝐍𝐆 𝐘𝐎𝐔𝐑 𝐒𝐏𝐀𝐌𝐁𝐎𝐓🔰....\n𝐓𝐘𝐏𝐄 `.ping` 𝐀𝐅𝐓𝐄𝐑 𝟓 𝐌𝐈𝐍𝐒 𝐓𝐎 𝐂𝐇𝐄𝐂𝐊 𝐈𝐅 𝐈'𝐌 𝐎𝐍"
+    if e.sender_id in SUDO_USERS:
+        text = "__U𝗽𝗱𝗮𝘁𝗶𝗻𝗴..... 𝗬𝗼𝘂𝗿 𝗥𝗶𝗭𝗼𝗲𝗟 𝗫 𝗦𝗽𝗮𝗺 𝗨𝘀𝗲𝗿𝗯𝗼𝘁𝘀__\n𝗧𝘆𝗽𝗲 .ping 𝗔𝗳𝘁𝗲𝗿 5𝗺𝗶𝗻𝘀 𝗧𝗼 𝗰𝗵𝗲𝗰𝗸 𝗜'𝗺 𝗼𝗻 !!"
         await e.reply(text, parse_mode=None, link_preview=None)
 
 
 
 @Riz.on(
-    events.NewMessage(pattern="^.update", func=lambda e: e.sender_id in SMEX_USERS)
+    events.NewMessage(pattern="^.update", func=lambda e: e.sender_id in SUDO_USERS)
 )
 async def updater(message):
     try:
@@ -166,7 +162,7 @@ def generate_change_log(git_repo, diff_marker):
 async def deploy_start(Riz, message, refspec, remote):
     await message.edit(RESTARTING_APP)
     await message.edit(
-        "Updated your RiZoeL X Spam successfully sur!!!\nNow type `.ping` after 5 mins to check if I'm on🚶😏"
+        "Updated your RiZoeL X Spam successfully sur!!!\n\n © @RiZoeLX"
     )
     await remote.push(refspec=refspec)
     await Riz.disconnect()
