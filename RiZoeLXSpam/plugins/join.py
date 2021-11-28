@@ -9,10 +9,6 @@ import os
 import random
 import sys
 
-SMEX_USERS = []
-for x in SUDO_USERS:
-    SMEX_USERS.append(x)
-
 
 @Riz.on(events.NewMessage(pattern=r"\.join"))
 @Riz2.on(events.NewMessage(pattern=r"\.join"))
@@ -36,7 +32,7 @@ for x in SUDO_USERS:
 @Riz20.on(events.NewMessage(pattern=r"\.join"))
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.join <Public Channel or Group Link/Username>"
-    if e.sender_id in SMEX_USERS:
+    if e.sender_id in SUDO_USERS:
         rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 6:
             bc = rizoel[0]
@@ -74,7 +70,7 @@ async def _(e):
 @Riz20.on(events.NewMessage(pattern=r"\.pjoin"))
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.pjoin <Private Channel or Group's access hash>\n\nExample :\nLink = https://t.me/joinchat/abcdefghijklmsnob\n\n.pjoin abcdefghijklmsnob"
-    if e.sender_id in SMEX_USERS:
+    if e.sender_id in SUDO_USERS:
         rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 7:
             bc = rizoel[0]
