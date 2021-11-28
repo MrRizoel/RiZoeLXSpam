@@ -5,10 +5,6 @@ from telethon import events
 from time import time
 from datetime import datetime
 
-SMEX_USERS = []
-for x in SUDO_USERS:
-    SMEX_USERS.append(x)
-
 def get_readable_time(seconds: int) -> str:
     count = 0
     ping_time = ""
@@ -57,9 +53,9 @@ def get_readable_time(seconds: int) -> str:
 @Riz19.on(events.NewMessage(pattern=".ping"))
 @Riz20.on(events.NewMessage(pattern=".ping"))
 async def ping(e):
-    if e.sender_id in SMEX_USERS:
+    if e.sender_id in SUDO_USERS:
         start = datetime.now()
-        text = "Pong!"
+        text = "Pong!!..."
         event = await e.reply(text, parse_mode=None, link_preview=None )
         end = datetime.now()
         ms = (end-start).microseconds / 1000
