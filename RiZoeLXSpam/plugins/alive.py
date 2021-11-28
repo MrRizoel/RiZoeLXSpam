@@ -4,10 +4,6 @@ from telethon import events, version
 from time import time
 from datetime import datetime
 
-SMEX_USERS = []
-for x in SUDO_USERS:
-    SMEX_USERS.append(x)
-
 RIZ_PIC = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/ba87c58f01a6fcb5ef512.jpg"
   
 
@@ -32,7 +28,7 @@ rizoel += f"🖤 [𝐑𝐄𝐏𝐎](https://github.com/MrRizoel/RiZoeLXSpam) �
                                     
 @Riz.on(events.NewMessage(pattern=r"\.alive"))
 async def alive(event):
-    if event.sender_id in SMEX_USERS:
+    if event.sender_id in SUDO_USERS:
      await Riz.send_file(event.chat_id,
                                   RIZ_PIC,
                                   caption=rizoel)
