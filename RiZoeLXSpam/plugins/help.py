@@ -3,9 +3,6 @@ from telethon import events
 from time import time
 from datetime import datetime
 
-SMEX_USERS = []
-for x in SUDO_USERS:
-    SMEX_USERS.append(x)
     
 HELP_PIC = "https://telegra.ph/file/9acc785291052c8f8998d.jpg"
 
@@ -34,7 +31,7 @@ RiZoeLX += f"© @RiZoeLX | @DNHxHELL\n"
 
 @Riz.on(events.NewMessage(pattern=r"\.help"))
 async def help(event):
-    if event.sender_id in SMEX_USERS:
+    if event.sender_id in SUDO_USERS:
      await Riz.send_file(event.chat_id,
                                   HELP_PIC,
                                   caption=RiZoeLX)                                                         
