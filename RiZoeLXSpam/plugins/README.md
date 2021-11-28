@@ -4,11 +4,6 @@
 from .. import Riz, Riz2, Riz3, Riz4, Riz5, Riz6, Riz7, Riz8, Riz9, Riz10, Riz11, Riz12, Riz13, Riz14, Riz15, Riz16, Riz17, Riz18, Riz19, Riz20, SUDO_USERS
 from telethon import events
 
-SMEX_USERS = []
-for x in SUDO_USERS:
-    SMEX_USERS.append(x)
-
-
 @Riz.on(events.NewMessage(pattern=".hi"))
 @Riz2.on(events.NewMessage(pattern=".hi"))
 @Riz3.on(events.NewMessage(pattern=".hi"))
@@ -30,7 +25,7 @@ for x in SUDO_USERS:
 @Riz19.on(events.NewMessage(pattern=".hi"))
 @Riz20.on(events.NewMessage(pattern=".hi"))
 async def hi(e):
-    if e.sender_id in SMEX_USERS:
+    if e.sender_id in SUDO_USERS:
         event = await e.reply(text, parse_mode=None, link_preview=None )
         await event.edit(f"``**HELLO**``")
 ```
