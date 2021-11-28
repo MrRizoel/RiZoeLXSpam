@@ -4,9 +4,6 @@ import os
 import random
 import sys
 
-SMEX_USERS = []
-for x in SUDO_USERS:
-    SMEX_USERS.append(x)
 
 @Riz.on(events.NewMessage(pattern=r"\.restart"))
 @Riz2.on(events.NewMessage(pattern=r"\.restart"))
@@ -29,7 +26,7 @@ for x in SUDO_USERS:
 @Riz19.on(events.NewMessage(pattern=r"\.restart"))
 @Riz20.on(events.NewMessage(pattern=r"\.restart"))
 async def restart(e):
-    if e.sender_id in SMEX_USERS:
+    if e.sender_id in SUDO_USERS:
         text = "**Restarting Your RiZoeL X Spam**.. Please Wait Until It Starts Again"
         await e.reply(text, parse_mode=None, link_preview=None)
         try:
