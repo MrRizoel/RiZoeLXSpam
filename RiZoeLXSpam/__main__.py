@@ -66,6 +66,46 @@ if len(argv) not in (1, 3, 4):
         Riz10.disconnect()
     except Exception as e:
         pass
+    try:
+        Riz11.disconnect()
+    except Exception as e:
+        pass
+    try:
+        Riz12.disconnect()
+    except Exception as e:
+        pass
+    try:
+        Riz13.disconnect()
+    except Exception as e:
+        pass
+    try:
+        Riz14.disconnect()
+    except Exception as e:
+        pass
+    try:
+        Riz15.disconnect()
+    except Exception as e:
+        pass
+    try:
+        Riz16.disconnect()
+    except Exception as e:
+        pass
+    try:
+        Riz17.disconnect()
+    except Exception as e:
+        pass
+    try:
+        Riz18.disconnect()
+    except Exception as e:
+        pass
+    try:
+        Riz19.disconnect()
+    except Exception as e:
+        pass
+    try:
+        Riz20.disconnect()
+    except Exception as e:
+        pass
 else:
     try:
         Riz.run_until_disconnected()
@@ -105,5 +145,45 @@ else:
         pass
     try:
         Riz10.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        Riz11.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        Riz12.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        Riz13.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        Riz14.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        Riz15.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        Riz16.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        Riz17.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        Riz18.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        Riz19.run_until_disconnected()
+    except Exception as e:
+        pass
+    try:
+        Riz20.run_until_disconnected()
     except Exception as e:
         pass
