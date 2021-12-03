@@ -7,9 +7,9 @@ from telethon import events
 from telethon import functions, types
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 from .. import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, Riz11, Riz12, Riz13, Riz14, Riz15, Riz16, Riz17, Riz18, Riz19, Riz20, RAID, RRAID, SUDO_USERS
+from resources.data import RAID, REPLYRAID, RiZoeLX
 
 que = {}
-RiZoeLX = [1517994352, 2086101519]
 
 
 @Riz.on(events.NewMessage(pattern=r"\.raid"))
@@ -114,7 +114,7 @@ async def _(event):
     async with event.client.action(event.chat_id, "typing"):
         await event.client.send_message(
             entity=event.chat_id,
-            message="""{}""".format(random.choice(RRAID)),
+            message="""{}""".format(random.choice(REPLYRAID)),
             reply_to=event.message.id,
         )
 
@@ -142,7 +142,7 @@ async def _(event):
 async def _(e):
     global que
     usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱\n\nCommand:\n\n.replyraid <Username of User>\n\n.replyraid <reply to a User>."
-    if e.sender_id in SUDO_USERS or e.sender_id in DEV_USERS:
+    if e.sender_id in SUDO_USERS:
         RiZoeL = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         Rizx = await e.get_reply_message()
         if len(e.text) > 11:
@@ -158,9 +158,9 @@ async def _(e):
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
                 que[user_id] = []
-                gey = que.get(user_id)
-                phucker = [user_id]
-                gey.append(phucker)
+                nobi = que.get(user_id)
+                nobita = [user_id]
+                nobi.append(nobita)
                 text = f"Activated replyraid"
                 await e.reply(text, parse_mode=None, link_preview=None )
         elif e.reply_to_msg_id:             
@@ -176,9 +176,9 @@ async def _(e):
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
                 que[user_id] = []
-                gey = que.get(user_id)
-                phucker = [user_id]
-                gey.append(phucker)
+                nobi = que.get(user_id)
+                nobita = [user_id]
+                nobi.append(nobita)
                 text = f"Activated Replyraid"
                 await e.reply(text, parse_mode=None, link_preview=None )
         else:
