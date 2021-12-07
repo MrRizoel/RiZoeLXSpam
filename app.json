@@ -10,15 +10,7 @@
         "SpamBots"
       ],   
    "repository": "https://github.com/MrRizoel/RiZoeLXSpam",
-   "addons": [
-      {
-         "options": {
-            "version": "12"
-         },
-         "plan": "heroku-postgresql"
-      }
-   ],
-    "env": {
+   "env": {
              "API_ID": {
         "description": "Fill Api ID Take this value from My.telegram.org",
         "value": "",
