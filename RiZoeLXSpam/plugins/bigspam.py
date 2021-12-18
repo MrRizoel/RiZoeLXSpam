@@ -72,6 +72,6 @@ async def spam(e):
             for _ in range(counter):
                 async with e.client.action(e.chat_id, "typing"):
                     await e.client.send_message(e.chat_id, message)
-                    await asyncio.sleep(0.3)
+                    await asyncio.sleep(0.2)
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )
