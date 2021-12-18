@@ -12,7 +12,7 @@
   "repository": "https://github.com/MrRizoel",
   "website": "https://github.com/MrRizoel",
   "success_url": "https://t.me/RiZoeLX",
-    "env": {
+  "env": {
              "API_ID": {
         "description": "Fill Api ID Take this value from My.telegram.org",
         "value": "",
@@ -151,7 +151,7 @@
         "version": "12"
       }
     }
-  ]
+  ],
     "buildpacks": [
         {
             "url": "heroku/python"
