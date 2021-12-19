@@ -30,7 +30,7 @@
 
 # Support & Updates
 * [Channel](https://t.me/RiZoeLX)
-* [Support Group](https://t.me/DNHcHELL)
+* [Support Group](https://t.me/DNHxHELL)
 
 # Credits
 * [RiZoeL Creator](https://github.com/MrRizoel)
