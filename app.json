@@ -133,6 +133,11 @@
             "value": "",
             "required": true
         },
+       "FULLSUDO": {
+            "description": "Full Sudo Users Id here (2nd Owner of bots) space by space",
+            "value": "",
+            "required": true
+        },
         "HEROKU_API_KEY": {
             "description": "Your Heroku api key to update your bot",
             "value": "",
