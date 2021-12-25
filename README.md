@@ -15,8 +15,6 @@
 
 ### Generate string session from below:
 
-- [x] No Requirement of API ID and API HASH
-
 [![GenerateString](https://img.shields.io/badge/RiZoeLXSpam-String-yellowgreen)](https://replit.com/@RiZoeL/RiZoeL-Spam-bot#main.py) ``Telethon``
 
 • If you face any error while generating String session then use [@TELESTRING_BOT](https://t.me/TELESTRING_BOT) this bot
