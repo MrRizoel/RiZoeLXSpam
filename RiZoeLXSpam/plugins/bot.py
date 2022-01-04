@@ -180,8 +180,7 @@ async def stats(event):
    bc = 0
    b = 0
    rizoel = ""
-   if event.sender_id in DEV:    
-        await event.delete()
+   if event.sender_id in DEV:
         event = await event.reply("__Processing__.....")
        # await event.edit("`Processing..`")
         dialogs = await event.client.get_dialogs(limit=None, ignore_migrated=True)
