@@ -6,9 +6,9 @@ import requests
 from telethon import events
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
 
-from RiZoeLXSpam import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, Riz11, Riz12, Riz13, Riz14, Riz15, Riz16, Riz17, Riz18, Riz19, Riz20, Riz21, Riz22, Riz23, Riz24, Riz25, Riz26, Riz27, Riz28, Riz29, Riz30, Riz31, Riz32, Riz33, Riz34, Riz35, Riz36, Riz37, Riz38, Riz39, Riz40, SUDO_USERS
+from RiZoeLXSpam import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, Riz11, Riz12, Riz13, Riz14, Riz15, Riz16, Riz17, Riz18, Riz19, Riz20, Riz21, Riz22, Riz23, Riz24, Riz25, Riz26, Riz27, Riz28, Riz29, Riz30, Riz31, Riz32, Riz33, Riz34, Riz35, Riz36, Riz37, Riz38, Riz39, Riz40, SUDO_USERS, DEV, OWNER_ID
 
-from .. import CMD_HNDLR as hl
+from RiZoeLXSpam import CMD_HNDLR as hl
 from .sql_helper.echo_sql import addecho, get_all_echos, is_echo, remove_echo
 from resources.data import RiZoeLX
 
@@ -54,14 +54,20 @@ from resources.data import RiZoeLX
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
 async def echo(event):
-  usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = **ECHO**\n\nCommand:\n\n `{hl}addecho <reply to a User>`"
-  if event.sender_id in SUDO_USERS:
+  usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = **ECHO**\n\nCommand:\n\n `.addecho <reply to a User>`"
+  if event.sender_id in SUDO_USERS or event.sender_id in DEV:
      if event.reply_to_msg_id is not None:
             reply_msg = await event.get_reply_message()
             user_id = reply_msg.sender_id
             if int(user_id) in RiZoeLX:
                     text = f"I can't echo @RiZoeLX's Owner"
                     await event.reply(text, parse_mode=None, link_preview=None )
+            elif int(user_id) == OWNER_ID:
+                text = f"This guy is Owner Of this Bots."
+                await e.reply(text, parse_mode=None, link_preview=None )
+            elif int(user_id) in DEV:
+                text = f"This guy is a Full sudo user."
+                await e.reply(text, parse_mode=None, link_preview=None )
             elif int(user_id) in SUDO_USERS:
                     text = f"This guy is a sudo user."
                     await event.reply(text, parse_mode=None, link_preview=None )
@@ -122,8 +128,8 @@ async def echo(event):
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
 async def echo(event):
-  usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = **ECHO**\n\nCommand:\n\n `{hl}rmecho <reply to a User>`"
-  if event.sender_id in SUDO_USERS:
+  usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = **ECHO**\n\nCommand:\n\n `.rmecho <reply to a User>`"
+  if event.sender_id in SUDO_USERS or event.sender_id in DEV:
      if event.reply_to_msg_id is not None:
             reply_msg = await event.get_reply_message()
             user_id = reply_msg.sender_id
@@ -185,7 +191,7 @@ async def echo(event):
 @Riz40.on(events.NewMessage(incoming=True))
 async def _(e):
     if is_echo(e.sender_id, e.chat_id):
-        await asyncio.sleep(0.5)
+        await asyncio.sleep(0.4)
         try:
             RiZoeL = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
             RiZoeL = Get(RiZoeL)
