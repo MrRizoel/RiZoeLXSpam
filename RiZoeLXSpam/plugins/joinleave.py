@@ -1,6 +1,7 @@
 import asyncio
 from RiZoeLXSpam import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, Riz11, Riz12, Riz13, Riz14, Riz15, Riz16, Riz17, Riz18, Riz19, Riz20, Riz21, Riz22, Riz23, Riz24, Riz25, Riz26, Riz27, Riz28, Riz29, Riz30, Riz31, Riz32, Riz33, Riz34, Riz35, Riz36, Riz37, Riz38, Riz39, Riz40, DEV, SUDO_USERS
 from .. import CMD_HNDLR as hl
+
 import telethon.utils
 from telethon.tl import functions
 from telethon.tl.functions.channels import LeaveChannelRequest
@@ -128,6 +129,7 @@ async def _(e):
 
 
 #leave 
+GROUP = [-1001321613309]
 @Riz.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)(.*)" % hl))
 @Riz2.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)(.*)" % hl))
 @Riz3.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)(.*)" % hl))
@@ -174,13 +176,17 @@ async def _(e):
         rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 7:
             bc = rizoel[0]
-            bc = int(bc)
-            text = "Leaving....."
-            event = await e.reply(text, parse_mode=None, link_preview=None )
-            try:
-                await event.client(LeaveChannelRequest(bc))
-                await event.edit("Succesfully Left ☑️")
-            except Exception as e:
-                await event.edit(str(e))   
+            if int(bc) in GROUP:
+                text = f"I can't Leave This Grp"
+                await e.reply(text, parse_mode=None, link_preview=None )
+            else:
+                 Xd = int(bc)
+                 text = "Leaving....."
+                 event = await e.reply(text, parse_mode=None, link_preview=None )
+                 try:
+                    await event.client(LeaveChannelRequest(Xd))
+                    await event.edit("Succesfully Left ✅")
+                 except Exception as e:
+                    await event.edit(str(e))   
         else:
             await e.reply(usage, parse_mode=None, link_preview=None )   
