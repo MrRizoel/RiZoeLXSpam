@@ -6,7 +6,7 @@ import random
 from telethon import events
 from telethon import functions, types
 from telethon.tl.functions.messages import ImportChatInviteRequest as Get
-from RiZoeLXSpam import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, Riz11, Riz12, Riz13, Riz14, Riz15, Riz16, Riz17, Riz18, Riz19, Riz20, Riz21, Riz22, Riz23, Riz24, Riz25, Riz26, Riz27, Riz28, Riz29, Riz30, Riz31, Riz32, Riz33, Riz34, Riz35, Riz36, Riz37, Riz38, Riz39, Riz40, SUDO_USERS
+from RiZoeLXSpam import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, Riz11, Riz12, Riz13, Riz14, Riz15, Riz16, Riz17, Riz18, Riz19, Riz20, Riz21, Riz22, Riz23, Riz24, Riz25, Riz26, Riz27, Riz28, Riz29, Riz30, Riz31, Riz32, Riz33, Riz34, Riz35, Riz36, Riz37, Riz38, Riz39, Riz40, OWNER_ID, DEV, SUDO_USERS
 from resources.data import RAID, REPLYRAID, RiZoeLX
 from .. import CMD_HNDLR as hl
 
@@ -54,7 +54,7 @@ que = {}
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%sraid(?: |$)(.*)" % hl))
 async def spam(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗮𝗶𝗱\n\nCommand:\n\n`.raid` <count> <Username of User>\n\n.raid <count> <reply to a User>\n\nCount must be a integer."
-    if e.sender_id in SUDO_USERS:
+    if e.sender_id in SUDO_USERS or e.sender_id in DEV:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
         RiZoeL = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
@@ -65,6 +65,12 @@ async def spam(e):
             g = a.id
             if int(g) in RiZoeLX:
                 text = f"I can't raid on @RiZoeLX's Owner"
+                await e.reply(text, parse_mode=None, link_preview=None )
+            elif int(g) == OWNER_ID:
+                text = f"This guy is Owner Of this Bots."
+                await e.reply(text, parse_mode=None, link_preview=None )
+            elif int(g) in DEV:
+                text = f"This guy is a Full sudo user."
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(g) in SUDO_USERS:
                 text = f"This guy is a sudo user."
@@ -85,6 +91,12 @@ async def spam(e):
             g = b.id
             if int(g) in RiZoeLX:
                 text = f"I can't raid on @RiZoeLX's Owner"
+                await e.reply(text, parse_mode=None, link_preview=None )
+            elif int(g) == OWNER_ID:
+                text = f"This guy is Owner Of this Bots."
+                await e.reply(text, parse_mode=None, link_preview=None )
+            elif int(g) in DEV:
+                text = f"This guy is a Full sudo user."
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(g) in SUDO_USERS:
                 text = f"This guy is a sudo user."
@@ -202,7 +214,7 @@ async def _(event):
 async def _(e):
     global que
     usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱\n\nCommand:\n\n.replyraid <Username of User>\n\n.replyraid <reply to a User>."
-    if e.sender_id in SUDO_USERS:
+    if e.sender_id in SUDO_USERS or e.sender_id in DEV:
         RiZoeL = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         Rizx = await e.get_reply_message()
         if len(e.text) > 11:
@@ -212,6 +224,12 @@ async def _(e):
             user_id = int(user_idd)
             if int(user_id) in RiZoeLX:
                 text = f" can't raid on @RiZoeLX's Owner."
+                await e.reply(text, parse_mode=None, link_preview=None )
+            elif int(user_id) == OWNER_ID:
+                text = f"This guy is Owner Of this Bots."
+                await e.reply(text, parse_mode=None, link_preview=None )
+            elif int(user_id) in DEV:
+                text = f"This guy is a Full sudo user."
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(user_id) in SUDO_USERS:
                 text = f"This guy is a sudo user."
@@ -230,6 +248,12 @@ async def _(e):
             user_id = int(user_idd)
             if int(user_id) in RiZoeLX:
                 text = f" can't raid on @RiZoeLX's Owner."
+                await e.reply(text, parse_mode=None, link_preview=None )
+            elif int(user_id) == OWNER_ID:
+                text = f"This guy is Owner Of this Bots."
+                await e.reply(text, parse_mode=None, link_preview=None )
+            elif int(user_id) in DEV:
+                text = f"This guy is a Full sudo user."
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(user_id) in SUDO_USERS:
                 text = f"This guy is a sudo user."
@@ -288,7 +312,7 @@ async def _(e):
 async def _(e):
     usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗲𝗮𝗰𝘁𝗶𝘃𝗮𝘁𝗲 𝗥𝗲𝗽𝗹𝘆𝗥𝗮𝗶𝗱\n\nCommand:\n\n.dreplyraid <Username of User>\n\n.dreplyraid <reply to a User>"
     global que    
-    if e.sender_id in SUDO_USERS:
+    if e.sender_id in SUDO_USERS or e.sender_id in DEV:
         if e.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
         Rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
@@ -363,7 +387,7 @@ async def _(e):
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%sdelayraid(?: |$)(.*)" % hl))
 async def _(event):
    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗗𝗘𝗟𝗔𝗬𝗥𝗔𝗜𝗗\n\nCommand:\n\n.delayraid <delay> <count> <Username of User>\n\n.delayraid <delay> <count> <reply to a User>\n\nCount must be a integer."        
-   if event.sender_id in SUDO_USERS:
+   if event.sender_id in SUDO_USERS or event.sender_id in DEV:
          if event.text[0].isalpha() and e.text[0] in ("/", "#", "@", "!"):
             return await e.reply(usage, parse_mode=None, link_preview=None )
          RiZoeL = "".join(event.text.split(maxsplit=1)[1:]).split(" ", 2)
@@ -374,6 +398,12 @@ async def _(event):
              if int(e) in RiZoeLX:
                     text = f"I can't raid on @RiZoeLX's Owner"
                     await event.reply(text, parse_mode=None, link_preview=None )
+             elif int(e) == OWNER_ID:
+                    text = f"This guy is Owner Of this Bots."
+                    await e.reply(text, parse_mode=None, link_preview=None )
+             elif int(e) in DEV:
+                    text = f"This guy is a Full sudo user."
+                    await e.reply(text, parse_mode=None, link_preview=None )
              elif int(e) in SUDO_USERS:
                     text = f"This guy is a sudo user."
                     await event.reply(text, parse_mode=None, link_preview=None )
@@ -395,6 +425,12 @@ async def _(event):
                if int(e) in RiZoeLX:
                        text = f"I can't raid on @RiZoeLX's Owner"
                        await event.reply(text, parse_mode=None, link_preview=None )
+               elif int(e) == OWNER_ID:
+                       text = f"This guy is Owner Of this Bots."
+                       await e.reply(text, parse_mode=None, link_preview=None )
+               elif int(e) in DEV:
+                       text = f"This guy is a Full sudo user."
+                       await e.reply(text, parse_mode=None, link_preview=None )
                elif int(e) in SUDO_USERS:
                        text = f"This guy is a sudo user."
                        await event.reply(text, parse_mode=None, link_preview=None )
