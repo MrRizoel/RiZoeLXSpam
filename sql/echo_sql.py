@@ -1,6 +1,6 @@
 from sqlalchemy import Column, String
 
-from RiZoeLXSpam.plugins.sql_helper import BASE, SESSION
+from sql import BASE, SESSION
 
 
 class ECHOSQL(BASE):
