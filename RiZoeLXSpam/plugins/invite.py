@@ -4,7 +4,7 @@ import random
 from os import execl
 import asyncio
 import telethon.utils
-from RiZoeLXSpam import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, Riz11, Riz12, Riz13, Riz14, Riz15, Riz16, Riz17, Riz18, Riz19, Riz20, Riz21, Riz22, Riz23, Riz24, Riz25, Riz26, Riz27, Riz28, Riz29, Riz30, Riz31, Riz32, Riz33, Riz34, Riz35, Riz36, Riz37, Riz38, Riz39, Riz40, DEV
+from RiZoeLXSpam import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, Riz11, Riz12, Riz13, Riz14, Riz15, Riz16, Riz17, Riz18, Riz19, Riz20, Riz21, Riz22, Riz23, Riz24, Riz25, Riz26, Riz27, Riz28, Riz29, Riz30, Riz31, Riz32, Riz33, Riz34, Riz35, Riz36, Riz37, Riz38, Riz39, Riz40, OWNER_ID
 from .. import CMD_HNDLR as hl
 from telethon.tl import functions
 from telethon import events
@@ -97,7 +97,7 @@ async def get_chatinfo(event):
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%sinviteall(?: |$)(.*)" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%sinviteall(?: |$)(.*)" % hl))
 async def get_users(event):
-    if event.sender_id in DEV:
+    if event.sender_id == OWNER_ID:
         Nobi = event.text[11:]
         Rizoel = Nobi.lower()
         restricted = ["@DNHxHELL", "@RiZoeLX", "@Gladiators_Spam"]
@@ -129,5 +129,3 @@ async def get_users(event):
         return await rizx.edit(
         f"**INVITING FINISHED** \n\n**Invited :**  `{s}` users \n**Failed :**  `{f}` users."
     )
-
-
