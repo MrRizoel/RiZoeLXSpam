@@ -11,7 +11,8 @@ from telethon.tl.functions.users import GetFullUserRequest
 
 Heroku = heroku3.from_key(HEROKU_API_KEY)
 heroku_api = "https://api.heroku.com"
-sudousers = os.environ.get("SUDO_USERS", None)
+sudousers = os.environ.get("SUDO_USER", None)
+full_sudo = os.environ.get("FULLSUDO", None)
 
 
 @Riz.on(events.NewMessage(incoming=True, pattern=r"\%saddsudo(?: |$)(.*)" % hl))
@@ -72,7 +73,7 @@ async def tb(event):
             target = await get_user(event)
         except Exception:
             await ok.edit(f"Reply to a user.")
-        if sudousers:
+        if full_sudo:
             newsudo = f"{sudousers} {target}"
         else:
             newsudo = f"{target}"
