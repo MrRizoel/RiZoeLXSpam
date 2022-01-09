@@ -144,7 +144,7 @@ RiZoeLX += f" `.raid` - `.replyraid` - `.dreplyraid` - `.delayraid` \n\n `.spam`
 
 RiZoeLX += f" 𝙳𝙼 / 𝙴𝚌𝚑𝚘 𝙲𝚖𝚍𝚜 \n\n"
 
-RiZoeLX += f" `.dm` - `.dmraid` - `.dmspam` \n\n `.addecho` - `.rmecho` \n\n"
+RiZoeLX += f" `.dm` - `.dmraid` - `.dmspam` \n\n `.addecho` - `.rmecho` - `.pornspam`\n\n"
 
 RiZoeLX += f"All Cmds Uploaded : [•HERE•](https://t.me/Resourcez/4) \n\n"
  
