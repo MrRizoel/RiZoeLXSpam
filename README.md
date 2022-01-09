@@ -12,6 +12,9 @@
  
 - [x] ☯︎ ғᴀsᴛ ᴀɴᴅ sᴛᴀʙʟᴇ ☯︎
 - [x] Deploy upto 40 UserBots in One time 🔥
+- [x] Dm Spam / Raid
+- [x] Pornspam
+- [x] You can also add members using Spam Bots
 
 ### Generate string session from below:
 
