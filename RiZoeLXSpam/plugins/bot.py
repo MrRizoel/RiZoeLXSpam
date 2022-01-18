@@ -54,21 +54,22 @@ from telethon.tl.types import Channel, Chat, InputPhoto, User
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%ssetname(?: |$)(.*)" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%ssetname(?: |$)(.*)" % hl))
 async def name(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗖𝗛𝗔𝗡𝗚𝗘 𝗡𝗔𝗠𝗘\n\nCommand:\n\n.setname <Message to change name of spam ids>"
-    if e.sender_id in DEV:
-        names = e.text.split(" ", 1)
-        RiZoeL = names[1]
-        if len(e.text) > 5:
-            firstname = RiZoeL
-            text = "Changing Name..."
-            try:
-                await e.client(functions.account.UpdateProfileRequest(first_name=firstname))
-                event = await e.reply(text, parse_mode=None, link_preview=None )
-                await event.edit("Changed name successfully! ✅")
-            except Exception as e:
-                await print(str(e))   
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None )
+    if e.sender_id not in DEV:
+        return
+    names = e.text.split(" ", 1)
+    RiZoeL = names[1]
+    if len(e.text) > 5:
+        firstname = RiZoeL
+        text = "Changing Name..."
+        try:
+            await e.client(functions.account.UpdateProfileRequest(first_name=firstname))
+            event = await e.reply(text, parse_mode=None, link_preview=None )
+            await event.edit("Changed name successfully! ✅")
+        except Exception as e:
+            await print(e)
+    else:
+        usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗖𝗛𝗔𝗡𝗚𝗘 𝗡𝗔𝗠𝗘\n\nCommand:\n\n.setname <Message to change name of spam ids>"
+        await e.reply(usage, parse_mode=None, link_preview=None )
 
 #bio 
             
@@ -113,22 +114,24 @@ async def name(e):
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%ssetbio(?: |$)(.*)" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%ssetbio(?: |$)(.*)" % hl))
 async def _(e):
-    usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗖𝗛𝗔𝗡𝗚𝗘 𝗕𝗜𝗢\n\nCommand:\n\n.setbio <Message to change name of spam ids>"
-    if e.sender_id in DEV:
-        fukyou = e.text.split(" ", 1)
-        message = fukyou[1]
-        if len(e.text) > 5:
-            bio = message
-            text = "Changing Bio..."
-            try:
-                await e.client(functions.account.UpdateProfileRequest(about=bio))
-                event = await e.reply(text, parse_mode=None, link_preview=None )
-                await asyncio.sleep(0.7)
-                await event.edit("Changed bio successfully! ✅")
-            except Exception as e:
-                await print(str(e))   
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None )         
+    if e.sender_id not in DEV:
+        return
+    fukyou = e.text.split(" ", 1)
+    message = fukyou[1]
+    if len(e.text) > 5:
+        bio = message
+        text = "Changing Bio..."
+        try:
+            await e.client(functions.account.UpdateProfileRequest(about=bio))
+            event = await e.reply(text, parse_mode=None, link_preview=None )
+            await asyncio.sleep(0.7)
+            await event.edit("Changed bio successfully! ✅")
+        except Exception as e:
+            await print(e)
+    else:
+        usage = '𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗖𝗛𝗔𝗡𝗚𝗘 𝗕𝗜𝗢\n\nCommand:\n\n.setbio <Message to change name of spam ids>'
+
+        await e.reply(usage, parse_mode=None, link_preview=None )         
         
 
 # statss                   
@@ -174,41 +177,42 @@ async def _(e):
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%sstats(?: |$)(.*)" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%sstats(?: |$)(.*)" % hl))
 async def stats(event):
-   u = 0
-   g = 0
-   c = 0
-   bc = 0
-   b = 0
-   rizoel = ""
-   if event.sender_id in DEV:    
-        await event.delete()
-        event = await event.reply("__Processing__.....")
+    if event.sender_id not in DEV:
+        return    
+
+    await event.delete()
+    event = await event.reply("__Processing__.....")
        # await event.edit("`Processing..`")
-        dialogs = await event.client.get_dialogs(limit=None, ignore_migrated=True)
-        for d in dialogs:
-            currrent_entity = d.entity
-            if isinstance(currrent_entity, User):
-                if currrent_entity.bot:
-                    b += 1
-                else:
-                    u += 1
-            elif isinstance(currrent_entity, Chat):
-                g += 1
-            elif isinstance(currrent_entity, Channel):
-                if currrent_entity.broadcast:
-                    bc += 1
-                else:
-                    c += 1
+    dialogs = await event.client.get_dialogs(limit=None, ignore_migrated=True)
+    u = 0
+    g = 0
+    c = 0
+    bc = 0
+    b = 0
+    for d in dialogs:
+        currrent_entity = d.entity
+        if isinstance(currrent_entity, User):
+            if currrent_entity.bot:
+                b += 1
             else:
-                print(d)
-         
-        rizoel += f"🔻 **HERE IS YOUR RIZOELXSPAM STATS** 🔻\n\n"
-        rizoel += f"`Users:`\t**{u}**\n"
-        rizoel += f"`Groups:`\t**{g}**\n"
-        rizoel += f"`Super Groups:`\t**{c}**\n"
-        rizoel += f"`Channels:`\t**{bc}**\n"
-        rizoel += f"`Bots:`\t**{b}**"
-        await event.edit(rizoel)    
+                u += 1
+        elif isinstance(currrent_entity, Chat):
+            g += 1
+        elif isinstance(currrent_entity, Channel):
+            if currrent_entity.broadcast:
+                bc += 1
+            else:
+                c += 1
+        else:
+            print(d)
+
+    rizoel = "" + '🔻 **HERE IS YOUR RIZOELXSPAM STATS** 🔻\n\n'
+    rizoel += f"`Users:`\t**{u}**\n"
+    rizoel += f"`Groups:`\t**{g}**\n"
+    rizoel += f"`Super Groups:`\t**{c}**\n"
+    rizoel += f"`Channels:`\t**{bc}**\n"
+    rizoel += f"`Bots:`\t**{b}**"
+    await event.edit(rizoel)    
     
     
     

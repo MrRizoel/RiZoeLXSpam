@@ -16,27 +16,26 @@ sudousers = os.environ.get("SUDO_USERS", None)
 
 @Riz.on(events.NewMessage(incoming=True, pattern=r"\%saddsudo(?: |$)(.*)" % hl))
 async def tb(event):
-    if event.sender_id in DEV:
-        ok = await event.reply("Adding user as a sudo...")
-        rizoel = "SUDO_USER"
-        if HEROKU_APP_NAME is not None:
-            app = Heroku.app(HEROKU_APP_NAME)
-        else:
-            await ok.edit("`[HEROKU]:" "\nPlease setup your` **HEROKU_APP_NAME**")
-            return
-        heroku_var = app.config()
-        if event is None:
-            return
-        try:
-            target = await get_user(event)
-        except Exception:
-            await ok.edit(f"Reply to a user.")
-        if sudousers:
-            newsudo = f"{sudousers} {target}"
-        else:
-            newsudo = f"{target}"
-        await ok.edit(f"**Added `{target}` ** as a sudo user 🔱 Restarting.. Please wait a minute...")
-        heroku_var[rizoel] = newsudo
+    if event.sender_id not in DEV:
+        return
+
+    ok = await event.reply("Adding user as a sudo...")
+    rizoel = "SUDO_USER"
+    if HEROKU_APP_NAME is not None:
+        app = Heroku.app(HEROKU_APP_NAME)
+    else:
+        await ok.edit("`[HEROKU]:" "\nPlease setup your` **HEROKU_APP_NAME**")
+        return
+    heroku_var = app.config()
+    if event is None:
+        return
+    try:
+        target = await get_user(event)
+    except Exception:
+        await ok.edit('Reply to a user.')
+    newsudo = f"{sudousers} {target}" if sudousers else f"{target}"
+    await ok.edit(f"**Added `{target}` ** as a sudo user 🔱 Restarting.. Please wait a minute...")
+    heroku_var[rizoel] = newsudo
 
         
 
@@ -51,5 +50,4 @@ async def get_user(event):
             replied_user = await event.client(
                 GetFullUserRequest(previous_message.sender_id)
             )
-    target = replied_user.user.id
-    return target
+    return replied_user.user.id

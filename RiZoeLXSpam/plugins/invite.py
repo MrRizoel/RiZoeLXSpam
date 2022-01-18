@@ -97,35 +97,37 @@ async def get_chatinfo(event):
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%sinviteall(?: |$)(.*)" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%sinviteall(?: |$)(.*)" % hl))
 async def get_users(event):
-    if event.sender_id in DEV:
-        Nobi = event.text[11:]
-        Rizoel = Nobi.lower()
-        restricted = ["@DNHxHELL", "@RiZoeLX", "@Gladiators_Spam"]
-        rizx = await event.reply("__Inviting members __")
-        if Rizoel in restricted:
-            await rizx.edit("You can't Invite Members from there.")
-            await event.client.send_message(-1001321613309, "Sorry for inviting members from here.")
-            return
-        rizoelxspam = await get_chatinfo(event)
-        chat = await event.get_chat()
-        if event.is_private:
-            return await rizx.edit("`Sorry, Cant add users here`")
-        s = 0
-        f = 0
-        error = "None"
-        await rizx.edit("**INVITING USERS !!**")
-        async for user in event.client.iter_participants(rizoelxspam.full_chat.id):
-            try:
-                await event.client(
-                    InviteToChannelRequest(channel=chat, users=[user.id])
-                )
-                s += 1
-                await rizx.edit(
-                    f"**INVITING USERS.. **\n\n**Invited :**  `{s}` users \n**Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+    if event.sender_id not in DEV:
+        return
+
+    Nobi = event.text[11:]
+    Rizoel = Nobi.lower()
+    restricted = ["@DNHxHELL", "@RiZoeLX", "@Gladiators_Spam"]
+    rizx = await event.reply("__Inviting members __")
+    if Rizoel in restricted:
+        await rizx.edit("You can't Invite Members from there.")
+        await event.client.send_message(-1001321613309, "Sorry for inviting members from here.")
+        return
+    rizoelxspam = await get_chatinfo(event)
+    chat = await event.get_chat()
+    if event.is_private:
+        return await rizx.edit("`Sorry, Cant add users here`")
+    s = 0
+    f = 0
+    error = "None"
+    await rizx.edit("**INVITING USERS !!**")
+    async for user in event.client.iter_participants(rizoelxspam.full_chat.id):
+        try:
+            await event.client(
+                InviteToChannelRequest(channel=chat, users=[user.id])
             )
-            except Exception as e:
-                error = str(e)
-                f += 1
+            s += 1
+            await rizx.edit(
+                f"**INVITING USERS.. **\n\n**Invited :**  `{s}` users \n**Failed to Invite :**  `{f}` users.\n\n**×Error :**  `{error}`"
+        )
+        except Exception as e:
+            error = str(e)
+            f += 1
         return await rizx.edit(
         f"**INVITING FINISHED** \n\n**Invited :**  `{s}` users \n**Failed :**  `{f}` users."
     )
