@@ -54,7 +54,7 @@ from resources.data import RiZoeLX
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%saddecho(?: |$)(.*)" % hl))
 async def echo(event):
-  usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = **ECHO**\n\nCommand:\n\n `.addecho <reply to a User>`"
+  usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = **ECHO**\n\nCommand:\n\n `{hl}addecho <reply to a User>`"
   if event.sender_id in SUDO_USERS or event.sender_id in DEV:
      if event.reply_to_msg_id is not None:
             reply_msg = await event.get_reply_message()
@@ -128,7 +128,7 @@ async def echo(event):
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%srmecho(?: |$)(.*)" % hl))
 async def echo(event):
-  usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = **ECHO**\n\nCommand:\n\n `.rmecho <reply to a User>`"
+  usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = **ECHO**\n\nCommand:\n\n `{hl}rmecho <reply to a User>`"
   if event.sender_id in SUDO_USERS or event.sender_id in DEV:
      if event.reply_to_msg_id is not None:
             reply_msg = await event.get_reply_message()
