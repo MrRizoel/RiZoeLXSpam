@@ -24,6 +24,7 @@ from .. import CMD_HNDLR as hl
 from telethon.tl.functions.messages import GetStickerSetRequest
 from telethon.tl.types import InputStickerSetID, InputStickerSetShortName
 from resources.data import RiZoeLX, GROUP, PORMS
+from telethon import utils
 
 # spam
 
