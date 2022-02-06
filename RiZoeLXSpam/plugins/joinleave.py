@@ -53,7 +53,7 @@ import sys
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%sjoin(?: |$)(.*)" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%sjoin(?: |$)(.*)" % hl))
 async def _(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.join <Public Channel or Group Link/Username>"
+    usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗝𝗼𝗶𝗻\n\nCommand:\n\n{hl}join <Public Channel or Group Link/Username>"
     if e.sender_id in SUDO_USERS or e.sender_id in DEV:
         rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 6:
@@ -111,7 +111,7 @@ async def _(e):
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%spjoin(?: |$)(.*)" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%spjoin(?: |$)(.*)" % hl))
 async def _(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗝𝗼𝗶𝗻\n\nCommand:\n\n.pjoin <Private Channel or Group's access hash>\n\nExample :\nLink = https://t.me/joinchat/abcdefghijklmsnob\n\n.pjoin abcdefghijklmsnob"
+    usage = f"𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗣𝗿𝗶𝘃𝗮𝘁𝗲 𝗝𝗼𝗶𝗻\n\nCommand:\n\n{hl}pjoin <Private Channel or Group's access hash>\n\nExample :\nLink = https://t.me/joinchat/abcdefghijklmsnob\n\n.pjoin abcdefghijklmsnob"
     if e.sender_id in SUDO_USERS or e.sender_id in DEV:
         rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 7:
@@ -171,8 +171,7 @@ GROUP = [-1001321613309]
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)(.*)" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%sleave(?: |$)(.*)" % hl))
 async def _(e):
-    usage = "𝗠𝗼𝗱𝘂𝗹𝗲 𝗡𝗮𝗺𝗲 = 𝗟𝗲𝗮𝘃𝗲\n\nCommand:\n\n.leave <Channel or Chat ID>"
-    if e.sender_id in SUDO_USERS or e.sender_id in DEV:
+    if e.sender_id in DEV:
         rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 7:
             bc = rizoel[0]
@@ -187,6 +186,25 @@ async def _(e):
                     await event.client(LeaveChannelRequest(Xd))
                     await event.edit("Succesfully Left ✅")
                  except Exception as e:
-                    await event.edit(str(e))   
+                    await event.edit(str(e))
+         
         else:
-            await e.reply(usage, parse_mode=None, link_preview=None )   
+             bc = e.chat_id
+             if int(bc) in GROUP:
+                text = f"I can't Leave This Grp"
+                await e.reply(text, parse_mode=None, link_preview=None )
+             else:
+                 Xd = int(bc)
+                 text = "Leaving....."
+                 if e.is_private:
+                       dik = f"You Can't Do this Here !! \n\n {hl}leave <Channel or Chat ID> \n {hl}leave : type in the group bot will auto leave that group !"
+                       await e.reply(dik, parse_mode=None, link_preview=None )
+               
+                 else:
+                      event = await e.reply(text, parse_mode=None, link_preview=None )
+                      try:
+                          await event.client(LeaveChannelRequest(Xd))
+                      except Exception as e:
+                           await event.edit(str(e))
+    if e.sender_id in SUDO_USERS:
+            await e.reply("Only Full Sudo Users Can Do That Noob !!")
