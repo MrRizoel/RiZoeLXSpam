@@ -252,7 +252,7 @@ commands:
 2) {hl}fullsudo <reply to user>
 """
 
-help_menu f"""
+help_menu = f"""
 **RiZoeL X Spam Help**
 
 **There are following categories**
