@@ -136,9 +136,7 @@ async def RiZoeLX():
             await Riz(functions.channels.JoinChannelRequest(channel="@DNHxHELL"))
             await Riz(functions.channels.JoinChannelRequest(channel="@Gladiators_Projects"))
             deployy = f"__Your RiZoeL X Spam Deployed Successfully__ ✅ \n\n **© @RiZoeLX**"
-            deployed = f"__My RiZoeL X Spam Deployed Successfully__ ✅"
             await Riz.send_message(OWNER_ID, deployy)
-            await Riz.send_message(-1001321613309, deployed)
             botid = telethon.utils.get_peer_id(botme)
             SUDO_USERS.append(botid)
         except Exception as e:
