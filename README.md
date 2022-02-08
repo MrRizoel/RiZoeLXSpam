@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="./resources/logo.jpg" alt="RiZoeLXSpam Logo">
+  <img src="./resources/logo.jpg" alt="PriNceXSpam Logo">
 </p>
 <h1 align="center">
-  <b>ʀɪᴢᴏᴇʟ X sᴘᴀᴍ</b>
+  <b>prince X sᴘᴀᴍ</b>
 </h1>
 
 [![Forks](https://img.shields.io/github/forks/MrRizoel/RiZoeLXSpam?style=flat-square&color=orange)](https://github.com/MrRizoel/RiZoeLXSpam/fork)
