@@ -18,10 +18,7 @@ def get_readable_time(seconds: int) -> str:
 
     while count < 4:
         count += 1
-        if count < 3:
-            remainder, result = divmod(seconds, 60)
-        else:
-            remainder, result = divmod(seconds, 24)
+        remainder, result = divmod(seconds, 60) if count < 3 else divmod(seconds, 24)
         if seconds == 0 and remainder == 0:
             break
         time_list.append(int(result))
@@ -92,26 +89,24 @@ async def ping(e):
 
 # ALIVE
 
-RIZ_PIC = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/ba87c58f01a6fcb5ef512.jpg"
+RIZ_PIC = ALIVE_PIC or "https://telegra.ph/file/ba87c58f01a6fcb5ef512.jpg"
 
 
-rizoel = "✧ 𝗥𝗶𝗭𝗼𝗲𝗟 𝗫 𝗦𝗽𝗮𝗺 𝗛𝗲𝗿𝗲 ✧\n\n"
+rizoel = "✧ 𝗥𝗶𝗭𝗼𝗲𝗟 𝗫 𝗦𝗽𝗮𝗺 𝗛𝗲𝗿𝗲 ✧\n\n" + '┏━━━━━━━━━━━━━━━━━━━\n'            
 
-rizoel += f"┏━━━━━━━━━━━━━━━━━━━\n"
-
-rizoel += f"┣➣ **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.9.6`\n"
+rizoel += '┣➣ **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.9.6`\n'
 
 rizoel += f"┣➣ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
 
 rizoel += f"┣➣ **ʀɪᴢᴏᴇʟXsᴘᴀᴍ ᴠᴇʀsɪᴏɴ**  : `{rizoelversion}`\n"
-    
-rizoel += f"┣➣ **sᴜᴘᴘᴏʀᴛ** : [JOIN](https://t.me/DNHxHELL)\n"
 
-rizoel += f"┣➣ **ᴄʜᴀɴɴᴇʟ** : [JOIN](https://t.me/RiZoeLX)\n"
+rizoel += '┣➣ **sᴜᴘᴘᴏʀᴛ** : [JOIN](https://t.me/DNHxHELL)\n'
 
-rizoel += f"┗━━━━━━━━━━━━━━━━━━━\n\n"
+rizoel += '┣➣ **ᴄʜᴀɴɴᴇʟ** : [JOIN](https://t.me/RiZoeLX)\n'
 
-rizoel += f"🖤 [𝐑𝐄𝐏𝐎](https://github.com/MrRizoel/RiZoeLXSpam) 🖤"            
+rizoel += '┗━━━━━━━━━━━━━━━━━━━\n\n'
+
+rizoel += '🖤 [𝐑𝐄𝐏𝐎](https://github.com/MrRizoel/RiZoeLXSpam) 🖤'            
                                     
 @Riz.on(events.NewMessage(incoming=True, pattern=r"\%salive" % hl))
 async def alive(event):
@@ -125,29 +120,29 @@ async def alive(event):
 
 HELP_PIC = "https://telegra.ph/file/9acc785291052c8f8998d.jpg"
 
-RiZoeLX = "🔥 𝗥𝗜𝗭𝗢𝗘𝗟 𝗫 𝗦𝗣𝗔𝗠 🔥\n\n"
- 
-RiZoeLX += f"__ᴄᴍᴅs ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ ʀɪᴢᴏᴇʟ x sᴘᴀᴍ__\n\n"
+RiZoeLX = "🔥 𝗥𝗜𝗭𝗢𝗘𝗟 𝗫 𝗦𝗣𝗔𝗠 🔥\n\n" + '__ᴄᴍᴅs ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ ʀɪᴢᴏᴇʟ x sᴘᴀᴍ__\n\n'
 
-RiZoeLX += f" ↧ 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝙲𝙼𝙳𝚂 ↧\n\n"
+RiZoeLX += ' ↧ 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝙲𝙼𝙳𝚂 ↧\n\n'
 
-RiZoeLX += f" `.ping` - `.alive` - `.setname` - `.setbio` - `.inviteall` - .`restart` - `.update` - `.stats` - `.addsudo` \n\n"
- 
-RiZoeLX += f" ↧ 𝙹𝙾𝙸𝙽/𝙻𝙴𝙰𝚅𝙴 𝙲𝙼𝙳𝚂 ↧\n\n"
+RiZoeLX += ' `.ping` - `.alive` - `.setname` - `.setbio` - `.inviteall` - .`restart` - `.update` - `.stats` - `.addsudo` \n\n'
 
-RiZoeLX += f" `.join` - `.pjoin` - `.leave`\n\n"
- 
-RiZoeLX += f" ↧ 𝚂𝙿𝙰𝙼 / 𝚁𝙰𝙸𝙳 𝙲𝙼𝙳𝚂 ↧\n\n"
 
-RiZoeLX += f" `.raid` - `.replyraid` - `.dreplyraid` - `.delayraid` \n\n `.spam` - `.bigspam` - `.delayspam` - `.abuse` \n\n"
+RiZoeLX += ' ↧ 𝙹𝙾𝙸𝙽/𝙻𝙴𝙰𝚅𝙴 𝙲𝙼𝙳𝚂 ↧\n\n'
 
-RiZoeLX += f" 𝙳𝙼 / 𝙴𝚌𝚑𝚘 𝙲𝚖𝚍𝚜 \n\n"
+RiZoeLX += ' `.join` - `.pjoin` - `.leave`\n\n'
 
-RiZoeLX += f" `.dm` - `.dmraid` - `.dmspam` \n\n `.addecho` - `.rmecho` \n\n"
+RiZoeLX += ' ↧ 𝚂𝙿𝙰𝙼 / 𝚁𝙰𝙸𝙳 𝙲𝙼𝙳𝚂 ↧\n\n'
 
-RiZoeLX += f"All Cmds Uploaded : [•HERE•](https://t.me/Resourcez/4) \n\n"
- 
-RiZoeLX += f"© @RiZoeLX | @DNHxHELL\n"
+RiZoeLX += ' `.raid` - `.replyraid` - `.dreplyraid` - `.delayraid` \n\n `.spam` - `.bigspam` - `.delayspam` - `.abuse` \n\n'
+
+
+RiZoeLX += ' 𝙳𝙼 / 𝙴𝚌𝚑𝚘 𝙲𝚖𝚍𝚜 \n\n'
+
+RiZoeLX += ' `.dm` - `.dmraid` - `.dmspam` \n\n `.addecho` - `.rmecho` \n\n'
+
+RiZoeLX += 'All Cmds Uploaded : [•HERE•](https://t.me/Resourcez/4) \n\n'
+
+RiZoeLX += '© @RiZoeLX | @DNHxHELL\n'
 
 
 @Riz.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
@@ -199,169 +194,171 @@ async def help(event):
 @Riz39.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
 async def restart(e):
-    if e.sender_id in SUDO_USERS:
-        text = "𝙍𝙀𝙎𝙏𝘼𝙍𝙏𝙄𝙉𝙂\n\n ....Please Wait Until It Starts Again"
-        await e.reply(text, parse_mode=None, link_preview=None)
-        try:
-            await Riz.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz2.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz3.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz4.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz5.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz6.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz7.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz8.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz9.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz10.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz11.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz12.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz13.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz14.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz15.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz16.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz17.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz18.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz19.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz20.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz21.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz22.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz23.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz24.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz25.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz26.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz27.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz28.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz29.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz30.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz31.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz32.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz33.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz34.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz35.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz36.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz37.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz38.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz39.disconnect()
-        except Exception:
-            pass
-        try:
-            await Riz40.disconnect()
-        except Exception:
-            pass
+    if e.sender_id not in SUDO_USERS:
+        return
 
-        os.execl(sys.executable, sys.executable, *sys.argv)
-        quit()
+    text = "𝙍𝙀𝙎𝙏𝘼𝙍𝙏𝙄𝙉𝙂\n\n ....Please Wait Until It Starts Again"
+    await e.reply(text, parse_mode=None, link_preview=None)
+    try:
+        await Riz.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz2.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz3.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz4.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz5.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz6.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz7.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz8.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz9.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz10.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz11.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz12.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz13.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz14.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz15.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz16.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz17.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz18.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz19.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz20.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz21.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz22.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz23.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz24.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz25.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz26.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz27.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz28.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz29.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz30.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz31.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz32.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz33.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz34.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz35.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz36.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz37.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz38.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz39.disconnect()
+    except Exception:
+        pass
+    try:
+        await Riz40.disconnect()
+    except Exception:
+        pass
+
+    os.execl(sys.executable, sys.executable, *sys.argv)
+    quit()
