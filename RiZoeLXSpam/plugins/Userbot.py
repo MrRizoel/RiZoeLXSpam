@@ -95,7 +95,7 @@ async def ping(e):
 RIZ_PIC = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/ba87c58f01a6fcb5ef512.jpg"
 
 
-rizoel = "✧ 𝗥𝗶𝗭𝗼𝗲𝗟 𝗫 𝗦𝗽𝗮𝗺 𝗛𝗲𝗿𝗲 ✧\n\n"
+rizoel = "✧ 𝐒𝐇𝐀𝐔𝐑𝐘𝐀 𝗫 𝗦𝗽𝗮𝗺 𝗛𝗲𝗿𝗲 ✧\n\n"
 
 rizoel += f"┏━━━━━━━━━━━━━━━━━━━\n"
 
@@ -125,7 +125,7 @@ async def alive(event):
 
 HELP_PIC = "https://telegra.ph/file/9acc785291052c8f8998d.jpg"
 
-RiZoeLX = "🔥 𝗥𝗜𝗭𝗢𝗘𝗟 𝗫 𝗦𝗣𝗔𝗠 🔥\n\n"
+RiZoeLX = "🔥 𝐒𝐇𝐀𝐔𝐑𝐘𝐀 𝗫 𝗦𝗣𝗔𝗠 🔥\n\n"
  
 RiZoeLX += f"__ᴄᴍᴅs ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ ʀɪᴢᴏᴇʟ x sᴘᴀᴍ__\n\n"
 
