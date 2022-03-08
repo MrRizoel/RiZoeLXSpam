@@ -86,13 +86,13 @@ async def ping(e):
         start = datetime.now()
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        pingop = f"█▀█ █▀█ █▄░█ █▀▀\n█▀▀ █▄█ █░▀█ █▄█\n\nϟ TUSHAR X sᴘᴀᴍ ϟ︎ `{ms}` ᴍs"                   
+        pingop = f"█▀█ █▀█ █▄░█ █▀▀\n█▀▀ █▄█ █░▀█ █▄█\n\nϟ TUSHAR ♥️ X sᴘᴀᴍ ϟ︎ `{ms}` ᴍs"                   
         await fuk.edit(pingop)
 
 
 # ALIVE
 
-RIZ_PIC = ALIVE_PIC if ALIVE_PIC else "https://telegra.ph/file/ba87c58f01a6fcb5ef512.jpg"
+RIZ_PIC = ALIVE_PIC if ALIVE_PIC else "https://te.legra.ph/file/22124e853b3b9117b8ede.jpg"
 
 
 rizoel = "✧ TUSHAR 𝗫 𝗦𝗽𝗮𝗺 𝗛𝗲𝗿𝗲 ✧\n\n"
@@ -123,11 +123,11 @@ async def alive(event):
    
 # help
 
-HELP_PIC = "https://telegra.ph/file/9acc785291052c8f8998d.jpg"
+HELP_PIC = "https://te.legra.ph/file/22124e853b3b9117b8ede.jpg"
 
 RiZoeLX = "🔥 TUSHAR 𝗫 𝗦𝗣𝗔𝗠 🔥\n\n"
  
-RiZoeLX += f"__ᴄᴍᴅs ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ ʀɪᴢᴏᴇʟ x sᴘᴀᴍ__\n\n"
+RiZoeLX += f"__ᴄᴍᴅs ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ TUSHAR x sᴘᴀᴍ__\n\n"
 
 RiZoeLX += f" ↧ 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝙲𝙼𝙳𝚂 ↧\n\n"
 
@@ -147,7 +147,7 @@ RiZoeLX += f" `.dm` - `.dmraid` - `.dmspam` \n\n `.addecho` - `.rmecho` \n\n"
 
 RiZoeLX += f"All Cmds Uploaded : [•HERE•](https://t.me/Resourcez/4) \n\n"
  
-RiZoeLX += f"© @RiZoeLX | @DNHxHELL\n"
+RiZoeLX += f"© @HYPERSPIRITOFFICIAL | @HYPERSPIRITOFFICIALCHAT\n"
 
 
 @Riz.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
@@ -155,7 +155,7 @@ async def help(event):
     if event.sender_id in SUDO_USERS:
      await Riz.send_file(event.chat_id,
                                   HELP_PIC,
-                                  caption=RiZoeLX)                                                         
+                                  caption=TUSHAR)                                                         
 
 
 @Riz.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
