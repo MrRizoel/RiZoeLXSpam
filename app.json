@@ -1,5 +1,5 @@
       {
-                 "name": "TUSHAR X Spam",
+                 "name": "RizoeL X Spam",
                  "description": "MOST POWERFUL + STABLE SPAM USERBOTS",
                  "logo": "https://te.legra.ph/file/22124e853b3b9117b8ede.jpg",
                  "keywords": [
@@ -9,9 +9,9 @@
                  "TUSHARXSpam",
                  "SpamBots"
                ],   
-           "repository": "https://github.com/9717tushar/9711TUSHAR",
-           "website": "https://github.com/9717tushar/9711TUSHAR
-           "success_url": "https://github.com/9717tushar/9711TUSHAR",
+           "repository": "https://github.com/MrRizoel",
+           "website": "https://github.com/MrRizoel
+           "success_url": "https://github.com/MrRizoel",
            "env": {
                      "API_ID": {
                    "description": "Fill Api ID Take this value from My.telegram.org",
@@ -82,57 +82,57 @@
                   "description": "Telethon String Session",
                   "value": "",
                   "required": false
-                 },
-                 "STRING12": {
-                   "description": "Telethon String Session",
-                   "value": "",
-                   "required": false
-                 },
-                 "STRING13": {
-                   "description": "Telethon String Session",
-                   "value": "",
-                   "required": false
-                 },
-                 "STRING14": {
-                   "description": "Telethon String Session",
-                   "value": "",
-                   "required": false
-                  },
-                  "STRING15": {
-                    "description": "Telethon String Session",
-                    "value": "",
-                    "required": false
-                 },
-                 "STRING16": {
-                   "description": "Telethon String Session",
-                   "value": "",
-                   "required": false
-                 },
-                 "STRING17": {
-                   "description": "Telethon String Session",
-                   "value": "",
-                   "required": false
-                 },
-                 "STRING18": {
-                   "description": "Telethon String Session",
-                   "value": "",
-                   "required": false
-                 },
+                },
+                "STRING12": {
+                  "description": "Telethon String Session",
+                  "value": "",
+                  "required": false
+                },
+                "STRING13": {
+                  "description": "Telethon String Session",
+                  "value": "",
+                  "required": false
+                },
+                "STRING14": {
+                  "description": "Telethon String Session",
+                  "value": "",
+                  "required": false
+                },
+                "STRING15": {
+                  "description": "Telethon String Session",
+                  "value": "",
+                  "required": false
+                },
+                "STRING16": {
+                  "description": "Telethon String Session",
+                  "value": "",
+                  "required": false
+                },
+                "STRING17": {
+                  "description": "Telethon String Session",
+                  "value": "",
+                  "required": false
+               },
+                "STRING18": {
+                  "description": "Telethon String Session",
+                  "value": "",
+                  "required": false
+                },
                 "STRING19": {
                   "description": "Telethon String Session",
                   "value": "",
                   "required": false
-                },
+               },
                 "STRING20": {
                   "description": "Telethon String Session",
                   "value": "",
                   "required": false
-                },
+                 },
                 "STRING21": {
                   "description": "Telethon String Session",
                   "value": "",
                   "required": false
-                },
+                 },
                 "STRING22": {
                   "description": "Telethon String Session",
                   "value": "",
@@ -162,28 +162,28 @@
                   "description": "Telethon String Session",
                   "value": "",
                   "required": false
+                },
+                "STRING28": {
+                  "description": "Telethon String Session",
+                  "value": "",
+                  "required": false
                },
-               "STRING28": {
+               "STRING29": {
                  "description": "Telethon String Session",
                  "value": "",
                  "required": false
                },
-              "STRING29": {
-                "description": "Telethon String Session",
-                "value": "",
-                "required": false
-              },
-              "STRING30
-                "description": "Telethon String Session",
-                "value": "",
-                "required": false
+               "STRING30
+                 "description": "Telethon String Session",
+                 "value": "",
+                 "required": false
                },
                "STRING31": {
                  "description": "Telethon String Session",
                  "value": "",
                  "required": false
-               },
-               "STRING32": {
+                },
+                "STRING32": {
                  "description": "Telethon String Session",
                  "value": "",
                  "required": false
@@ -259,7 +259,7 @@
                  "required": false  
             }
          },
-            "addons": [
+             "addons": [
           {
             "plan": "heroku-postgresql",
             "options": {
