@@ -237,16 +237,16 @@
                    "description": "Full Sudo Users Id (This Sudo Users have All access of Spam Userbots",
                    "value": "",
                    "required": false
-                },
-              "OWNER_ID": {
-                    "description": "Sudo users id space by space",
-                    "value": "",
-                    "required": true
-                },
-              "CMD_HNDLR": {
-                    "description": "Your Spam Userbot's Command handler",
-                    "value": ".",
-                    "required": false
+               },
+             "OWNER_ID": {
+                   "description": "Sudo users id space by space",
+                   "value": "",
+                   "required": true
+               },
+             "CMD_HNDLR": {
+                   "description": "Your Spam Userbot's Command handler",
+                   "value": ".",
+                   "required": false
              },
               "HEROKU_API_KEY": {
                   "description": "Your Heroku api key to update your bot",
