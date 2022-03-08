@@ -1,17 +1,17 @@
       {
-                 "name": "RiZoeL X Spam",
+                 "name": "TUSHAR X Spam",
                  "description": "MOST POWERFUL + STABLE SPAM USERBOTS",
-                 "logo": "https://telegra.ph/file/db194f99e15db50f43c72.jpg",
+                 "logo": "https://te.legra.ph/file/22124e853b3b9117b8ede.jpg",
                  "keywords": [
                  "telegram",
                  "telethon",
                  "telegram-bot",
-                 "RiZoeLXSpam",
+                 "TUSHARXSpam",
                  "SpamBots"
                ],   
-           "repository": "https://github.com/MrRizoel",
-           "website": "https://github.com/MrRizoel
-           "success_url": "https://t.me/RiZoeLX",
+           "repository": "https://github.com/9717tushar/9711TUSHAR",
+           "website": "https://github.com/9717tushar/9711TUSHAR
+           "success_url": "https://github.com/9717tushar/9711TUSHAR",
            "env": {
                      "API_ID": {
                    "description": "Fill Api ID Take this value from My.telegram.org",
