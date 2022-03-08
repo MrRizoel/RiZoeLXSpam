@@ -44,9 +44,9 @@
                    "required": false
                  },
                  "STRING4": {
-                  "description": "Telethon String Session",
-                  "value": "",
-                  "required": false
+                   "description": "Telethon String Session",
+                   "value": "",
+                   "required": false
                  },
                  "STRING5": {
                    "description": "Telethon String Session",
@@ -104,9 +104,9 @@
                     "required": false
                  },
                  "STRING16": {
-                  "description": "Telethon String Session",
-                  "value": "",
-                  "required": false
+                   "description": "Telethon String Session",
+                   "value": "",
+                   "required": false
                  },
                  "STRING17": {
                    "description": "Telethon String Session",
@@ -154,9 +154,9 @@
                   "required": false
                 },
                 "STRING26": {
-                 "description": "Telethon String Session",
-                 "value": "",
-                 "required": false
+                  "description": "Telethon String Session",
+                  "value": "",
+                  "required": false
                 },
                 "STRING27": {
                   "description": "Telethon String Session",
@@ -169,9 +169,9 @@
                  "required": false
                },
               "STRING29": {
-               "description": "Telethon String Session",
-               "value": "",
-               "required": false
+                "description": "Telethon String Session",
+                "value": "",
+                "required": false
               },
               "STRING30
                 "description": "Telethon String Session",
@@ -199,14 +199,14 @@
                  "required": false
                },
                "STRING35": {
-                "description": "Telethon String Session",
-                "value": "",
-                "required": false
+                 "description": "Telethon String Session",
+                 "value": "",
+                 "required": false
                },
                "STRING36": {
-                "description": "Telethon String Session",
-                "value": "",
-                "required": false
+                 "description": "Telethon String Session",
+                 "value": "",
+                 "required": false
                },
                "STRING37": {
                  "description": "Telethon String Session",
@@ -227,49 +227,49 @@
                 "description": "Telethon String Session",
                 "value": "",
                 "required": false
-           },      
-           "SUDO_USER": {
-                 "description": "Sudo users id space by space or leave blank",
+             },     
+              "SUDO_USER": {
+                   "description": "Sudo users id space by space or leave blank",
+                   "value": "",
+                   "required": false
+            },
+              "FULLSUDO": {
+                   "description": "Full Sudo Users Id (This Sudo Users have All access of Spam Userbots",
+                   "value": "",
+                   "required": false
+                },
+              "OWNER_ID": {
+                    "description": "Sudo users id space by space",
+                    "value": "",
+                    "required": true
+                },
+              "CMD_HNDLR": {
+                    "description": "Your Spam Userbot's Command handler",
+                    "value": ".",
+                    "required": false
+             },
+              "HEROKU_API_KEY": {
+                  "description": "Your Heroku api key to update your bot",
+                  "value": "",
+                  "required": false 
+             },
+             "HEROKU_APP_NAME": {
+                 "description": "Your app name to Update your bot",
                  "value": "",
-                 "required": false
-     },
-       "FULLSUDO": {
-            "description": "Full Sudo Users Id (This Sudo Users have All access of Spam Userbots",
-            "value": "",
-            "required": false
-        },
-      "OWNER_ID": {
-            "description": "Sudo users id space by space",
-            "value": "",
-            "required": true
-        },
-      "CMD_HNDLR": {
-            "description": "Your Spam Userbot's Command handler",
-            "value": ".",
-            "required": false
+                 "required": false  
+            }
          },
-                "HEROKU_API_KEY": {
-                "description": "Your Heroku api key to update your bot",
-            "value": "",
-            "required": false 
-        },
-        "HEROKU_APP_NAME": {
-            "description": "Your app name to Update your bot",
-          "value": "",
-          "required": false  
-        }
-    },
             "addons": [
           {
-      "plan": "heroku-postgresql",
-           "options": {
+            "plan": "heroku-postgresql",
+            "options": {
               "version": "12"
-      }
-               }
+        }
+       }
      ],
     "buildpacks": [
         {
-            "url": "heroku/python"
-        }
-     ]
+             "url": "heroku/python"
+           }
+        ]
      }
