@@ -214,24 +214,24 @@
                  "required": false
                },
                "STRING38": {
-               "description": "Telethon String Session",
-               "value": "",
-        "required": false
-      },
-      "STRING39": {
-        "description": "Telethon String Session",
-        "value": "",
-        "required": false
-      },
-      "STRING40": {
-        "description": "Telethon String Session",
-        "value": "",
-        "required": false
-      },      
-       "SUDO_USER": {
-            "description": "Sudo users id space by space or leave blank",
-            "value": "",
-            "required": false
+                 "description": "Telethon String Session",
+                 "value": "",
+                 "required": false
+               },
+              "STRING39": {
+                "description": "Telethon String Session",
+                "value": "",
+                "required": false
+              },
+              "STRING40": {
+                "description": "Telethon String Session",
+                "value": "",
+                "required": false
+           },      
+           "SUDO_USER": {
+                 "description": "Sudo users id space by space or leave blank",
+                 "value": "",
+                 "required": false
      },
        "FULLSUDO": {
             "description": "Full Sudo Users Id (This Sudo Users have All access of Spam Userbots",
