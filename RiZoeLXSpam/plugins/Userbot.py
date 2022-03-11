@@ -86,7 +86,7 @@ async def ping(e):
         start = datetime.now()
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        pingop = f"█▀█ █▀█ █▄░█ █▀▀\n█▀▀ █▄█ █░▀█ █▄█\n\nϟ TUSHAR ♥️ X sᴘᴀᴍ ϟ︎ `{ms}` ᴍs"                   
+        pingop = f"ZINDA HU BABY BATAO KISKI CHUDAI KARNI H \n\nϟ TUSHAR ♥️ X sᴘᴀᴍ ϟ︎ `{ms}` ᴍs"                   
         await fuk.edit(pingop)
 
 
@@ -111,7 +111,7 @@ rizoel += f"┣➣ **ᴄʜᴀɴɴᴇʟ** : [JOIN](https://t.me/HYPERSPIRITOFFICI
 
 rizoel += f"┗━━━━━━━━━━━━━━━━━━━\n\n"
 
-rizoel += f"🖤 [𝐑𝐄𝐏𝐎](LUND LELE MADARCHOD) 🖤"            
+rizoel += f"🖤 [𝐑𝐄𝐏𝐎](DM AAJAO ) 🖤"            
                                     
 @Riz.on(events.NewMessage(incoming=True, pattern=r"\%salive" % hl))
 async def alive(event):
