@@ -231,12 +231,12 @@ async def spam(e):
                 text = f"I can't Dm To @RiZoeLX's Owner"
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(g) in SUDO_USERS:
-                text = f"This guy is a sudo user."
+                text = f"𝗦𝗢𝗥𝗥𝗬 𝗬𝗛 𝗠𝗘𝗥𝗔 𝗕𝗛𝗔𝗜 𝗛 𝗡𝗘𝗛𝗜 𝗞𝗔𝗥𝗨𝗡𝗚𝗔."
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
                 message = str(Rizoelsexy[1])
                 counter = int(rizoel[0])
-                await e.reply("☢️ Dm Spam Started ☢️")
+                await e.reply("⚔️𝗗𝗠 𝗠𝗔𝗜 𝗖𝗛𝗨𝗗𝗔𝗜 𝗦𝗧𝗔𝗥𝗧 𝗦𝗜𝗥 ⚔️")
                 for _ in range(counter):
                     async with e.client.action(g, "typing"):
                         await e.client.send_message(g, message)
@@ -249,11 +249,11 @@ async def spam(e):
                 text = f"I can't Dm To @RiZoeLX's Owner"
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(g) in SUDO_USERS:
-                text = f"This guy is a sudo user."
+                text = f"𝗦𝗢𝗥𝗥𝗬 𝗬𝗛 𝗠𝗘𝗥𝗔 𝗕𝗛𝗔𝗜 𝗛 𝗡𝗘𝗛𝗜 𝗞𝗔𝗥𝗨𝗡𝗚𝗔."
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:           
                  counter = int(rizoel[0])
-                 await e.reply("☢️ Dm Spam Started ☢️")
+                 await e.reply("🤤𝗗𝗠 𝗠𝗔𝗜 𝗖𝗛𝗨𝗗𝗔𝗜 𝗦𝗧𝗔𝗥𝗧 𝗦𝗜𝗥🤤")
                  for _ in range(counter):
                      async with e.client.action(g, "document"):
                         smex = await e.client.send_file(g, smex, caption=smex.text)
@@ -268,11 +268,11 @@ async def spam(e):
                 text = f"I can't Dm To @RiZoeLX's Owner"
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(g) in SUDO_USERS:
-                text = f"This guy is a sudo user."
+                text = f"𝙎𝙊𝙍𝙍𝙔 𝙔𝙃 𝙈𝙀𝙍𝘼 𝘽𝙃𝘼𝙄 𝙃 𝙉𝙀𝙃𝙄 𝙆𝘼𝙍𝙐𝙉𝙂𝘼."
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
                 counter = int(rizoel[0])
-                await e.reply("☢️ Dm Spam Started ☢️")
+                await e.reply("💦𝘿𝙈 𝙈𝘼𝙄 𝘾𝙃𝙐𝘿𝘼𝙄 𝙎𝙏𝘼𝙍𝙏 𝙎𝙄𝙍💦 ")
                 for _ in range(counter):
                     async with e.client.action(g, "typing"):
                         await e.client.send_message(g, message)
