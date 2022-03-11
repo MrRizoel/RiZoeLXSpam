@@ -173,7 +173,7 @@
                  "value": "",
                  "required": false
                },
-               "STRING30
+               "STRING30": {
                  "description": "Telethon String Session",
                  "value": "",
                  "required": false
