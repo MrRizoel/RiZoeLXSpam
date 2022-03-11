@@ -86,7 +86,7 @@ async def ping(e):
         start = datetime.now()
         end = datetime.now()
         ms = (end-start).microseconds / 1000
-        pingop = f"ZINDA HU BABY BATAO KISKI CHUDAI KARNI H \n\nϟ TUSHAR ♥️ X sᴘᴀᴍ ϟ︎ `{ms}` ᴍs"                   
+        pingop = f"𝙆𝙄𝙎𝙆𝙄 𝙈𝘼𝘼 𝙆𝙄 𝘾𝙃𝙐𝙏 𝙆𝘼 𝘿𝘼𝙍𝘿 𝙈𝙄𝙏𝘼𝙉𝘼 𝙃 𝙎𝙄𝙍 \n\nϟ 𝗧𝗨𝗦𝗛𝗔𝗥 𝗫 𝗦𝗽𝗮𝗺 𝗛𝗲𝗿𝗲 ⚔️ ϟ︎ `{ms}` ᴍs"                   
         await fuk.edit(pingop)
 
 
@@ -95,7 +95,7 @@ async def ping(e):
 RIZ_PIC = ALIVE_PIC if ALIVE_PIC else "https://te.legra.ph/file/22124e853b3b9117b8ede.jpg"
 
 
-rizoel = "✧ TUSHAR 𝗫 𝗦𝗽𝗮𝗺 𝗛𝗲𝗿𝗲 ✧\n\n"
+rizoel = "✧ 𝗧𝗨𝗦𝗛𝗔𝗥 𝗫 𝗦𝗽𝗮𝗺 𝗛𝗲𝗿𝗲 ✧\n\n"
 
 rizoel += f"┏━━━━━━━━━━━━━━━━━━━\n"
 
@@ -103,7 +103,7 @@ rizoel += f"┣➣ **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `3.9.6`\n"
 
 rizoel += f"┣➣ **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ** : `{version.__version__}`\n"
 
-rizoel += f"┣➣ **TUSHARXsᴘᴀᴍ ᴠᴇʀsɪᴏɴ**  : `{rizoelversion}`\n"
+rizoel += f"┣➣ ** ᴠᴇʀsɪᴏɴ** 𝗧𝗨𝗦𝗛𝗔𝗥 𝗫 𝗦𝗽𝗮𝗺 : `{rizoelversion}`\n"
     
 rizoel += f"┣➣ **sᴜᴘᴘᴏʀᴛ** : [JOIN](https://t.me/HYPERSPIRITOFFICIALCHAT)\n"
 
@@ -125,9 +125,9 @@ async def alive(event):
 
 HELP_PIC = "https://te.legra.ph/file/22124e853b3b9117b8ede.jpg"
 
-RiZoeLX = "🔥 TUSHAR 𝗫 𝗦𝗣𝗔𝗠 🔥\n\n"
+RiZoeLX = "🔥 𝗧𝗨𝗦𝗛𝗔𝗥 𝗫 𝗦𝗽𝗮𝗺 🔥\n\n"
  
-RiZoeLX += f"__ᴄᴍᴅs ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ TUSHAR x sᴘᴀᴍ__\n\n"
+RiZoeLX += f"__ᴄᴍᴅs ᴀᴠᴀɪʟᴀʙʟᴇ ɪɴ 𝗧𝗨𝗦𝗛𝗔𝗥 𝗫 𝗦𝗽𝗮𝗺__\n\n"
 
 RiZoeLX += f" ↧ 𝚄𝚂𝙴𝚁𝙱𝙾𝚃 𝙲𝙼𝙳𝚂 ↧\n\n"
 
@@ -200,7 +200,7 @@ async def help(event):
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%srestart(?: |$)(.*)" % hl))
 async def restart(e):
     if e.sender_id in SUDO_USERS:
-        text = "𝙍𝙀𝙎𝙏𝘼𝙍𝙏𝙄𝙉𝙂\n\n ....Please Wait Until It Starts Again"
+        text = "𝙍𝙀𝙎𝙏𝘼𝙍𝙏𝙄𝙉𝙂\n\n ....𝗧𝗛𝗢𝗗𝗜 𝗗𝗘𝗥 𝗥𝗨𝗞𝗢 𝗔𝗕𝗛𝗜 𝗩𝗔𝗣𝗜𝗦 𝗔𝗨𝗨𝗡𝗚𝗔"
         await e.reply(text, parse_mode=None, link_preview=None)
         try:
             await Riz.disconnect()
