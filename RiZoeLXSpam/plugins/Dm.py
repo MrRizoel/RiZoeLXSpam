@@ -150,7 +150,7 @@ async def dmraid(e):
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
                 counter = int(RiZoeL[0])
-                await e.reply("⚜️ Dm Raid Strated Successfully ⚜️")
+                await e.reply("🔥 LODE KI CHUDAI START KARDI H BRO 🔥")
                 for _ in range(counter):
                     reply = random.choice(RAID)
                     caption = f"{reply}"
@@ -169,7 +169,7 @@ async def dmraid(e):
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
                 counter = int(RiZoeL[0])
-                await e.reply("⚜️ Dm Raid Strated Successfully!! ⚜️")
+                await e.reply("🔥 BRO CHUDRA H BECHARA KALAP KE BLOCK KREGA 🔥 ")
                 for _ in range(counter):
                     reply = random.choice(RAID)
                     caption = f"{reply}"
