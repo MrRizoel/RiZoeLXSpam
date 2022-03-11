@@ -221,7 +221,7 @@ async def _(e):
                 nobi = que.get(user_id)
                 nobita = [user_id]
                 nobi.append(nobita)
-                text = f"Activated replyraid 🔥"
+                text = f"𝙎𝙏𝘼𝙍𝙏𝙀𝘿 𝙍𝙀𝙋𝙇𝙔 𝙍𝘼𝙄𝘿 🔥"
                 await e.reply(text, parse_mode=None, link_preview=None )
         elif e.reply_to_msg_id:             
             a = await e.get_reply_message()
@@ -302,7 +302,7 @@ async def _(e):
                 queue.pop(0)
             except Exception as f:
                 pass
-            text = "De-Activated Reply Raid ☑️"
+            text = "𝘽𝙊𝙎𝘿𝙄𝙆𝙀 𝘾𝙃𝙊𝘿 𝙍𝘼𝙃𝘼 𝙃𝙐 𝙆𝙔𝙐𝙆𝙄 𝙏𝙐 𝘽𝘼𝘾𝙃𝘼 𝙃 "
             await e.reply(text, parse_mode=None, link_preview=None )
         elif e.reply_to_msg_id:             
             a = await e.get_reply_message()
