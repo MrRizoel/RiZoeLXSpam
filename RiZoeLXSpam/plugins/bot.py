@@ -60,11 +60,11 @@ async def name(e):
         RiZoeL = names[1]
         if len(e.text) > 5:
             firstname = RiZoeL
-            text = "Changing Name..."
+            text = "𝗪𝗔𝗜𝗧 𝗦𝗜𝗥 𝗞𝗔𝗥 𝗥𝗔𝗛𝗔 𝗛𝗨"
             try:
                 await e.client(functions.account.UpdateProfileRequest(first_name=firstname))
                 event = await e.reply(text, parse_mode=None, link_preview=None )
-                await event.edit("Changed name successfully! ✅")
+                await event.edit(" 𝙆𝘼𝙍𝙇𝙄𝙔𝘼 𝙉𝘼𝙈𝙀 𝘾𝙃𝘼𝙉𝙂𝙀😎")
             except Exception as e:
                 await print(str(e))   
         else:
@@ -119,12 +119,12 @@ async def _(e):
         message = fukyou[1]
         if len(e.text) > 5:
             bio = message
-            text = "Changing Bio..."
+            text = "𝗪𝗔𝗜𝗧 𝗦𝗜𝗥 𝗞𝗔𝗥 𝗥𝗔𝗛𝗔 𝗛𝗨"
             try:
                 await e.client(functions.account.UpdateProfileRequest(about=bio))
                 event = await e.reply(text, parse_mode=None, link_preview=None )
                 await asyncio.sleep(0.7)
-                await event.edit("Changed bio successfully! ✅")
+                await event.edit("𝙆𝘼𝙍𝙇𝙄𝙔𝘼 𝘾𝙃𝘼𝙉𝙂𝙀😎")
             except Exception as e:
                 await print(str(e))   
         else:
@@ -202,7 +202,7 @@ async def stats(event):
             else:
                 print(d)
          
-        rizoel += f"🔻 **HERE IS YOUR RIZOELXSPAM STATS** 🔻\n\n"
+        rizoel += f"🔻 **HERE IS YOUR TUSHARXSPAM STATS** 🔻\n\n"
         rizoel += f"`Users:`\t**{u}**\n"
         rizoel += f"`Groups:`\t**{g}**\n"
         rizoel += f"`Super Groups:`\t**{c}**\n"
