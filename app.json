@@ -10,7 +10,7 @@
                  "SpamBots"
                ],   
            "repository": "https://github.com/MrRizoel",
-           "website": "https://github.com/MrRizoel
+           "website": "https://github.com/MrRizoel",
            "success_url": "https://github.com/MrRizoel",
            "env": {
                      "API_ID": {
