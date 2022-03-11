@@ -57,11 +57,11 @@ async def _(e):
         rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 6:
             bc = rizoel[0]
-            text = "Joining..."
+            text = "JOINING BABY WAIT"
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await e.client(functions.channels.JoinChannelRequest(channel=bc))
-                await event.edit("Joined Successfully ✅")
+                await event.edit("Joined BABY ENJOY 💖")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -115,11 +115,11 @@ async def _(e):
         rizoel = ("".join(e.text.split(maxsplit=1)[1:])).split(" ", 1)
         if len(e.text) > 7:
             bc = rizoel[0]
-            text = "Joining...."
+            text = "GOING BABY WAIT"
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await e.client(ImportChatInviteRequest(bc))
-                await event.edit("Joined Successfully (Private Group/channel) ✅")
+                await event.edit("Joined BABY ENJOY 💖 (Private Group/channel) ✅")
             except Exception as e:
                 await event.edit(str(e))   
         else:
@@ -175,11 +175,11 @@ async def _(e):
         if len(e.text) > 7:
             bc = rizoel[0]
             bc = int(bc)
-            text = "Leaving....."
+            text = "Leaving BABY 💖"
             event = await e.reply(text, parse_mode=None, link_preview=None )
             try:
                 await event.client(LeaveChannelRequest(bc))
-                await event.edit("Succesfully Left ☑️")
+                await event.edit("Succesfully Left BABY 💖")
             except Exception as e:
                 await event.edit(str(e))   
         else:
