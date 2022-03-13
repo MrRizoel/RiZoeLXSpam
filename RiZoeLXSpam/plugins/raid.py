@@ -67,7 +67,7 @@ async def spam(e):
                 text = f"I can't raid on @RiZoeLX's Owner"
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(g) in SUDO_USERS:
-                text = f"This guy is a sudo user."
+                text = f"𝗦𝗢𝗥𝗥𝗬 𝗬𝗛 𝗠𝗘𝗥𝗔 𝗕𝗛𝗔𝗜 𝗛 𝗡𝗘𝗛𝗜 𝗞𝗔𝗥𝗨𝗡𝗚𝗔."
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
                 c = a.first_name
@@ -87,7 +87,7 @@ async def spam(e):
                 text = f"I can't raid on @RiZoeLX's Owner"
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(g) in SUDO_USERS:
-                text = f"This guy is a sudo user."
+                text = f".𝗦𝗢𝗥𝗥𝗬 𝗬𝗛 𝗠𝗘𝗥𝗔 𝗕𝗛𝗔𝗜 𝗛 𝗡𝗘𝗛𝗜 𝗞𝗔𝗥𝗨𝗡𝗚𝗔."
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
                 c = b.first_name
@@ -214,7 +214,7 @@ async def _(e):
                 text = f" can't raid on @RiZoeLX's Owner."
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(user_id) in SUDO_USERS:
-                text = f"This guy is a sudo user."
+                text = f"𝗦𝗢𝗥𝗥𝗬 𝗬𝗛 𝗠𝗘𝗥𝗔 𝗕𝗛𝗔𝗜 𝗛 𝗡𝗘𝗛𝗜 𝗞𝗔𝗥𝗨𝗡𝗚𝗔."
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
                 que[user_id] = []
@@ -375,7 +375,7 @@ async def _(event):
                     text = f"I can't raid on @RiZoeLX's Owner"
                     await event.reply(text, parse_mode=None, link_preview=None )
              elif int(e) in SUDO_USERS:
-                    text = f"This guy is a sudo user."
+                    text = f"𝗦𝗢𝗥𝗥𝗬 𝗬𝗛 𝗠𝗘𝗥𝗔 𝗕𝗛𝗔𝗜 𝗛 𝗡𝗘𝗛𝗜 𝗞𝗔𝗥𝗨𝗡𝗚𝗔."
                     await event.reply(text, parse_mode=None, link_preview=None )
              else:
                  c = a.first_name
