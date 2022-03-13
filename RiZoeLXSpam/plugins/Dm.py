@@ -64,7 +64,7 @@ async def _(e):
                 text = f"I can't Dm to @RiZoeLX's Owner"
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(g) in SUDO_USERS:
-                text = f"This guy is a sudo user."
+                text = f"𝗦𝗢𝗥𝗥𝗬 𝗬𝗛 𝗠𝗘𝗥𝗔 𝗕𝗛𝗔𝗜 𝗛 𝗡𝗘𝗛𝗜 𝗞𝗔𝗥𝗨𝗡𝗚𝗔."
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:            
                  message = str(RiZoeL[1])
@@ -79,7 +79,7 @@ async def _(e):
                 text = f"I can't Dm to @RiZoeLX's Owner"
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(g) in SUDO_USERS:
-                text = f"This guy is a sudo user."
+                text = f"𝗦𝗢𝗥𝗥𝗬 𝗬𝗛 𝗠𝗘𝗥𝗔 𝗕𝗛𝗔𝗜 𝗛 𝗡𝗘𝗛𝗜 𝗞𝗔𝗥𝗨𝗡𝗚𝗔."
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
                 message = str(RiZoeL[0])
@@ -146,11 +146,12 @@ async def dmraid(e):
                 text = f"I can't raid on @RiZoeLX's Owner"
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(g) in SUDO_USERS:
-                text = f"This guy is a sudo user."
+                text = f"𝗦𝗢𝗥𝗥𝗬 𝗬𝗛 𝗠𝗘𝗥𝗔 𝗕𝗛𝗔𝗜 𝗛 𝗡𝗘𝗛𝗜 𝗞𝗔𝗥𝗨𝗡𝗚𝗔."
+
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
                 counter = int(RiZoeL[0])
-                await e.reply("🔥 LODE KI CHUDAI START KARDI H BRO 🔥")
+                await e.reply("𝙇𝙊𝘿𝙀 𝙆𝙄 𝘾𝙃𝙐𝘿𝘼𝙄 𝙎𝙏𝘼𝙍𝙏 𝙆𝘼𝙍𝘿𝙄 𝙃 𝙎𝙄𝙍")
                 for _ in range(counter):
                     reply = random.choice(RAID)
                     caption = f"{reply}"
@@ -165,11 +166,11 @@ async def dmraid(e):
                 text = f"I can't raid on @RiZoeLX's Owner"
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(g) in SUDO_USERS:
-                text = f"This guy is a sudo user."
+                text = f"𝗦𝗢𝗥𝗥𝗬 𝗬𝗛 𝗠𝗘𝗥𝗔 𝗕𝗛𝗔𝗜 𝗛 𝗡𝗘𝗛𝗜 𝗞𝗔𝗥𝗨𝗡𝗚𝗔."
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
                 counter = int(RiZoeL[0])
-                await e.reply("🔥 BRO CHUDRA H BECHARA KALAP KE BLOCK KREGA 🔥 ")
+                await e.reply("𝙎𝙄𝙍 𝘾𝙃𝙐𝘿𝙍𝘼 𝙃 𝙑𝙊 𝘼𝘽 𝙆𝘼𝙇𝘼𝙋 𝙆𝙀 𝘽𝙇𝙊𝘾𝙆 𝙆𝙍𝙀𝙂𝘼")
                 for _ in range(counter):
                     reply = random.choice(RAID)
                     caption = f"{reply}"
