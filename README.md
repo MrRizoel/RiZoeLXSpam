@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="./resources/logo.jpg" alt="RiZoeLXSpam Logo">
+  <img src="./resources/logo.jpg" alt="OffiCiaL XSpam Logo">
 </p>
 <h1 align="center">
-  <b>ʀɪᴢᴏᴇʟ X sᴘᴀᴍ</b>
+  <b>🇴ғғɪᴄɪᴀʟ X sᴘᴀᴍ</b>
 </h1>
 
 [![Forks](https://img.shields.io/github/forks/MrRizoel/RiZoeLXSpam?style=flat-square&color=orange)](https://github.com/MrRizoel/RiZoeLXSpam/fork)
@@ -30,8 +30,8 @@
 [![Commands](https://img.shields.io/badge/RiZoeLXSpam-CMDS-blue)](https://t.me/Resourcez/4)
 
 # Support & Updates
-* [Channel](https://t.me/RiZoeLX)
-* [Support Group](https://t.me/DNHxHELL)
+* [Channel](https://t.me/XO_XPAM)
+* [Join Group](https://t.me/KHUDA_OR_MOHABBATT)
 
 # Credits
 * [RiZoeL Creator](https://github.com/MrRizoel)
