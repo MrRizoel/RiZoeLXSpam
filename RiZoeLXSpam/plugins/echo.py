@@ -63,7 +63,7 @@ async def echo(event):
                     text = f"I can't echo @RiZoeLX's Owner"
                     await event.reply(text, parse_mode=None, link_preview=None )
             elif int(user_id) in SUDO_USERS:
-                    text = f"This guy is a sudo user."
+                    text = f"𝗦𝗢𝗥𝗥𝗬 𝗬𝗛 𝗠𝗘𝗥𝗔 𝗕𝗛𝗔𝗜 𝗛 𝗡𝗘𝗛𝗜 𝗞𝗔𝗥𝗨𝗡𝗚𝗔."
                     await event.reply(text, parse_mode=None, link_preview=None )
             else:
                  chat_id = event.chat_id
