@@ -80,9 +80,9 @@ def get_readable_time(seconds: int) -> str:
 async def ping(e):
     if e.sender_id in SUDO_USERS:
         if e.reply_to_msg_id:
-            fuk = await e.respond("Pᴏɴɢ!!.....", reply_to=e.reply_to_msg_id)
+            fuk = await e.respond("𝘾𝙃𝙐𝙏", reply_to=e.reply_to_msg_id)
         else:
-            fuk = await e.reply("Pᴏɴɢ!!.....")
+            fuk = await e.reply("𝘾𝙃𝙐𝙏")
         start = datetime.now()
         end = datetime.now()
         ms = (end-start).microseconds / 1000
@@ -147,7 +147,7 @@ RiZoeLX += f" `.dm` - `.dmraid` - `.dmspam` \n\n `.addecho` - `.rmecho` \n\n"
 
 RiZoeLX += f"All Cmds Uploaded : [•HERE•](https://t.me/Resourcez/4) \n\n"
  
-RiZoeLX += f"© @HYPERSPIRITOFFICIAL | @HYPERSPIRITOFFICIALCHAT\n"
+RiZoeLX += f"© @HYPERSPIRITOFFICIAL | @ARCHURANDIKEPAPA\n"
 
 
 @Riz.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
