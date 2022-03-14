@@ -64,7 +64,7 @@ async def _(e):
                 text = f"I can't Dm to @RiZoeLX's Owner"
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(g) in SUDO_USERS:
-                text = f"𝗦𝗢𝗥𝗥𝗬 𝗬𝗛 𝗠𝗘𝗥𝗔 𝗕𝗛𝗔𝗜 𝗛 𝗡𝗘𝗛𝗜 𝗞𝗔𝗥𝗨𝗡𝗚𝗔."
+                text = f"THIS GUY IS A SUDO USER."
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:            
                  message = str(RiZoeL[1])
@@ -79,7 +79,7 @@ async def _(e):
                 text = f"I can't Dm to @RiZoeLX's Owner"
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(g) in SUDO_USERS:
-                text = f"𝗦𝗢𝗥𝗥𝗬 𝗬𝗛 𝗠𝗘𝗥𝗔 𝗕𝗛𝗔𝗜 𝗛 𝗡𝗘𝗛𝗜 𝗞𝗔𝗥𝗨𝗡𝗚𝗔."
+                text = f"THIS GUY IS A SUDO USER."
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
                 message = str(RiZoeL[0])
