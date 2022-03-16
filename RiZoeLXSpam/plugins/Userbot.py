@@ -147,7 +147,7 @@ RiZoeLX += f" `.dm` - `.dmraid` - `.dmspam` \n\n `.addecho` - `.rmecho` \n\n"
 
 RiZoeLX += f"All Cmds Uploaded : [•HERE•](https://t.me/Resourcez/4) \n\n"
  
-RiZoeLX += f"© @HYPERSPIRITOFFICIAL | @ARCHURANDIKEPAPA\n"
+RiZoeLX += f"© @HYPERSPIRITOFFICIAL | @HYPERSPIRITOFFICIALCHAT\n"
 
 
 @Riz.on(events.NewMessage(incoming=True, pattern=r"\%shelp(?: |$)(.*)" % hl))
