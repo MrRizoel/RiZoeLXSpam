@@ -214,7 +214,7 @@ async def _(e):
                 text = f" can't raid on @RiZoeLX's Owner."
                 await e.reply(text, parse_mode=None, link_preview=None )
             elif int(user_id) in SUDO_USERS:
-                text = f"𝗦𝗢𝗥𝗥𝗬 𝗬𝗛 𝗠𝗘𝗥𝗔 𝗕𝗛𝗔𝗜 𝗛 𝗡𝗘𝗛𝗜 𝗞𝗔𝗥𝗨𝗡𝗚𝗔."
+                text = f"This guy is a sudo user."
                 await e.reply(text, parse_mode=None, link_preview=None )
             else:
                 que[user_id] = []
