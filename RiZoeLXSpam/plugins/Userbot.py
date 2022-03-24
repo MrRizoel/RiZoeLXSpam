@@ -205,7 +205,7 @@ async def alive(event):
 @Riz40.on(events.NewMessage(incoming=True, pattern=r"\%srestart" % hl))
 async def restart(e):
     if e.sender_id in SUDO_USERS or e.sender_id in DEV:
-        text = f"**Restarting....\n\n ....Please Wait Until It Starts Again"
+        text = f"**Restarting** \n\n Please Wait Until It Starts Again"
         await e.reply(text, parse_mode=None, link_preview=None)
         try:
             await Riz.disconnect()
