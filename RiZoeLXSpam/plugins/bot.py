@@ -5,7 +5,51 @@ import base64
 from telethon.errors.rpcerrorlist import UsernameOccupiedError
 from telethon.tl import functions
 from telethon.tl.functions.account import UpdateUsernameRequest
-from RiZoeLXSpam import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, Riz11, Riz12, Riz13, Riz14, Riz15, Riz16, Riz17, Riz18, Riz19, Riz20, Riz21, Riz22, Riz23, Riz24, Riz25, Riz26, Riz27, Riz28, Riz29, Riz30, Riz31, Riz32, Riz33, Riz34, Riz35, Riz36, Riz37, Riz38, Riz39, Riz40, OWNER_ID, DEV
+from RiZoeLXSpam import (
+  Riz, 
+  Riz2, 
+  Riz3, 
+  Riz4, 
+  Riz5, 
+  Riz6, 
+  Riz7, 
+  Riz8, 
+  Riz9, 
+  Riz10, 
+  Riz11, 
+  Riz12, 
+  Riz13, 
+  Riz14, 
+  Riz15, 
+  Riz16, 
+  Riz17, 
+  Riz18, 
+  Riz19, 
+  Riz20, 
+  Riz21, 
+  Riz22, 
+  Riz23, 
+  Riz24, 
+  Riz25, 
+  Riz26, 
+  Riz27, 
+  Riz28, 
+  Riz29, 
+  Riz30, 
+  Riz31, 
+  Riz32, 
+  Riz33, 
+  Riz34, 
+  Riz35, 
+  Riz36, 
+  Riz37, 
+  Riz38, 
+  Riz39, 
+  Riz40,
+  DEV, 
+  OWNER_ID, 
+  SUDO_USERS,
+),
 from .. import CMD_HNDLR as hl
 from telethon import events
 from telethon.tl.types import Channel, Chat, InputPhoto, User
@@ -207,7 +251,5 @@ async def stats(event):
         rizoel += f"`Super Groups:`\t**{c}**\n"
         rizoel += f"`Channels:`\t**{bc}**\n"
         rizoel += f"`Bots:`\t**{b}**"
-        await event.edit(rizoel)    
-    
-    
-    
+        await event.edit(rizoel)
+        
