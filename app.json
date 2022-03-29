@@ -1,19 +1,19 @@
 {
-      "name": "RiZoeL X Spam",
-      "description": "MOST POWERFUL + STABLE SPAM USERBOTS",
-      "logo": "https://telegra.ph/file/db194f99e15db50f43c72.jpg",
-      "keywords": [
-        "telegram",
-        "telethon",
-        "telegram-bot",
-        "RiZoeLXSpam",
-        "SpamBots"
-      ],   
+  "name": "RiZoeL X Spam",
+  "description": "MOST POWERFUL + STABLE SPAM USERBOTS",
+  "logo": "https://telegra.ph/file/db194f99e15db50f43c72.jpg",
+  "keywords": [
+    "telegram",
+    "telethon",
+    "telegram-bot",
+    "RiZoeLXSpam",
+    "SpamBots"
+  ],   
   "repository": "https://github.com/MrRizoel",
   "website": "https://github.com/MrRizoel",
   "success_url": "https://t.me/RiZoeLX",
   "env": {
-             "API_ID": {
+        "API_ID": {
         "description": "Fill Api ID Take this value from My.telegram.org",
         "value": "",
         "required": true
@@ -228,36 +228,36 @@
         "value": "",
         "required": false
       },      
-       "SUDO_USER": {
-            "description": "Sudo users id space by space or leave blank",
-            "value": "",
-            "required": false
-     },
-       "FULLSUDO": {
-            "description": "Full Sudo Users Id (This Sudo Users have All access of Spam Userbots",
-            "value": "",
-            "required": false
-        },
+      "SUDO_USER": {
+        "description": "Sudo users id space by space or leave blank",
+        "value": "",
+        "required": false
+      },
+      "FULLSUDO": {
+        "description": "Full Sudo Users Id (This Sudo Users have All access of Spam Userbots",
+        "value": "",
+        "required": false
+      },
       "OWNER_ID": {
-            "description": "Sudo users id space by space",
-            "value": "",
-            "required": true
-        },
+        "description": "Sudo users id space by space",
+        "value": "",
+        "required": true
+      },
       "CMD_HNDLR": {
-            "description": "Your Spam Userbot's Command handler",
-            "value": ".",
-            "required": false
+        "description": "Your Spam Userbot's Command handler",
+        "value": ".",
+        "required": false
        },
-        "HEROKU_API_KEY": {
-            "description": "Your Heroku api key to update your bot",
-            "value": "",
-            "required": false 
-        },
-        "HEROKU_APP_NAME": {
-            "description": "Your app name to Update your bot",
-          "value": "",
-          "required": false  
-        }
+       "HEROKU_API_KEY": {
+         "description": "Your Heroku api key to update your bot",
+         "value": "",
+         "required": false 
+       },
+       "HEROKU_APP_NAME": {
+         "description": "Your app name to Update your bot",
+         "value": "",
+        "required": false  
+       }
     },
   "addons": [
     {
