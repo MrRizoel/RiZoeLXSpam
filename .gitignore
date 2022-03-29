@@ -1,5 +1,4 @@
 .env
-raw_files/
 __pycache__/
 Riz.session
 Riz.session-journal
