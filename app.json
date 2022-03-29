@@ -12,6 +12,7 @@
   "repository": "https://github.com/MrRizoel",
   "website": "https://github.com/MrRizoel",
   "success_url": "https://t.me/RiZoeLX",
+  "stack": "container",
   "env": {
         "API_ID": {
         "description": "Fill Api ID Take this value from My.telegram.org",
