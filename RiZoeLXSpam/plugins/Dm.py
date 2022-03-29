@@ -46,6 +46,9 @@ from RiZoeLXSpam import (
   Riz38, 
   Riz39, 
   Riz40,
+  DEV, 
+  OWNER_ID, 
+  SUDO_USERS,
 ),
 from .. import CMD_HNDLR as hl
 
