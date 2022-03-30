@@ -1,4 +1,5 @@
-#RiZoeLXSpam By @TheRiZoeL
+# RiZoeLXSpam - Spam Userbots
+# Copyright © present @RiZoeLX
 
 import asyncio
 import sys
@@ -8,7 +9,48 @@ from pathlib import Path
 from RiZoeLXSpam.utils import load_plugins
 import logging
 from telethon import events
-from . import Riz, Riz2, Riz3, Riz4, Riz5 , Riz6, Riz7, Riz8, Riz9, Riz10, Riz11, Riz12, Riz13, Riz14, Riz15, Riz16, Riz17, Riz18, Riz19, Riz20, Riz21, Riz22, Riz23, Riz24, Riz25, Riz26, Riz27, Riz28, Riz29, Riz30, Riz31, Riz32, Riz33, Riz34, Riz35, Riz36, Riz37, Riz38, Riz39, Riz40
+from . import (
+  Riz, 
+  Riz2, 
+  Riz3, 
+  Riz4, 
+  Riz5, 
+  Riz6, 
+  Riz7, 
+  Riz8, 
+  Riz9, 
+  Riz10, 
+  Riz11, 
+  Riz12, 
+  Riz13, 
+  Riz14, 
+  Riz15, 
+  Riz16, 
+  Riz17, 
+  Riz18, 
+  Riz19, 
+  Riz20, 
+  Riz21, 
+  Riz22, 
+  Riz23, 
+  Riz24, 
+  Riz25, 
+  Riz26, 
+  Riz27, 
+  Riz28, 
+  Riz29, 
+  Riz30, 
+  Riz31, 
+  Riz32, 
+  Riz33, 
+  Riz34, 
+  Riz35, 
+  Riz36, 
+  Riz37, 
+  Riz38, 
+  Riz39, 
+  Riz40,
+),  
 
 logging.basicConfig(format='[%(levelname) 5s/%(asctime)s] %(name)s: %(message)s',
                     level=logging.WARNING)

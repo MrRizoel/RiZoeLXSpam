@@ -6,7 +6,7 @@
 </h1>
 
 [![Forks](https://img.shields.io/github/forks/MrRizoel/RiZoeLXSpam?style=flat-square&color=orange)](https://github.com/MrRizoel/RiZoeLXSpam/fork)
-[![Python](https://img.shields.io/badge/Python-v3.9.7-blue)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/Python-v3.9.12-blue)](https://www.python.org/)
 [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/MrRizoel/RiZoeLXSpam)   
 ----
  
@@ -25,7 +25,7 @@
 • If you face any error while generating String session then use [@TELESTRING_BOT](https://t.me/TELESTRING_BOT) this bot
 # Deploy on heroku
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/MrRizoel/RiZoeLSpam-deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 
 # ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs

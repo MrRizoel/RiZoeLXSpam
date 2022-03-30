@@ -1,5 +1,5 @@
 # RiZoeLXSpam - Spam Userbots
-# Copyright © 2021 @RiZoeLX
+# Copyright © present @RiZoeLX
 
 import os
 import sys
