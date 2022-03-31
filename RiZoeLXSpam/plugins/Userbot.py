@@ -47,7 +47,7 @@ from RiZoeLXSpam import (
   DEV, 
   OWNER_ID, 
   SUDO_USERS,
-),
+)
 from RiZoeLXSpam import ALIVE_PIC, rizoelversion
 from .. import CMD_HNDLR as hl
 from telethon import events, version
