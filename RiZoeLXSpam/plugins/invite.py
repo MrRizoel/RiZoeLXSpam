@@ -48,7 +48,7 @@ from RiZoeLXSpam import (
   DEV, 
   OWNER_ID, 
   SUDO_USERS,
-),
+)
 from .. import CMD_HNDLR as hl
 from telethon.tl import functions
 from telethon import events
