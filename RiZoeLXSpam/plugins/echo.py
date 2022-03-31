@@ -47,7 +47,7 @@ from RiZoeLXSpam import (
   DEV, 
   OWNER_ID, 
   SUDO_USERS,
-),
+)
 from RiZoeLXSpam import CMD_HNDLR as hl
 from RiZoeLXSpam.sql.echo_sql import addecho, get_all_echos, is_echo, remove_echo
 from resources.data import RiZoeLX
