@@ -48,7 +48,7 @@ from RiZoeLXSpam import (
   DEV, 
   OWNER_ID, 
   SUDO_USERS,
-),
+)
 from resources.data import RiZoeLX
 from .. import CMD_HNDLR as hl
   
