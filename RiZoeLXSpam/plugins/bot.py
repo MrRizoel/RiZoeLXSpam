@@ -49,7 +49,7 @@ from RiZoeLXSpam import (
   DEV, 
   OWNER_ID, 
   SUDO_USERS,
-),
+)
 from .. import CMD_HNDLR as hl
 from telethon import events
 from telethon.tl.types import Channel, Chat, InputPhoto, User
