@@ -49,7 +49,7 @@ from RiZoeLXSpam import (
   DEV, 
   OWNER_ID, 
   SUDO_USERS,
-),
+)
 from resources.data import RAID, REPLYRAID, RiZoeLX
 from .. import CMD_HNDLR as hl
 
